@@ -129,7 +129,7 @@ Matrix 实例和 Element-web 客户端的测试仍在进行中。计划在九月
 
 联系人：Deb Goodkin <[deb@FreeBSDFoundation.org](mailto:deb@FreeBSDFoundation.org)>
 
-FreeBSD 基金会是一家 501(c)(3)非营利组织，致力于支持和推动全球 FreeBSD 项目和社区。个人和公司的捐赠资助和管理软件开发项目、会议和开发者峰会。我们还向 FreeBSD 贡献者提供差旅资助，购买和支持硬件以改善和维护 FreeBSD 基础设施，并提供资源以提高安全性、质量保证和集群管理工作。我们发布营销材料以推广、教育和宣传 FreeBSD，促进商业供应商与 FreeBSD 开发者之间的合作，并最终代表 FreeBSD 项目执行合同、许可协议和其他需要认可法律实体的安排。
+FreeBSD 基金会是一家 501(c)(3)非营利组织，致力于支持和推动全球 FreeBSD 项目和社区。个人和公司的捐赠赞助和管理软件开发项目、会议和开发者峰会。我们还向 FreeBSD 贡献者提供差旅赞助，购买和支持硬件以改善和维护 FreeBSD 基础设施，并提供资源以提高安全性、质量保证和集群管理工作。我们发布营销材料以推广、教育和宣传 FreeBSD，促进商业供应商与 FreeBSD 开发者之间的合作，并最终代表 FreeBSD 项目执行合同、许可协议和其他需要认可法律实体的安排。
 
 在本季度，我们协助 FreeBSD 庆祝其 30 周年！这一激动人心的时刻推动我们加速努力，推动 FreeBSD 在增长和创新方面取得进展，这使我们集中精力确定可以投入资源的关键领域。在 9 月份的董事会会议上，我们优化了我们的目标，重点放在增加 FreeBSD 的采用和可见性、多元化我们的资金来源，以及投资于项目的社区健康和长期稳定性。我们正在确定目标受众和市场，同时为这些目标制定可衡量的结果。
 
@@ -1128,7 +1128,7 @@ FreeBSD 提供了 Ports，为用户和管理员提供了一种安装应用程序
 
 不幸的是，屏幕阅读器在 TUI 中表现不佳；这是一个众所周知的可访问性问题。FreeBSD 提供了数以万计的 port； port 配置是一个关键功能，但对于视力受损的用户而言是不可访问的。
 
-PortOptsCLI（Port Options CLI）是一个通过命令行界面设置 port 选项的新实用程序。确切地说，PortOptsCLI 提供了导航配置对话框（复选框和/或单选按钮）并通过交互方式设置其项目的命令。它也适用于语音合成器；目前已与 [accessibility/orca](https://cgit.freebsd.org/ports/tree/accessibility/orca/) 进行了测试。可以通过 [ports-mgmt/portoptscli](https://cgit.freebsd.org/ports/tree/ports-mgmt/portoptscli/) port 或软件包安装 PortOptsCLI 。
+PortOptsCLI（Port Options CLI）是一个通过命令行界面设置 port 选项的新实用程序。确切地说，PortOptsCLI 提供了导航配置对话框（复选框/单选按钮）并通过交互方式设置其项目的命令。它也适用于语音合成器；目前已与 [accessibility/orca](https://cgit.freebsd.org/ports/tree/accessibility/orca/) 进行了测试。可以通过 [ports-mgmt/portoptscli](https://cgit.freebsd.org/ports/tree/ports-mgmt/portoptscli/) port 或软件包安装 PortOptsCLI 。
 
 欢迎提供建议和新想法。如果可能，请将报告发送到 FreeBSD 可访问性邮件列表，以在公共位置共享和跟踪讨论。
 

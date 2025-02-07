@@ -72,7 +72,7 @@ FreeBSD 杂志网址：[https://www.freebsdfoundation.org/journal/](https://www.
 
 联系人：Deb Goodkin [deb@FreeBSDFoundation.org](mailto:deb@FreeBSDFoundation.org)
 
-FreeBSD 基金会是一个 501(c)(3) 非营利组织，致力于在全球支持和推广 FreeBSD 项目和社区。个人和公司的捐赠用于资助和管理软件开发项目、会议和开发者峰会。我们还为 FreeBSD 贡献者提供差旅补助，购买和支持硬件以改善和维护 FreeBSD 基础设施，并提供资源来改进安全性、质量保证和发布工程工作。我们发布营销材料以推广、教育和支持 FreeBSD 项目，促进商业供应商和 FreeBSD 开发者之间的合作，并最终代表 FreeBSD 项目执行合同、许可协议和其他需要被认可的法律安排。
+FreeBSD 基金会是一个 501(c)(3) 非营利组织，致力于在全球支持和推广 FreeBSD 项目和社区。个人和公司的捐赠用于赞助和管理软件开发项目、会议和开发者峰会。我们还为 FreeBSD 贡献者提供差旅补助，购买和支持硬件以改善和维护 FreeBSD 基础设施，并提供资源来改进安全性、质量保证和发布工程工作。我们发布营销材料以推广、教育和支持 FreeBSD 项目，促进商业供应商和 FreeBSD 开发者之间的合作，并最终代表 FreeBSD 项目执行合同、许可协议和其他需要被认可的法律安排。
 
 **祝 FreeBSD 30 岁生日快乐！**
 
@@ -102,7 +102,7 @@ FreeBSD 基金会是一个 501(c)(3) 非营利组织，致力于在全球支持�
 
 - 我创建了关于如何与基金会合作推进 FreeBSD 的[幻灯片](https://docs.google.com/presentation/d/1tDCpbfxbqIucmJF6H15vK-ETrQsCMOVtxoqLem_V0Z0/edit?usp=sharing)。如果你对如何改进这些幻灯片有任何想法，或者希望我向你的组织介绍这些内容，请给我发送[电子邮件](../di-0-zhang-freebsd-zhong-wen-she-qu/greg@freebsdfoundation.org)或[安排通话](https://calendly.com/greg-freebsdfound/30min)。并且请随意自由地分享这份演示文稿，无论全部还是部分内容。
 - 我与基金会的同事合作，为向行业分析师进行演示准备了许多特定行业的用例幻灯片。
-- 我还在寻求与以下机构的资助机会：
+- 我还在寻求与以下机构的赞助机会：
   - NSF 安全可信的网络空间（SaTC）
   - Sovereign Tech 基金
   - NGI。
