@@ -186,7 +186,7 @@ FreeBSD 基金会赞助了许多全球各地的会议、活动和峰会。这些
   - [Hackernoon：我们将开源 FreeBSD 用作企业操作系统的 5 个原因](https://freebsdfoundation.org/news-and-events/latest-news/hackernoon-5-reasons-we-use-open-source-freebsd-as-our-enterprise-os/)
   - [What the Dev Podcast：FreeBSD 项目的演变](https://freebsdfoundation.org/news-and-events/latest-news/what-the-dev-podcast-the-evolution-of-the-freebsd-project/)
 
-我们通过出版专业制作的 FreeBSD Journal 来向全世界宣传 FreeBSD。正如我们先前提到的，FreeBSD Journal 现在是一份免费出版物。了解更多并访问最新杂志，[https://www.freebsdfoundation.org/journal/](https://www.freebsdfoundation.org/journal/)。你可以在[https://freebsdfoundation.org/our-work/events/](https://freebsdfoundation.org/our-work/events/)找到我们参加的事件和即将举行的事件的更多信息。
+我们通过出版专业制作的 FreeBSD 期刊来向全世界宣传 FreeBSD。正如我们先前提到的，FreeBSD Journal 现在是一份免费出版物。了解更多并访问最新杂志，[https://www.freebsdfoundation.org/journal/](https://www.freebsdfoundation.org/journal/)。你可以在[https://freebsdfoundation.org/our-work/events/](https://freebsdfoundation.org/our-work/events/)找到我们参加的事件和即将举行的事件的更多信息。
 
 ## 改进操作系统
 
@@ -1190,7 +1190,7 @@ Potluck 的目标是成为 FreeBSD 和 Pot 的 Dockerhub：Pot 的风味和完�
 
 提供了相当多的新容器镜像，例如 [Caddy S3 代理](https://github.com/bsdpot/potluck/tree/master/caddy-s3-nomad)、[Mastodon 实例](https://github.com/bsdpot/potluck/tree/master/mastodon-s3) 和 [Redis 容器](https://github.com/bsdpot/potluck/tree/master/redis-single)。总共有 50 个容器可供使用，可以在 [Potluck 镜像注册表](https://potluck.honeyguide.net/) 中下载为现成的镜像（如果你信任我们的构建过程），或者可以从 [Potluck GitHub 仓库](https://github.com/bsdpot/potluck) 中存储的 Pot 风味文件中自行构建。
 
-2023 年 7 月 / 8 月的 FreeBSD Journal 包含了 Luca 的 [使用 pot 和 nomad 进行 Jail 编排](https://freebsdfoundation.org/wp-content/uploads/2023/08/Pizzamiglio.pdf) 文章，解释了如何使用 Pot 和 Potluck 与 Nomad 一起在多个主机上进行容器编排。
+2023 年 7 月 / 8 月的 FreeBSD 期刊包含了 Luca 的 [使用 pot 和 nomad 进行 Jail 编排](https://freebsdfoundation.org/wp-content/uploads/2023/08/Pizzamiglio.pdf) 文章，解释了如何使用 Pot 和 Potluck 与 Nomad 一起在多个主机上进行容器编排。
 
 最后但同样重要的是，一个补丁（[90b1184d93c8](https://cgit.freebsd.org/ports/commit/?id=90b1184d93c8)）为 [devel/sccache](https://cgit.freebsd.org/ports/tree/devel/sccache/) port 添加了构建集群支持。
 
