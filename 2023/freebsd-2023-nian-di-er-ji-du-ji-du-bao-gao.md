@@ -4,7 +4,7 @@
 
 正如你可能注意到的，我们比上个季度有更多的报告。这是个好消息，也显示了 FreeBSD 社区的活跃程度，我们一直在努力提供高质量的软件。
 
-特别需要注意的是，夏季已经开始了，请不要错过由我们的谷歌代码之夏学生分享的令人惊叹的项目。
+特别需要注意的是，夏季已经开始了，请不要错过由我们的谷歌编程之夏学生分享的令人惊叹的项目。
 
 祝你阅读愉快。
 
@@ -142,7 +142,7 @@ FreeBSD 基金会是一个 501(c)(3) 非营利组织，致力于在全球支持�
 
 关于当前和过去由基金会承包的工作的状态，可以在[基金会项目页面上](https://freebsdfoundation.org/our-work/projects/)查看。
 
-基金会技术团队的成员在加拿大渥太华举行的开发者峰会上进行了演讲。这包括主持谷歌代码之夏、[FreeBSD 基金会技术审查](https://wiki.freebsd.org/DevSummit/202305?action=AttachFile&do=view&target=FreeBSD_Foundation_Devsummit_Spring_2023_Day_2_part1.pdf)和[工作流](https://docs.google.com/presentation/d/e/2PACX-1vSnEW5Z0ttQOAeqEEY8KHkfiRGeFUm4i8XrYsfY8TNYD%E2%80%94%E2%80%8Byx1P6MUu2_u-mCcpe6PMMITjeDIgT31CC/pub)工作组会议。Pierre Pronchery 谈到了 [BSD 之间的驱动程序兼容性](https://www.bsdcan.org/events/bsdcan_2023/schedule/speaker/89-pierre-pronchery/)问题，而 En-Wei Wu 则讨论了在与基金会签订的合同下完成的 [wtap 工作](https://www.bsdcan.org/events/bsdcan_2023/schedule/session/139-add-operating-modes-to-wtap4/)。
+基金会技术团队的成员在加拿大渥太华举行的开发者峰会上进行了演讲。这包括主持谷歌编程之夏、[FreeBSD 基金会技术审查](https://wiki.freebsd.org/DevSummit/202305?action=AttachFile&do=view&target=FreeBSD_Foundation_Devsummit_Spring_2023_Day_2_part1.pdf)和[工作流](https://docs.google.com/presentation/d/e/2PACX-1vSnEW5Z0ttQOAeqEEY8KHkfiRGeFUm4i8XrYsfY8TNYD%E2%80%94%E2%80%8Byx1P6MUu2_u-mCcpe6PMMITjeDIgT31CC/pub)工作组会议。Pierre Pronchery 谈到了 [BSD 之间的驱动程序兼容性](https://www.bsdcan.org/events/bsdcan_2023/schedule/speaker/89-pierre-pronchery/)问题，而 En-Wei Wu 则讨论了在与基金会签订的合同下完成的 [wtap 工作](https://www.bsdcan.org/events/bsdcan_2023/schedule/session/139-add-operating-modes-to-wtap4/)。
 
 **持续集成和质量保证**
 
@@ -411,7 +411,7 @@ BATMAN （Better Approach to Mobile Ad-hoc Networking）。BATMAN 是由 Freifun
 
 导师：Mahdi Mokhtari
 
-赞助商：2023 谷歌代码之夏项目
+赞助商：2023 谷歌编程之夏项目
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -802,7 +802,7 @@ Colin 在 BSDCan 上的“将 FreeBSD 移植到 Firecracker”演讲中讨论了
 
 链接：
 
-[FreeBSD Wiki 谷歌代码之夏页面](https://wiki.freebsd.org/SummerOfCode2023Projects/CITestHarnessForBootloader)
+[FreeBSD Wiki 谷歌编程之夏页面](https://wiki.freebsd.org/SummerOfCode2023Projects/CITestHarnessForBootloader)
 
 [Github 项目链接](https://github.com/mightyjoe781/freebsd-src/tree/bootloader-smk/tools/boot/bootloader_test)
 
@@ -814,7 +814,7 @@ FreeBSD 支持多种体系结构、文件系统和磁盘分区方案。我正在
 
 目前脚本相关的工作似乎进展顺利，但在未来我需要找到各种 QEMU 配置以测试不同的环境。如果有任何工作中的 QEMU 配方适用于当前发布版本的 FreeBSD，请随时通过邮件发送至 smk@FreeBSD.org。
 
-赞助者: 2023 谷歌代码之夏项目
+赞助者: 2023 谷歌编程之夏项目
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -822,17 +822,17 @@ FreeBSD 支持多种体系结构、文件系统和磁盘分区方案。我正在
 
 链接：
 
-谷歌代码之夏项目维基页面 网址：[https://wiki.freebsd.org/SummerOfCode2023Projects/PhysicalMemoryAntiFragmentationMechanisms](https://wiki.freebsd.org/SummerOfCode2023Projects/PhysicalMemoryAntiFragmentationMechanisms) [Differential revision 40575](https://reviews.freebsd.org/D40575) 网址：[https://reviews.freebsd.org/D40575](https://reviews.freebsd.org/D40575) [Differential revision 40772](https://reviews.freebsd.org/D40772) 网址：[https://reviews.freebsd.org/D40772](https://reviews.freebsd.org/D40772)
+谷歌编程之夏项目维基页面 网址：[https://wiki.freebsd.org/SummerOfCode2023Projects/PhysicalMemoryAntiFragmentationMechanisms](https://wiki.freebsd.org/SummerOfCode2023Projects/PhysicalMemoryAntiFragmentationMechanisms) [Differential revision 40575](https://reviews.freebsd.org/D40575) 网址：[https://reviews.freebsd.org/D40575](https://reviews.freebsd.org/D40575) [Differential revision 40772](https://reviews.freebsd.org/D40772) 网址：[https://reviews.freebsd.org/D40772](https://reviews.freebsd.org/D40772)
 
 联系人：Bojan Novković [bnovkov@FreeBSD.org](mailto:bnovkov@FreeBSD.org)
 
-大多数现代 CPU 架构通过支持大于标准页面大小的页面来提供性能提升。不幸的是，由于高度的物理内存碎片化，分配这种页面可能会失败。这项工作实现了物理内存压缩作为一种主动减少运行系统碎片化的手段。这项工作是正在进行的谷歌代码之夏项目的一部分，其目标是向虚拟内存子系统添加各种物理内存抗碎片化措施。
+大多数现代 CPU 架构通过支持大于标准页面大小的页面来提供性能提升。不幸的是，由于高度的物理内存碎片化，分配这种页面可能会失败。这项工作实现了物理内存压缩作为一种主动减少运行系统碎片化的手段。这项工作是正在进行的谷歌编程之夏项目的一部分，其目标是向虚拟内存子系统添加各种物理内存抗碎片化措施。
 
 Differential [D40575](https://reviews.freebsd.org/D40575) 实现了用于量化物理内存碎片化程度的众所周知的度量标准。 Differential [D40772](https://reviews.freebsd.org/D40772) 实现了物理内存压缩，并添加了一个守护程序，监视系统并在需要时执行压缩。
 
 计划的未来工作包括设计适当的基准测试套件，运行测试，并根据评审和测试结果调整代码。这仍然是一个正在进行的工作，因此非常欢迎进行任何测试、评审和反馈。
 
-赞助者：2023 谷歌代码之夏项目
+赞助者：2023 谷歌编程之夏项目
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -868,9 +868,9 @@ SquashFS 是一个只读文件系统，可以非常高效地压缩整个文件�
 
 目前，该驱动程序与 FreeBSD 13.2 版本兼容。该驱动程序能够正确解析 SquashFS 磁盘文件，并支持工作中的 mount(8)。Linux SquashFS 支持许多压缩选项，如 zstd、lzo2、zlib 等，根据用户的喜好选择，我们的驱动程序也支持所有这些压缩方式。
 
-计划的未来工作包括添加对目录、文件、扩展属性和符号链接的读取支持。该项目仍在 [Chuck Tuffli](../di-0-zhang-freebsd-zhong-wen-she-qu/chuck@FreeBSD.org) 的指导下进行中，并预计将在谷歌代码之夏项目结束时完成。
+计划的未来工作包括添加对目录、文件、扩展属性和符号链接的读取支持。该项目仍在 [Chuck Tuffli](../di-0-zhang-freebsd-zhong-wen-she-qu/chuck@FreeBSD.org) 的指导下进行中，并预计将在谷歌编程之夏项目结束时完成。
 
-赞助者：2023 谷歌代码之夏项目
+赞助者：2023 谷歌编程之夏项目
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -966,7 +966,7 @@ FreeBSD 拥有一套自己的并发安全数据结构和机制。其中一个机
 
 这个项目涉及大量的测试。目前，一些拓扑保护锁已经被移除，并且只测试了简单的图（在 VM 上运行 FreeBSD）。真正的测试应该在至少有 4 个 CPU 核心的硬件上运行，我会在得到一台这样的设备时进行测试。
 
-赞助：2023 谷歌代码之夏项目
+赞助：2023 谷歌编程之夏项目
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -1023,11 +1023,11 @@ SIMD 指令集扩展，如 SSE、AVX 和 NEON，在现代计算机上普遍存�
 
 **位置**
 
-这是 2023 年的谷歌代码之夏项目。因此，官方的编码期限是从 2023 年 5 月 29 日到 2023 年 8 月 28 日。作为开源社区的初学者，作者欢迎在项目存储库中提出所有的意见、建议和拉取请求，该存储库将是整个期间内所有代码的位置。
+这是 2023 年的谷歌编程之夏项目。因此，官方的编码期限是从 2023 年 5 月 29 日到 2023 年 8 月 28 日。作为开源社区的初学者，作者欢迎在项目存储库中提出所有的意见、建议和拉取请求，该存储库将是整个期间内所有代码的位置。
 
 导师：[Juraj Lutter](../di-0-zhang-freebsd-zhong-wen-she-qu/otis@FreeBSD.org)和 [Joseph Mingone](../di-0-zhang-freebsd-zhong-wen-she-qu/jrm@FreeBSD.org)
 
-赞助：2023 谷歌代码之夏项目
+赞助：2023 谷歌编程之夏项目
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
