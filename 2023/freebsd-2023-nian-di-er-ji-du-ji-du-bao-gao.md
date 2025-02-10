@@ -353,7 +353,7 @@ Ports Tarball 网址：[http://ftp.freebsd.org/pub/FreeBSD/ports/ports/](http://
 
 Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人员事务。以下是上一个季度的情况。
 
-目前，Ports 中有超过 34,400 个 port。目前有 3,019 个未解决的 port 问题(PR)，其中有 746 个未被分配。上个季度 `main` 分支有来自 151 位提交者的 10,439 次提交，2023Q2 分支有来自 55 位提交者的 745 次提交。与上个季度相比，这意味着 port 数量略有增加，未解决的 PR 数量略有减少， port 提交数量有较大增加。
+目前，Ports 中有超过 34,400 个 port。目前有 3,019 个未解决的 port 问题(PR)，其中有 746 个未被分配。上个季度 `main` 分支有来自 151 位提交者的 10,439 次提交，2023Q2 分支有来自 55 位提交者的 745 次提交。与上个季度相比，这意味着 port 数量略有增加，未解决的 PR 数量略有减少，Port 提交数量有较大增加。
 
 在本季度，我们欢迎 Tom Judge (tj@) 回归，同时告别了 Steve Wills (swills@)。Steve 也是 portmgr 的一员。作为 portmgr 开发计划的一部分，我们欢迎 Ronald Klop (ronald@)、Renato Botelho (garga@)和 Matthias Andree (mandree@) 的加入。
 
@@ -461,13 +461,13 @@ PowerPC 已经构建，但其状态未知。作者尝试获取合适的 PlayStat
 
 #### OpenSSL 3 在基本系统中的导入
 
-链接: OpenSSL 下载网址：[https://www.openssl.org/source/](https://www.openssl.org/source/)
+链接： OpenSSL 下载网址：[https://www.openssl.org/source/](https://www.openssl.org/source/)
 
 OpenSSL 3.0 已发布！网址：[https://www.openssl.org/blog/blog/2021/09/07/OpenSSL3.Final/](https://www.openssl.org/blog/blog/2021/09/07/OpenSSL3.Final/)
 
 openssl-fipsinstall 网址：[https://www.openssl.org/docs/man3.0/man1/openssl-fipsinstall.html](https://www.openssl.org/docs/man3.0/man1/openssl-fipsinstall.html)
 
-联系人: Pierre Pronchery [pierre@freebsdfoundation.org](mailto:pierre@freebsdfoundation.org)
+联系人：Pierre Pronchery [pierre@freebsdfoundation.org](mailto:pierre@freebsdfoundation.org)
 
 Pierre 被委派将 OpenSSL 3 导入基本系统。
 
@@ -489,13 +489,13 @@ OpenSSL 已大幅超越其前身 SSLeay，现在拥有超过 50 万行代码（S
 
 #### Linux 兼容性层更新
 
-链接:
+链接：
 
 Linuxulator 状态 Wiki 页面网址：[https://wiki.freebsd.org/Linuxulator](https://wiki.freebsd.org/Linuxulator)
 
 Linux 应用程序状态 Wiki 页面网址：[https://wiki.freebsd.org/LinuxApps](https://wiki.freebsd.org/LinuxApps)
 
-联系人: Dmitry Chagin [dchagin@FreeBSD.org](mailto:dchagin@FreeBSD.org)
+联系人：Dmitry Chagin [dchagin@FreeBSD.org](mailto:dchagin@FreeBSD.org)
 
 该项目的目标是改进 FreeBSD 执行未经修改的 linux(4) 二进制文件的能力。
 
@@ -750,7 +750,7 @@ unzip(1) 的违规行为可以在 C 运行时违规行为之后找到：
 
 链接：nvmf2 branch 网址: [https://github.com/bsdjhb/freebsd/tree/nvmf2](https://github.com/bsdjhb/freebsd/tree/nvmf2)
 
-联系人: John Baldwin [jhb@FreeBSD.org](mailto:jhb@FreeBSD.org)
+联系人：John Baldwin [jhb@FreeBSD.org](mailto:jhb@FreeBSD.org)
 
 NVMe over Fabrics（NVMe-oF）允许通过网络通信使用 NVMe 协议与存储设备交互。这类似于使用 iSCSI 通过网络导出存储设备并使用 SCSI 命令进行通信。
 
@@ -782,7 +782,7 @@ Wiki 页面 网址: [https://wiki.freebsd.org/BootTime](https://wiki.freebsd.org
 
 BSDCan 演讲幻灯片 网址: [https://www.bsdcan.org/events/bsdcan_2023/sessions/session/116/slides/44/BSDCan23-Firecracker.pdf](https://www.bsdcan.org/events/bsdcan_2023/sessions/session/116/slides/44/BSDCan23-Firecracker.pdf)
 
-联系人: Colin Percival [cperciva@FreeBSD.org](mailto:cperciva@FreeBSD.org)
+联系人：Colin Percival [cperciva@FreeBSD.org](mailto:cperciva@FreeBSD.org)
 
 Colin 正在协调加快 FreeBSD 启动过程的工作。
 
@@ -806,7 +806,7 @@ Colin 在 BSDCan 上的“将 FreeBSD 移植到 Firecracker”演讲中讨论了
 
 [Github 项目链接](https://github.com/mightyjoe781/freebsd-src/tree/bootloader-smk/tools/boot/bootloader_test)
 
-联系人: Sudhanshu Mohan Kashyap [smk@FreeBSD.org](mailto:smk@FreeBSD.org)
+联系人：Sudhanshu Mohan Kashyap [smk@FreeBSD.org](mailto:smk@FreeBSD.org)
 
 FreeBSD 支持多种体系结构、文件系统和磁盘分区方案。我正在尝试编写一个 Lua 脚本，该脚本将允许测试所有支持的第一和第二级支持的体系结构组合的引导加载程序，并提供关于任何不兼容组合和预期功能的报告。如果时间允许，还可以进一步探索将脚本集成到现有的构建基础设施中（如 Jenkins 或 Github Actions），以生成测试结果的综合摘要。
 
@@ -1133,7 +1133,7 @@ Microsoft 的 Wei Hu 和 Souradeep Chakrabarti 正在进行由 Microsoft 赞助�
 
 - 将 Hyper-V 客户机支持移植到 aarch64 -[https://bugs.freebsd.org/267654](https://bugs.freebsd.org/267654) -[https://bugs.freebsd.org/272461](https://bugs.freebsd.org/272461)
 
-待办任务：
+待办事项
 
 - 更新 [Microsoft Learn](https://learn.microsoft.com/) 上与 FreeBSD 相关的文档
 - 在 [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines/) 中支持 FreeBSD
@@ -1428,7 +1428,7 @@ MITRE Caldera（security/caldera）于 2023 年 4 月添加到了 ports 中。�
 
 当前版本：4.2.0
 
-**待办事项：**
+**待办事项**
 
 - 添加 Caldera 测试基础设施 makejail。
 - 将 FreeBSD 添加到 MITRE Caldera 官方支持的平台中，请参见 [https://github.com/mitre/caldera/pull/2752。](https://github.com/mitre/caldera/pull/2752%E3%80%82)
@@ -1462,7 +1462,7 @@ Wazuh 在 FreeBSD 上的移植由 Michael Muenz 开始。他在 2021 年 9 月�
 
 当前版本：4.4.4
 
-**待办事项：**
+**待办事项**
 
 - 添加 Wazuh 集群模式基础设施 makejail（正在进行中）
 - 将 FreeBSD 添加到 Wazuh Inc 官方支持的平台中，请参见 [https://github.com/wazuh/wazuh-kibana-app/pull/5413](https://github.com/wazuh/wazuh-kibana-app/pull/5413)

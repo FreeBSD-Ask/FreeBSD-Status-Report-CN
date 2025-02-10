@@ -331,7 +331,7 @@ FreeBSD 发布工程团队负责制定和发布 FreeBSD 官方项目的发布计
 
 Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人事事务。以下是上一季度发生的情况。
 
-- 根据 INDEX 文件，Ports 目前包含 34,600 个 port 。目前有 3,000 个开放的 port 问题报告（PR），其中有 730 个未分配。上一季度主分支有 130 位贡献者进行了 11,454 次提交，2023Q3 分支有 37 位贡献者进行了 828 次提交。与上一季度相比，这意味着未分配 PR 数量略有减少，主分支提交次数增加了 10%，但季度分支的反向移植较少。 port 的数量也略有增长。
+- 根据 INDEX 文件，Ports 目前包含 34,600 个 Port。目前有 3,000 个开放的 port 问题报告（PR），其中有 730 个未分配。上一季度主分支有 130 位贡献者进行了 11,454 次提交，2023Q3 分支有 37 位贡献者进行了 828 次提交。与上一季度相比，这意味着未分配 PR 数量略有减少，主分支提交次数增加了 10%，但季度分支的反向移植较少。Port 的数量也略有增长。
 
 在 Q3 期间，我们欢迎 Joel Bodenmann（jbo@）作为新的 port 贡献者，向 mizhka@授予了 port 提交权限，他已经是 src 贡献者，并在一年的沉寂后将 kn​​u@ 和 uqs@ 的提交权限进行了保留。
 
@@ -685,7 +685,7 @@ URL: [https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-
 
 OpenStack 是一款开源的云操作系统，对于在云平台上部署各种资源类型非常有价值。然而，将 OpenStack 的控制平面运行在 FreeBSD 主机上一直是一个挑战。我们项目的任务是使 FreeBSD 能够无缝地作为 OpenStack 主机运行。
 
-在本季度，我们专注于整个概念验证（POC）的最后一部分，即 VM 控制台集成。目标是让用户通过 OpenStack 客户端获取串行控制台，以访问运行在基于 FreeBSD 的 OpenStack 集群上的 VM 实例。这也很重要，因为现在我们在 Neutron 中没有托管 DHCP 服务的 port 。用户需要手动配置正确的 IP 地址，以使 VM 实例具有网络连接。然而，[bhyve(8)](https://man.freebsd.org/cgi/man.cgi?query=bhyve&sektion=8&format=html) 并不会本地公开串行控制台，因此我们需要通过网络导出 [nmdm(4)](https://man.freebsd.org/cgi/man.cgi?query=nmdm&sektion=4&format=html) 设备。这是通过一个名为 [`socat-manager`](https://github.com/openstack-on-freebsd/socat-manager/blob/main/server.py) 的自定义代理完成的，是的，我们利用 [socat(1)](https://man.freebsd.org/cgi/man.cgi?query=socat&sektion=1&format=html) 在由 OpenStack `nova-compute` 分配的特定 port 上监听，以集成到其工作流程中。借助另一个关键部分，即 [bhyve 的自定义 Libvirt 钩子](https://github.com/openstack-on-freebsd/socat-manager/tree/main/hooks)，我们可以连接两个端点并使控制台对用户可访问。在开发钩子脚本时，我们发现 Libvirt 专门为 bhyve 提供的钩子接口 [没有很好地实现](https://gitlab.com/libvirt/libvirt/-/issues/528)。幸运的是，Libvirt 开发人员 [及时解决了问题](https://gitlab.com/libvirt/libvirt/-/commit/ad8c4d9d6d09d51a9530ed84fcd2220713aab928)，我们计划在将来发布修复时完善我们的钩子脚本。
+在本季度，我们专注于整个概念验证（POC）的最后一部分，即 VM 控制台集成。目标是让用户通过 OpenStack 客户端获取串行控制台，以访问运行在基于 FreeBSD 的 OpenStack 集群上的 VM 实例。这也很重要，因为现在我们在 Neutron 中没有托管 DHCP 服务的 Port。用户需要手动配置正确的 IP 地址，以使 VM 实例具有网络连接。然而，[bhyve(8)](https://man.freebsd.org/cgi/man.cgi?query=bhyve&sektion=8&format=html) 并不会本地公开串行控制台，因此我们需要通过网络导出 [nmdm(4)](https://man.freebsd.org/cgi/man.cgi?query=nmdm&sektion=4&format=html) 设备。这是通过一个名为 [`socat-manager`](https://github.com/openstack-on-freebsd/socat-manager/blob/main/server.py) 的自定义代理完成的，是的，我们利用 [socat(1)](https://man.freebsd.org/cgi/man.cgi?query=socat&sektion=1&format=html) 在由 OpenStack `nova-compute` 分配的特定 port 上监听，以集成到其工作流程中。借助另一个关键部分，即 [bhyve 的自定义 Libvirt 钩子](https://github.com/openstack-on-freebsd/socat-manager/tree/main/hooks)，我们可以连接两个端点并使控制台对用户可访问。在开发钩子脚本时，我们发现 Libvirt 专门为 bhyve 提供的钩子接口 [没有很好地实现](https://gitlab.com/libvirt/libvirt/-/issues/528)。幸运的是，Libvirt 开发人员 [及时解决了问题](https://gitlab.com/libvirt/libvirt/-/commit/ad8c4d9d6d09d51a9530ed84fcd2220713aab928)，我们计划在将来发布修复时完善我们的钩子脚本。
 
 我们还解决了在 [上一季度报告](https://www.freebsd.org/status/report-2023-04-2023-06/#_openstack_on_freebsd) 中提到的我们的开发环境中的嵌套 bhyve 问题（在 Linux KVM 之上运行 bhyve VM）。这是由两个 VT-x 功能的 APIC 模拟引起的：`VID` 和 `PostIntr`。
 
@@ -925,7 +925,7 @@ Handbook 中已添加了新的 `USES` 标记：
 
 KDE on FreeBSD 项目为 FreeBSD ports 树打包了 CMake、Qt 和来自 KDE Community 的软件。该软件包括一个名为 KDE Plasma（适用于 X11 和 Wayland）的完整桌面环境，以及可以在任何 FreeBSD 计算机上使用的数百个应用程序。
 
-KDE 团队（kde@）是 desktop@ 和 x11@ 的一部分，构建软件堆栈，使 FreeBSD 成为一台美观且可用作日常驱动图形桌面工作站的计算机。下面的说明主要说明了与 KDE 相关的 port ，但也包括对整个桌面堆栈重要的项目。
+KDE 团队（kde@）是 desktop@ 和 x11@ 的一部分，构建软件堆栈，使 FreeBSD 成为一台美观且可用作日常驱动图形桌面工作站的计算机。下面的说明主要说明了与 KDE 相关的 Port，但也包括对整个桌面堆栈重要的项目。
 
 #### 基础设施
 
@@ -977,7 +977,7 @@ Pantheon 桌面环境是为 elementary OS 设计的。它基于 GNOME 技术（�
 
 **要求使用 13.2-RELEASE 或更高版本**，因为几个核心组件依赖于 [deskutils/xdg-desktop-portal](https://cgit.freebsd.org/ports/tree/deskutils/xdg-desktop-portal/)。
 
-该仓库包含一个名为 **elementary.mk** 的文件，用于 **Mk/Uses** 框架、官方应用程序和依赖于 [x11-toolkits/granite7](https://cgit.freebsd.org/ports/tree/x11-toolkits/granite7/) 的精选 port 。
+该仓库包含一个名为 **elementary.mk** 的文件，用于 **Mk/Uses** 框架、官方应用程序和依赖于 [x11-toolkits/granite7](https://cgit.freebsd.org/ports/tree/x11-toolkits/granite7/) 的精选 Port。
 
 我已经提交了几个补丁，以保持这些 port 的最新状态：
 
@@ -1108,7 +1108,7 @@ Wifibox 主要经过了对 Intel 芯片组的测试，并显示出很好的性�
 
 GitLab 是一个 DevOps 平台。它为团队带来了高效的速度，充满信心的开发过程，无需牺牲安全性，并提供对 DevOps 成功的全面可见性。
 
-版本 16.3 现在在 FreeBSD 上可用，请查看 [www/gitlab-ce](https://cgit.freebsd.org/ports/tree/www/gitlab-ce/) port 。升级非常重要，因为版本 16.3 将是以后所有升级的要求。只有从 GitLab 16.3 才能升级到 16.4。
+版本 16.3 现在在 FreeBSD 上可用，请查看 [www/gitlab-ce](https://cgit.freebsd.org/ports/tree/www/gitlab-ce/) Port。升级非常重要，因为版本 16.3 将是以后所有升级的要求。只有从 GitLab 16.3 才能升级到 16.4。
 
 可以在 [https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/install/16.3-freebsd.md?ref_type=heads](https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/install/16.3-freebsd.md?ref_type=heads) 找到。升级的文档可在 [https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/update/16.1-16.3-freebsd.md?ref_type=heads](https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/update/16.1-16.3-freebsd.md?ref_type=heads) 找到安装文档。
 
@@ -1124,7 +1124,7 @@ GitLab 是一个 DevOps 平台。它为团队带来了高效的速度，充满�
 
 联系人：FreeBSD 可访问性邮件列表 <[freebsd-accessibility@FreeBSD.org](mailto:freebsd-accessibility@FreeBSD.org)>
 
-FreeBSD 提供了 Ports，为用户和管理员提供了一种安装应用程序的简单方法。在构建和安装之前可以配置一个 port 。`make config` 命令使用 [ports-mgmt/dialog4ports](https://cgit.freebsd.org/ports/tree/ports-mgmt/dialog4ports/) 和 [ports-mgmt/portconfig](https://cgit.freebsd.org/ports/tree/ports-mgmt/portconfig/) 通过文本用户界面（TUI）交互式设置 port 。
+FreeBSD 提供了 Ports，为用户和管理员提供了一种安装应用程序的简单方法。在构建和安装之前可以配置一个 Port。`make config` 命令使用 [ports-mgmt/dialog4ports](https://cgit.freebsd.org/ports/tree/ports-mgmt/dialog4ports/) 和 [ports-mgmt/portconfig](https://cgit.freebsd.org/ports/tree/ports-mgmt/portconfig/) 通过文本用户界面（TUI）交互式设置 Port。
 
 不幸的是，屏幕阅读器在 TUI 中表现不佳；这是一个众所周知的可访问性问题。FreeBSD 提供了数以万计的 port； port 配置是一个关键功能，但对于视力受损的用户而言是不可访问的。
 
