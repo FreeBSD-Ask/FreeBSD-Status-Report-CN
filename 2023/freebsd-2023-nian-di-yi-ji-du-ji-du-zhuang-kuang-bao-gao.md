@@ -271,7 +271,7 @@ FreeBSD 集群管理团队负责管理项目依赖的机器，这些机器用于
 **赞助商： FreeBSD 基金会**
 
 
-### Ports Collection
+### Ports 
 
 **相关链接：**  
 [关于 FreeBSD Ports](https://www.freebsd.org/ports/)  
