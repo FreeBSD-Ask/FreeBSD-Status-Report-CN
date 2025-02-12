@@ -362,7 +362,7 @@ Ports 管理团队负责监督 Ports Tree 的总体方向、构建软件包（�
 Ihor Antonov <[ihor@antonovs.family](mailto:ihor@antonovs.family)>  
 Kyle Evans <[kevans@FreeBSD.org](mailto:kevans@FreeBSD.org)>
 
-目前正在进行一项改进 `daemon` 工具代码质量和监控能力的工作。`daemon` 是一个可以将任何正在运行的进程转为后台运行或进行监控的工具，如果进程崩溃，它会自动重启该进程。`daemon` 在 ports 树中被广泛使用，并且可以在基本系统中得到更多应用。
+目前正在进行一项改进 `daemon` 工具代码质量和监控能力的工作。`daemon` 是一个可以将任何正在运行的进程转为后台运行或进行监控的工具，如果进程崩溃，它会自动重启该进程。`daemon` 在 Ports 中被广泛使用，并且可以在基本系统中得到更多应用。
 
 本季度添加了对 `long_opts` 的支持，并对代码库进行了初步重构，为进一步的改进做好准备。目前没有功能性变化，但未来会有更多改进。如果你遇到意外的 bug，请直接联系或者在 Libera IRC 的 `#freebsd-dev` 频道中与我们联系。
 
@@ -844,7 +844,7 @@ KDE 团队（kde@）是 desktop@ 和 x11@ 组的一部分，负责构建软件�
 
 #### KDE 软件栈  
 
-KDE Gear 每季度发布一次，KDE Plasma 每月更新一次，KDE Frameworks 也每月发布新版本。这些较大规模的更新会在上游发布后不久合入 Ports ，因此不单独列出。  
+KDE Gear 每季度发布一次，KDE Plasma 每月更新一次，KDE Frameworks 也每月发布新版本。这些较大规模的更新会在上游发布后不久合入 Ports，因此不单独列出。  
 
 - KDE Frameworks 更新至 5.104。  
 - KDE Gear 更新至 22.12.3。  
@@ -881,7 +881,7 @@ Alan Somers <[asomers@freebsd.org](mailto:asomers@freebsd.org)>
 
 FSX（File System eXerciser）工具最早由 Apple 在 1990 年代编写，并自 FreeBSD 5.0 起成为 FreeBSD 代码库的一部分。该工具通过随机生成的操作流对文件系统进行压力测试，并在每次读取后验证文件数据。然而，该工具从未作为操作系统的一部分安装，仅存在于源代码树中，这使得它在 CI 流水线中难以使用。此外，该工具还存在其他限制。  
 
-因此，本季度我用 Rust 重新编写了该工具。新版本在相同的种子值下，与原始工具的行为保持字节级兼容。但未来版本可能会打破向后兼容性，以添加 `fspacectl` 和 `copy_file_range` 等新功能。目前，新版本已进入 Ports ，后续我将移除原始版本。
+因此，本季度我用 Rust 重新编写了该工具。新版本在相同的种子值下，与原始工具的行为保持字节级兼容。但未来版本可能会打破向后兼容性，以添加 `fspacectl` 和 `copy_file_range` 等新功能。目前，新版本已进入 Ports，后续我将移除原始版本。
 
 ### FreeBSD 上的 GCC
 
@@ -894,15 +894,15 @@ FSX（File System eXerciser）工具最早由 Apple 在 1990 年代编写，并�
 Lorenzo Salvadore <[salvadore@FreeBSD.org](mailto:salvadore@FreeBSD.org)>  
 Gerald Pfeifer <[gerald@pfeifer.com](mailto:gerald@pfeifer.com)>  
 
-本季度的主要更新是清理 ports 树中的旧版 GCC，以便更高效地处理 bug。
+本季度的主要更新是清理 Ports 中的旧版 GCC，以便更高效地处理 bug。
 
 #### 旧版 GCC ports 的弃用
 
-ports 树仍包含多个与旧版和不受支持的 GCC 相关的 ports。它们通常只是少数旧 ports 的依赖项，而这些旧 ports 最好更新至受支持的 GCC 版本，或者直接被弃用。为此，已创建[错误报告](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=269644)来跟踪问题，并已开始着手解决。感谢所有参与 ports 维护的贡献者！
+Ports 仍包含多个与旧版和不受支持的 GCC 相关的 ports。它们通常只是少数旧 ports 的依赖项，而这些旧 ports 最好更新至受支持的 GCC 版本，或者直接被弃用。为此，已创建[错误报告](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=269644)来跟踪问题，并已开始着手解决。感谢所有参与 ports 维护的贡献者！
 
 #### `USE_GCC=X+` 的弃用
 
-Gerald 维护 GCC ports 多年，虽然最近不再是主要维护者，但仍在 FreeBSD 上贡献 GCC 维护工作，简化 ports 树中的 GCC 相关基础架构，例如移除对旧版 GCC 的特殊处理。
+Gerald 维护 GCC ports 多年，虽然最近不再是主要维护者，但仍在 FreeBSD 上贡献 GCC 维护工作，简化 Ports 中的 GCC 相关基础架构，例如移除对旧版 GCC 的特殊处理。
 
 本季度，他最重要的改动可能是[移除了 `USE_GCC=X+`](https://cgit.freebsd.org/ports/commit/?id=9b5f5ab8482f105311d01a32260ef32bba4a2628) 的支持。现在，任何依赖 GCC 的 port 必须：
 

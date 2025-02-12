@@ -338,7 +338,7 @@ Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人�
 在 Q3 期间，Ports 管理团队讨论和处理了以下事项：
 
 - 在子包和闪电演讲中取得了一些进展，由 pizzamig@ 在 EuroBSDCon 上进行了演讲
-- 对 Ports 树的一些部分进行了全面改进（LIB_DEPENDS、PREFIX、MANPREFIX、MANPATH）
+- 对 Ports 的一些部分进行了全面改进（LIB_DEPENDS、PREFIX、MANPREFIX、MANPATH）
 
 对 FreeBSD 13.1 的支持已从 Ports 中删除，因为它在 8 月 1 日已经达到了寿命终点。
 
@@ -923,7 +923,7 @@ Handbook 中已添加了新的 `USES` 标记：
 
 联系人：Adriaan de Groot <[kde@FreeBSD.org](mailto:kde@FreeBSD.org)>
 
-KDE on FreeBSD 项目为 FreeBSD ports 树打包了 CMake、Qt 和来自 KDE Community 的软件。该软件包括一个名为 KDE Plasma（适用于 X11 和 Wayland）的完整桌面环境，以及可以在任何 FreeBSD 计算机上使用的数百个应用程序。
+KDE on FreeBSD 项目为 FreeBSD Ports 打包了 CMake、Qt 和来自 KDE Community 的软件。该软件包括一个名为 KDE Plasma（适用于 X11 和 Wayland）的完整桌面环境，以及可以在任何 FreeBSD 计算机上使用的数百个应用程序。
 
 KDE 团队（kde@）是 desktop@ 和 x11@ 的一部分，构建软件堆栈，使 FreeBSD 成为一台美观且可用作日常驱动图形桌面工作站的计算机。下面的说明主要说明了与 KDE 相关的 Port，但也包括对整个桌面堆栈重要的项目。
 
@@ -1017,7 +1017,7 @@ FreeBSD Office 团队致力于开发一系列办公相关的软件套件和工�
 
 在本季度，工作重点是为所有 FreeBSD 用户提供最新稳定版本的 LibreOffice 套件和配套应用程序。
 
-在 2023Q3 期间，我们为 LibreOffice port 推送了维护补丁，并将最新的 7.6.2 版本及其所有配套库，如 MDDS、libIxion 等，带入了 ports 树。LibreOffice port 的所有预发布开发都在 [LibreOffice WIP 仓库](https://github.com/freebsd/freebsd-ports-libreoffice) 中进行。
+在 2023Q3 期间，我们为 LibreOffice port 推送了维护补丁，并将最新的 7.6.2 版本及其所有配套库，如 MDDS、libIxion 等，带入了 Ports。LibreOffice port 的所有预发布开发都在 [LibreOffice WIP 仓库](https://github.com/freebsd/freebsd-ports-libreoffice) 中进行。
 
 与 LibreOffice 一起，我们还将 Boost 更新到最新的 1.83 版本。所有对 Boost 的移植感兴趣的人都可以向 [Boost WIP 仓库](https://github.com/fluffykhv/freebsd-ports-boost) 提交补丁。
 

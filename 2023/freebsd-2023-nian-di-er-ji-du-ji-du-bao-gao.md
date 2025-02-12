@@ -758,7 +758,7 @@ NVMe over Fabrics 目前定义了用于光纤通道、RDMA 和 TCP 的网络传�
 
 在 nvmf2 分支中的工作包括一个用户空间库（`lib/libnvmf`），其中包含用于传输的抽象和 TCP 传输的实现。它还对 nvmecontrol(8)进行了更改，以添加“discover”、“connect”和“disconnect”命令来管理与远程控制器的连接。
 
-该分支还包含一个内核中的 Fabrics 实现。`nvmf_transport.ko` 包含一个在 nvmf 主机（即 SCSI 中的 initiator）和各个传输之间的传输抽象。`nvmf_tcp.ko` 包含一个 TCP 传输层的实现。`nvmf.ko` 包含一个 NVMe over Fabrics 主机（initiator），它连接到远程控制器并将远程命名空间导出为磁盘设备。类似于 NVMe over PCI-express 的 nvme(4)驱动程序，命名空间通过 `/dev/nvmeXnsY` 设备导出，这些设备仅支持简单操作，同时还通过 CAM 导出为 ndaX 磁盘设备。与 nvme(4)不同，nvmf(4)不支持 nvd(4)磁盘驱动程序。nvmecontrol(8) 可用于处理远程命名空间和远程控制器，例如获取日志页、显示识别信息等。
+该分支还包含一个内核中的 Fabrics 实现。`nvmf_transport.ko` 包含一个在 nvmf 主机（即 SCSI 中的 initiator）和各个传输之间的传输抽象。`nvmf_tcp.ko` 包含一个 TCP 传输层的实现。`nvmf.ko` 包含一个 NVMe over Fabrics 主机（initiator），它连接到远程控制器并将远程命名空间导出为磁盘设备。类似于 NVMe over PCIe 的 nvme(4)驱动程序，命名空间通过 `/dev/nvmeXnsY` 设备导出，这些设备仅支持简单操作，同时还通过 CAM 导出为 ndaX 磁盘设备。与 nvme(4)不同，nvmf(4)不支持 nvd(4)磁盘驱动程序。nvmecontrol(8) 可用于处理远程命名空间和远程控制器，例如获取日志页、显示识别信息等。
 
 请注意，nvmf(4) 目前还相对简单，有些错误情况仍在待办事项中。如果发生错误，队列（和后端网络连接）将被丢弃，但设备将保留，并暂停 I/O 请求。可以使用 `nvmecontrol reconnect` 命令连接一组新的网络连接以恢复操作。与使用持续型守护程序（iscsid(8)）在错误后重新连接的 iSCSI 不同，重新连接必须手动进行。
 
@@ -1396,7 +1396,7 @@ Puppet 是一款自由软件的配置管理工具，由一个可信的源（Pupp
 
 Puppet 团队正在维护 Puppet 和相关工具的 ports。
 
-最近发布了 Puppet 8，并已添加到 ports 树中。
+最近发布了 Puppet 8，并已添加到 Ports 中。
 
 Puppet 6 已达到生命周期终点，并已被弃用。它现在已过期。因此，建议使用 Puppet 6 的用户更新到 Puppet 7 或 Puppet 8。
 
@@ -1448,7 +1448,7 @@ Wazuh 是一个免费且开源的平台，用于威胁预防、检测和响应�
 
 Wazuh 解决方案由部署在被监控系统上的终端安全代理和收集和分析代理收集的数据的管理服务器组成。Wazuh 的特性包括与 Elastic Stack 和 OpenSearch 的完全集成，通过这些工具，用户可以浏览安全警报。
 
-Wazuh 在 FreeBSD 上的移植由 Michael Muenz 开始。他在 2021 年 9 月将 Wazuh 首次添加到 ports 树中，即 security/wazuh-agent。在 2022 年 7 月，我接手了这个 port 的维护，并开始移植其他 Wazuh 组件。
+Wazuh 在 FreeBSD 上的移植由 Michael Muenz 开始。他在 2021 年 9 月将 Wazuh 首次添加到 Ports 中，即 security/wazuh-agent。在 2022 年 7 月，我接手了这个 port 的维护，并开始移植其他 Wazuh 组件。
 
 目前，所有的 Wazuh 组件都已经移植或适配：security/wazuh-manager、security/wazuh-agent、security/wazuh-server、security/wazuh-indexer 和 security/wazuh-dashboard。
 
