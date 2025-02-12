@@ -610,7 +610,7 @@ Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 * 解决 Open vSwitch 网络问题
 * 将各个 OpenStack 组件转换为 FreeBSD  Port
 
-有兴趣参与该项目的人可以首先按照安装指南检查文档。以下是项目的一项开放任务：
+有兴趣参与该项目的人可以首先按照安装指南检查文档。以下是项目的一项待办事项
 
 * 针对 oslo.privsep 库的 FreeBSD 特定实现
 
