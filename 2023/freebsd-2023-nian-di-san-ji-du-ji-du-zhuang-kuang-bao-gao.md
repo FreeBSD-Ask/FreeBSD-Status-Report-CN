@@ -199,7 +199,7 @@ FreeBSD 基金会赞助了许多全球各地的会议、活动和峰会。这些
 - [进程可见性安全策略](https://www.freebsd.org/status/report-2023-07-2023-09/#_process_visibility_security_policies)
 - [amd64 的 SIMD 增强](https://www.freebsd.org/status/report-2023-07-2023-09/#_simd_enhancements_for_amd64)。
 
-技术团队的成员参加了在葡萄牙科英布拉举办的 EuroBSDCon 2023。Li-Wen Hsu 提供了一项教程，帮助新手为 FreeBSD 做出贡献。在会议之前，FreeBSD 开发者峰会举行，团队在会上提供了一份[关于他们最近工作的简短更新](https://wiki.freebsd.org/DevSummit/202309?action=AttachFile&do=view&target=Foundation_Technology_Team_Devsummit_Fall_2023.pdf)。
+技术团队的成员参加了在葡萄牙科英布拉举办的 EuroBSDCon 2023。許立文提供了一项教程，帮助新手为 FreeBSD 做出贡献。在会议之前，FreeBSD 开发者峰会举行，团队在会上提供了一份[关于他们最近工作的简短更新](https://wiki.freebsd.org/DevSummit/202309?action=AttachFile&do=view&target=Foundation_Technology_Team_Devsummit_Fall_2023.pdf)。
 
 六个暑期实习/项目已经结束：
 
@@ -275,7 +275,7 @@ FreeBSD 发布工程团队负责制定和发布 FreeBSD 官方项目的发布计
 联系人：
 
 - Jenkins 管理员 <[jenkins-admin@FreeBSD.org](mailto:jenkins-admin@FreeBSD.org)>
-- Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
+- 許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 - [freebsd-testing 邮件列表](https://lists.freebsd.org/mailman/listinfo/freebsd-testing)
 - IRC #freebsd-ci 频道，位于 EFNet 上
 
@@ -681,7 +681,7 @@ URL: [https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-
 
 联系人：Chih-Hsin Chang <[starbops@hey.com](mailto:starbops@hey.com)>
 
-联系人：Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
+联系人：許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 
 OpenStack 是一款开源的云操作系统，对于在云平台上部署各种资源类型非常有价值。然而，将 OpenStack 的控制平面运行在 FreeBSD 主机上一直是一个挑战。我们项目的任务是使 FreeBSD 能够无缝地作为 OpenStack 主机运行。
 
@@ -712,7 +712,7 @@ OpenStack 是一款开源的云操作系统，对于在云平台上部署各种�
 
 联系人：Souradeep Chakrabarti <[schakrabarti@microsoft.com](mailto:schakrabarti@microsoft.com)>
 
-联系人：Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
+联系人：許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 
 在本季度，我们主要致力于 ARM64 架构支持，构建并发布基于 UFS 和 ZFS 的镜像到 [Azure 社区库](https://learn.microsoft.com/azure/virtual-machines/share-gallery-community)。在项目的测试公共库中，名为 `FreeBSDCGTest-d8
 
@@ -880,7 +880,7 @@ Handbook 中已添加了新的 `USES` 标记：
 
 联系人：Yan-Hao Wang <[bses30074@gmail.com](mailto:bses30074@gmail.com)>
 
-联系人：Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
+联系人：許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 
 目前，我们的文档翻译过程涉及使用 Weblate 和直接编辑 [doc](https://cgit.freebsd.org/doc/) 存储库。我们意识到这个过程可能有些繁琐，因此我们正在努力提供一个更方便的替代方案，类似于维基社区的做法。介绍在线文档编辑器和 Man 手册编辑器，这是一个用户友好的所见即所得（WYSIWYG）静态站点，用于翻译文档和 man 手册。我们的目标是在一个平台上 consolide 所有翻译功能，使翻译过程尽可能简单。
 
@@ -899,7 +899,7 @@ Handbook 中已添加了新的 `USES` 标记：
 
 -Hao/freebsd_expert_system](https://github.com/Wang-Yan-Hao/freebsd_expert_system)
 
-联系人：Yan-Hao Wang <[bses30074@gmail.com](mailto:bses30074@gmail.com)>联系人：Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
+联系人：Yan-Hao Wang <[bses30074@gmail.com](mailto:bses30074@gmail.com)>联系人：許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 
 在今天的世界中，机器学习和深度学习技术变得越来越普遍，就像 ChatGPT 的普及一样。我们正在开发一个 ChatGPT 插件，可以访问最新的 FreeBSD 数据，将 ChatGPT 转变为 FreeBSD 专家系统。我们已经编写了数据清理的脚本并构建了一个嵌入式模型来搜索相关信息。
 
@@ -1011,7 +1011,7 @@ Pantheon 桌面环境是为 elementary OS 设计的。它基于 GNOME 技术（�
 
 联系人：Dima Panov <[fluffy@FreeBSD.org](mailto:fluffy@FreeBSD.org)>
 
-联系人：Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
+联系人：許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 
 FreeBSD Office 团队致力于开发一系列办公相关的软件套件和工具，如 OpenOffice 和 LibreOffice。
 

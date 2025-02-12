@@ -289,7 +289,7 @@ dev-ci 邮件列表网址：[https://lists.FreeBSD.org/subscription/dev-ci](http
 
 联系人：Jenkins 管理员 [jenkins-admin@FreeBSD.org](mailto:jenkins-admin@FreeBSD.org)
 
-联系人：Li-Wen Hsu [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
+联系人：許立文 [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
 
 联系人：freebsd-testing 邮件列表
 
@@ -383,7 +383,7 @@ FreeBSD doc CI 网址：[https://cirrus-ci.com/github/freebsd/freebsd-doc](https
 
 联系人：Ed Maste [emaste@FreeBSD.org](mailto:emaste@FreeBSD.org)
 
-联系人：Li-Wen Hsu [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
+联系人：許立文 [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
 
 Cirrus-CI 是一个托管的持续集成服务，支持在 Linux、Windows、macOS 和 FreeBSD 上进行开源项目的 CI 服务。它是我们自己 Jenkins CI 基础设施的补充，支持其他用例，包括测试 GitHub 的 pull requests 和 FreeBSD 的 forks。我们在 2019 年为 FreeBSD src 添加了 Cirrus-CI 配置，并在 2020 年为 doc 添加了配置。许多其他托管在 GitHub 上的 FreeBSD 项目（如 drm-kmod、kyua、pkg 和 poudriere）也使用了 Cirrus-CI。
 
@@ -1074,7 +1074,7 @@ FreeBSD 上的 OpenStack 网址：[https://github.com/openstack-on-freebsd](http
 
 联系人：Chih-Hsin Chang [starbops@hey.com](mailto:starbops@hey.com)
 
-联系人：Li-Wen Hsu [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
+联系人：許立文 [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
 
 该项目旨在将关键的 OpenStack 组件，如 keystone、nova 和 neutron，移植到 FreeBSD，使其可以作为 OpenStack 主机运行。
 
@@ -1112,7 +1112,7 @@ Microsoft HyperV 上的 FreeBSD Wiki 文章网址：[https://wiki.freebsd.org/Hy
 
 联系人：Souradeep Chakrabarti [schakrabarti@microsoft.com](mailto:schakrabarti@microsoft.com)
 
-联系人：Li-Wen Hsu [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
+联系人：許立文 [lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)
 
 在本季度，我们主要在 ARM64 架构支持以及构建和发布到 [Azure 社区库](https://learn.microsoft.com/azure/virtual-machines/share-gallery-community)的镜像方面进行了工作。项目的测试公共库中提供了一些测试镜像，命名为`FreeBSDCGTest-d8a43fa5-745a-4910-9f71-0c9da2ac22bf`：FreeBSD-CURRENT-testing FreeBSD-CURRENT-gen2-testing FreeBSD-CURRENT-arm64-testing
 

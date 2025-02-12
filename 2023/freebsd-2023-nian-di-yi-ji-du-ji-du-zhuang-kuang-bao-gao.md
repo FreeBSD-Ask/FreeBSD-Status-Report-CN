@@ -114,7 +114,7 @@ FreeBSD 基金会赞助了全球众多会议、活动和峰会。这些活动可
 * 赞助并开始筹划将于 2023 年 5 月 17-18 日在加拿大安大略省渥太华举办的面对面 [开发者峰会](https://wiki.freebsd.org/DevSummit/202305)。
 * 确保了我们的媒体合作伙伴赞助地位，并为将于 2023 年 10 月 15-17 日在美国北卡罗来纳州罗利举行的 [All Things Open](https://2023.allthingsopen.org/) 提交了研讨会方案。
 * 为将于 2023 年 7 月 13-16 日在美国俄勒冈州波特兰举行的 [FOSSY](https://sfconservancy.org/fossy/) 提交了研讨会提案。
-* FreeBSD 项目已被接纳为 Google Summer of Code 的 [参与组织](https://summerofcode.withgoogle.com/programs/2023/organizations/the-freebsd-project)。
+* FreeBSD 项目已被接纳为谷歌编程之夏的 [参与组织](https://summerofcode.withgoogle.com/programs/2023/organizations/the-freebsd-project)。
 * 我们举办了 [GSoC 办公时间](https://youtu.be/NpOkTR_d8os) 以帮助潜在参与者解答疑问。
 * 发布了 [三月通讯](https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-march-2023/)。
 * 其他博客文章：
@@ -231,7 +231,7 @@ FreeBSD 集群管理团队负责管理项目依赖的机器，这些机器用于
 
 **联系方式**：  
 * Jenkins 管理员 <[jenkins-admin@FreeBSD.org](mailto:jenkins-admin@FreeBSD.org)>  
-* Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>  
+* 許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>  
 * [freebsd-testing 邮件列表](https://lists.freebsd.org/mailman/listinfo/freebsd-testing)  
 * [EFNet 上的 IRC #freebsd-ci 频道]()
 
@@ -519,7 +519,7 @@ Kyle Evans <[kevans@FreeBSD.org](mailto:kevans@FreeBSD.org)>
 **联系方式：**  
 Warner Losh <[imp@FreeBSD.org](mailto:imp@FreeBSD.org)>
 
-本季度，Warner 向 qemu-project 仓库上游提交了两个补丁集（第三个补丁集正在待定中）。Doug Rabson 提交了一些优化，使内核能够保存对 qemu-user 模拟器的句柄以便在未来执行时使用。我们还与一些有意在 NetBSD 上让 bsd-user 运行的人取得了联系。Google Summer of Code 项目对上游合并工作表现出了一些兴趣。
+本季度，Warner 向 qemu-project 仓库上游提交了两个补丁集（第三个补丁集正在待定中）。Doug Rabson 提交了一些优化，使内核能够保存对 qemu-user 模拟器的句柄以便在未来执行时使用。我们还与一些有意在 NetBSD 上让 bsd-user 运行的人取得了联系。谷歌编程之夏项目对上游合并工作表现出了一些兴趣。
 
 #### 上游合并工作
 
@@ -591,7 +591,7 @@ cloud-init 是在云中配置服务器的标准方式。不幸的是，除 Linux
 
 **联系方式：**  
 Chih-Hsin Chang <[starbops@hey.com](mailto:starbops@hey.com)>  
-Li-Wen Hsu <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
+許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>
 
 本项目旨在移植关键的 OpenStack 组件，使 FreeBSD 能够作为 OpenStack 主机运行。
 
