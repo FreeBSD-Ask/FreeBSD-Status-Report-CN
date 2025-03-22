@@ -132,7 +132,7 @@ FreeBSD 基金会赞助了全球众多会议、活动和峰会。这些活动可
 
 基金会拥有 FreeBSD 的商标，保护这些商标是我们的责任。同时，我们也为 核心团队提供法律支持，以调查相关问题。
 
-请访问 [https://www.freebsdfoundation.org](https://www.freebsdfoundation.org/) 了解更多关于我们如何支持 FreeBSD以及我们能为你提供哪些帮助的信息！
+请访问 [https://www.freebsdfoundation.org](https://www.freebsdfoundation.org/) 了解更多关于我们如何支持 FreeBSD 以及我们能为你提供哪些帮助的信息！
 
 
 
@@ -154,7 +154,7 @@ FreeBSD 发行工程团队负责为 FreeBSD 官方项目发布设定和公布发
 
 **赞助商**：Rubicon Communications, LLC ("Netgate")  
 **赞助商**：Tarsnap  
-**赞助商**： FreeBSD 基金会
+**赞助商**：FreeBSD 基金会
 
 
 
@@ -268,7 +268,7 @@ FreeBSD 集群管理团队负责管理项目依赖的机器，这些机器用于
 
 有关更多正在进行中的信息，请参阅 [freebsd-testing@ 相关的 Bugzilla 工单](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)，并欢迎你加入我们的工作！
 
-**赞助商： FreeBSD 基金会**
+**赞助商：FreeBSD 基金会**
 
 
 ### Ports 
@@ -300,7 +300,7 @@ Ports 管理团队负责监督 Ports Tree 的总体方向、构建软件包（�
 - 改善内核模块二进制软件包的现状；
 - 如何衡量 Port 对其依赖项的影响以及如何维护高影响力的 Port。
 
-本季度还进行了 32 次 exp-run，用于测试 Port更新、更改默认版本（例如：LLVM 升级至 15、MySQL 升级至 8.0、Ruby 升级至 3.1）以及在 base 中更新 byacc。此外，Go 的默认版本切换到了 1.20，而 Lazarus 的默认版本切换到了 2.2.6。
+本季度还进行了 32 次 exp-run，用于测试 Port 更新、更改默认版本（例如：LLVM 升级至 15、MySQL 升级至 8.0、Ruby 升级至 3.1）以及在 base 中更新 byacc。此外，Go 的默认版本切换到了 1.20，而 Lazarus 的默认版本切换到了 2.2.6。
 
 引入了四个新的 USES 变量：
 
@@ -751,7 +751,7 @@ FreshPorts 和 FreshSource 已对 FreeBSD 的提交进行了长达 20 年的跟�
 
 FreshPorts 跟踪提交情况，并从各个 Port 的 Makefile 中提取数据，以创建一个对 Ports 维护者和使用者都非常有用的信息数据库。
 
-例如，[https://www.freshports.org/security/acme.sh/](https://www.freshports.org/security/acme.sh/) 展示了  Port [security/acme.sh](https://cgit.freebsd.org/ports/tree/security/acme.sh/) 的历史记录，可以追溯到该  Port 于 2017 年 5 月创建时。同时，还提供了依赖关系、 flavor 、配置选项和可用软件包等信息。这一切对 Ports 的用户和开发者都非常有用。
+例如，[https://www.freshports.org/security/acme.sh/](https://www.freshports.org/security/acme.sh/) 展示了  Port [security/acme.sh](https://cgit.freebsd.org/ports/tree/security/acme.sh/) 的历史记录，可以追溯到该  Port 于 2017 年 5 月创建时。同时，还提供了依赖关系、flavor、配置选项和可用软件包等信息。这一切对 Ports 的用户和开发者都非常有用。
 
 #### SQL 注入攻击
 
@@ -975,9 +975,9 @@ PkgBase 的硬件由 FreeBSD 社区的一位成员赞助。然而，随着时间
 [Pot 组织（GitHub）](https://github.com/bsdpot)：[https://github.com/bsdpot](https://github.com/bsdpot)  
 
 **联系方式：**  
-Luca Pizzamiglio（Pot）<[pizzamig@freebsd.org](mailto:pizzamig@freebsd.org)>  
-Bretton Vine（Potluck）<[bv@honeyguide.eu](mailto:bv@honeyguide.eu)>  
-Michael Gmelin（Potman）<[grembo@freebsd.org](mailto:grembo@freebsd.org)>  
+Luca Pizzamiglio (Pot)<[pizzamig@freebsd.org](mailto:pizzamig@freebsd.org)>  
+Bretton Vine (Potluck)<[bv@honeyguide.eu](mailto:bv@honeyguide.eu)>  
+Michael Gmelin (Potman)<[grembo@freebsd.org](mailto:grembo@freebsd.org)>  
 
 [Pot](https://github.com/bsdpot/pot) 是一个 Jail 管理工具，同时[支持通过 Nomad 进行编排](https://www.freebsd.org/news/status/report-2020-01-2020-03/#pot-and-the-nomad-pot-driver)。
 

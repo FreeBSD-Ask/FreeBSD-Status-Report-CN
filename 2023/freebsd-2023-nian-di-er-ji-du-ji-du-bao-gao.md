@@ -50,7 +50,7 @@ FreeBSD 核心团队是 FreeBSD 的管理机构。
 
 **提交权限**
 
-核心团队批准了 Christos Margiolis (christos@)的 src 提交权限。
+核心团队批准了 Christos Margiolis (christos@) 的 src 提交权限。
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -124,13 +124,13 @@ FreeBSD 基金会是一个 501(c)(3) 非营利组织，致力于在全球支持�
 - FreeBSD 作为 Tier 1 的 cloud-init 平台
 - 基于 OpenSSL 3 的更新
 - FreeBSD 上的 OpenStack
-- 使用 ktrace(1)进行安全隔离
+- 使用 ktrace(1) 进行安全隔离
 - AMD64 的 SIMD 增强
 
 以下是其他由基金会赞助的工作的一部分：
 
-- fsck_ffs(8)的错误修复
-- killpg(2)的错误修复
+- fsck_ffs(8) 的错误修复
+- killpg(2) 的错误修复
 - hwpmc 的改进
 - vmm 的改进
 - 针对 LLVM 16 和 OpenSSL 3.0 的 port 修复和解决方案
@@ -353,9 +353,9 @@ Ports Tarball 网址：[http://ftp.freebsd.org/pub/FreeBSD/ports/ports/](http://
 
 Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人员事务。以下是上一个季度的情况。
 
-目前，Ports 中有超过 34,400 个 port。目前有 3,019 个未解决的 port 问题(PR)，其中有 746 个未被分配。上个季度 `main` 分支有来自 151 位提交者的 10,439 次提交，2023Q2 分支有来自 55 位提交者的 745 次提交。与上个季度相比，这意味着 port 数量略有增加，未解决的 PR 数量略有减少，Port 提交数量有较大增加。
+目前，Ports 中有超过 34,400 个 port。目前有 3,019 个未解决的 port 问题 (PR)，其中有 746 个未被分配。上个季度 `main` 分支有来自 151 位提交者的 10,439 次提交，2023Q2 分支有来自 55 位提交者的 745 次提交。与上个季度相比，这意味着 port 数量略有增加，未解决的 PR 数量略有减少，Port 提交数量有较大增加。
 
-在本季度，我们欢迎 Tom Judge (tj@) 回归，同时告别了 Steve Wills (swills@)。Steve 也是 portmgr 的一员。作为 portmgr 开发计划的一部分，我们欢迎 Ronald Klop (ronald@)、Renato Botelho (garga@)和 Matthias Andree (mandree@) 的加入。
+在本季度，我们欢迎 Tom Judge (tj@) 回归，同时告别了 Steve Wills (swills@)。Steve 也是 portmgr 的一员。作为 portmgr 开发计划的一部分，我们欢迎 Ronald Klop (ronald@)、Renato Botelho (garga@) 和 Matthias Andree (mandree@) 的加入。
 
 Portmgr 已经恢复了对将子软件包引入树中的工作，但仍有一些事项需要进一步完善。
 
@@ -403,7 +403,7 @@ Cirrus-CI 是一个托管的持续集成服务，支持在 Linux、Windows、mac
 
 联系人：Aymeric Wibo [obiwac@FreeBSD.org](mailto:obiwac@FreeBSD.org)
 
-BATMAN （Better Approach to Mobile Ad-hoc Networking）。BATMAN 是由 Freifunk 项目开发和使用的一种用于多跳自组织网络（主要是无线网络）的路由协议。Freifunk 是德国的一个倡议，旨在基于网络中立性原则在城市范围内构建开放的 Wi-Fi 网络。BATMAN 的目标是成为一个完全分散的协议；网络中的任何一个节点都不需要了解或关心整个网络的拓扑结构。
+BATMAN（Better Approach to Mobile Ad-hoc Networking）。BATMAN 是由 Freifunk 项目开发和使用的一种用于多跳自组织网络（主要是无线网络）的路由协议。Freifunk 是德国的一个倡议，旨在基于网络中立性原则在城市范围内构建开放的 Wi-Fi 网络。BATMAN 的目标是成为一个完全分散的协议；网络中的任何一个节点都不需要了解或关心整个网络的拓扑结构。
 
 在 Linux 中，由 batman-adv 内核模块提供支持 BATMAN 的功能。而这个项目的目标是将类似的支持带到 FreeBSD，包括开发内核模块本身，以及创建 BATMAN 网络所需的用户空间网络库和工具。
 
@@ -461,7 +461,7 @@ PowerPC 已经构建，但其状态未知。作者尝试获取合适的 PlayStat
 
 #### OpenSSL 3 在基本系统中的导入
 
-链接： OpenSSL 下载网址：[https://www.openssl.org/source/](https://www.openssl.org/source/)
+链接：OpenSSL 下载网址：[https://www.openssl.org/source/](https://www.openssl.org/source/)
 
 OpenSSL 3.0 已发布！网址：[https://www.openssl.org/blog/blog/2021/09/07/OpenSSL3.Final/](https://www.openssl.org/blog/blog/2021/09/07/OpenSSL3.Final/)
 
@@ -483,7 +483,7 @@ OpenSSL 已大幅超越其前身 SSLeay，现在拥有超过 50 万行代码（S
 
 虽然更新会对处理小输入块大小时产生一定的性能影响，但在处理 1 KB 及以上大小的块时，影响较小。另一个挑战在于 FIPS 提供者模块，目前需要一些手动步骤才能使其正常工作。我们目前正在寻找一种解决方案，以便默认情况下在 FreeBSD 中提供一个功能齐全的 FIPS 提供者。
 
-赞助商： The FreeBSD Foundation
+赞助商：The FreeBSD Foundation
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -511,17 +511,17 @@ Linux 应用程序状态 Wiki 页面网址：[https://wiki.freebsd.org/LinuxApps
 
 链接：
 
-D40369: 扩展 `/usr/bin/service` 以设置环境变量的可能性 网址: [https://reviews.freebsd.org/D40369](https://reviews.freebsd.org/D40369)
+D40369: 扩展 `/usr/bin/service` 以设置环境变量的可能性 网址：[https://reviews.freebsd.org/D40369](https://reviews.freebsd.org/D40369)
 
-D40370: 自动加入 rc.d 服务的基础设施 网址: [https://reviews.freebsd.org/D40370](https://reviews.freebsd.org/D40370)
+D40370: 自动加入 rc.d 服务的基础设施 网址：[https://reviews.freebsd.org/D40370](https://reviews.freebsd.org/D40370)
 
-D40371: 自动服务 jail：为在自动服务 jail 中实现服务的全部功能进行一些设置 网址: [https://reviews.freebsd.org/D40371](https://reviews.freebsd.org/D40371)
+D40371: 自动服务 jail：为在自动服务 jail 中实现服务的全部功能进行一些设置 网址：[https://reviews.freebsd.org/D40371](https://reviews.freebsd.org/D40371)
 
 联系人：Alexander Leidinger [netchild@FreeBSD.org](mailto:netchild@FreeBSD.org)
 
 Service Jail 扩展了 rc(8) 系统，允许自动将 rc.d 服务加入 jail。服务 jail 继承父主机或 jail 的文件系统，但默认情况下使用 jail 的所有其他限制（进程可见性、受限网络访问、文件系统挂载权限、sysvipc 等）。附加配置允许继承父级的 IP 地址、sysvipc、内存页锁定和使用 bhyve 虚拟机监视器（vmm(4)）。
 
-如果你想将例如 local_unbound 加入服务 jail 并允许 IPv4 和 IPv6 访问，只需更改 rc.conf(5)为：
+如果你想将例如 local_unbound 加入服务 jail 并允许 IPv4 和 IPv6 访问，只需更改 rc.conf(5) 为：
 
 ```shell-session
 local_unbound_svcj_options=net_basic
@@ -540,7 +540,7 @@ local_unbound_svcj=YES
 
 链接：
 
-ktrace 分支 网址: [https://github.com/jakesfreeland/freebsd-src/tree/ff/ktrace](https://github.com/jakesfreeland/freebsd-src/tree/ff/ktrace)
+ktrace 分支 网址：[https://github.com/jakesfreeland/freebsd-src/tree/ff/ktrace](https://github.com/jakesfreeland/freebsd-src/tree/ff/ktrace)
 
 联系人：Jake Freeland [jfree@FreeBSD.org](mailto:jfree@FreeBSD.org)
 
@@ -552,13 +552,13 @@ ktrace 分支 网址: [https://github.com/jakesfreeland/freebsd-src/tree/ff/ktra
 
 另一种寻找违规的替代方法是使用 ktrace(1)。ktrace(1) 工具记录指定进程的内核活动。能力违规发生在内核内部，因此 ktrace(1) 可以使用 `-t p` 选项记录和返回有关程序违规的额外信息。
 
-传统上，需要将程序放入能力模式，然后它们才能报告违规。当输入受限制的系统调用时，它将失败并返回 `ECAPMODE: Not permitted in capability mode`。如果开发人员进行错误检查，那么他们的程序可能会以该错误终止。这种行为使得违规跟踪变得不方便，因为 ktrace(1)只会报告第一个能力违规，然后程序将终止。
+传统上，需要将程序放入能力模式，然后它们才能报告违规。当输入受限制的系统调用时，它将失败并返回 `ECAPMODE: Not permitted in capability mode`。如果开发人员进行错误检查，那么他们的程序可能会以该错误终止。这种行为使得违规跟踪变得不方便，因为 ktrace(1) 只会报告第一个能力违规，然后程序将终止。
 
 幸运的是，ktrace(1) 的新扩展可以在程序没有进入能力模式时记录违规。这意味着任何开发人员都可以在其程序上运行能力违规跟踪而无需修改，以查看它引发违规的位置。由于程序实际上从未进入能力模式，因此它仍将获取资源并正常执行。
 
 **违规跟踪示例**
 
-下面显示的 cap_violate 程序尝试引发 ktrace(1)可以捕获的每种类型的违规：
+下面显示的 cap_violate 程序尝试引发 ktrace(1) 可以捕获的每种类型的违规：
 
 ```shell-session
 # ktrace -t p ./cap_violate
@@ -619,7 +619,7 @@ ktrace 分支 网址: [https://github.com/jakesfreeland/freebsd-src/tree/ff/ktra
 1632 foo      CAP   attempt to increase capabilities from CAP_READ to CAP_READ,CAP_WRITE
 ```
 
-在实际情况下，能力模式总是在 C 运行时库的初始化后进入，因此程序永远不会触发这前 7 个违规行为。我们之所以看到它们，是因为 ktrace(1)在程序启动之前开始记录违规行为。
+在实际情况下，能力模式总是在 C 运行时库的初始化后进入，因此程序永远不会触发这前 7 个违规行为。我们之所以看到它们，是因为 ktrace(1) 在程序启动之前开始记录违规行为。
 
 这个演示清楚地表明，违规跟踪并不总是完美的。它是检测受限制系统调用的有用指南，但可能并不总是模拟程序在能力模式下的实际行为。在能力模式下，违规等同于错误；它们是停止执行的指示。违规跟踪忽略了这一建议，无论如何继续执行，因此可能会报告无效的违规行为。
 
@@ -700,7 +700,7 @@ extracting: baz/baz.txt
 1926 unzip    CAP   openat: restricted VFS lookup: AT_FDCWD
 ```
 
-unzip(1) 的违规跟踪输出更类似于开发人员在首次跟踪自己的程序时所看到的情况。大多数程序都会链接到库。在这种情况下，unzip(1)链接到 libarchive(3)，这在追踪中反映了出来：
+unzip(1) 的违规跟踪输出更类似于开发人员在首次跟踪自己的程序时所看到的情况。大多数程序都会链接到库。在这种情况下，unzip(1) 链接到 libarchive(3)，这在追踪中反映了出来：
 
 ```shell-session
 1926 unzip    CAP   system call not allowed: open
@@ -738,9 +738,9 @@ unzip(1) 的违规行为可以在 C 运行时违规行为之后找到：
 1926 unzip    CAP   openat: restricted VFS lookup: AT_FDCWD
 ```
 
-在这种情况下，unzip(1) 正在重新创建 zip 归档中包含的文件结构。违规行为是因为在能力模式下不能使用 AT_FDCWD 值。这些违规行为的大部分可以通过在进入能力模式之前打开 AT_FDCWD（当前目录）并将该描述符传递给 openat(2)、fstatat(2)和 mkdirat(2)作为相对引用来解决。
+在这种情况下，unzip(1) 正在重新创建 zip 归档中包含的文件结构。违规行为是因为在能力模式下不能使用 AT_FDCWD 值。这些违规行为的大部分可以通过在进入能力模式之前打开 AT_FDCWD（当前目录）并将该描述符传递给 openat(2)、fstatat(2) 和 mkdirat(2) 作为相对引用来解决。
 
-虽然违规行为跟踪可能不会自动将程序 Capsicum 化，但它是开发者工具箱中的另一种工具。在 ktrace(1)下运行程序只需要几秒钟的时间，结果几乎总是一个不错的起点，用于使用 Capsicum 对程序进行沙盒化。
+虽然违规行为跟踪可能不会自动将程序 Capsicum 化，但它是开发者工具箱中的另一种工具。在 ktrace(1) 下运行程序只需要几秒钟的时间，结果几乎总是一个不错的起点，用于使用 Capsicum 对程序进行沙盒化。
 
 赞助：FreeBSD Foundation
 
@@ -748,7 +748,7 @@ unzip(1) 的违规行为可以在 C 运行时违规行为之后找到：
 
 #### NVMe over Fabrics
 
-链接：nvmf2 branch 网址: [https://github.com/bsdjhb/freebsd/tree/nvmf2](https://github.com/bsdjhb/freebsd/tree/nvmf2)
+链接：nvmf2 branch 网址：[https://github.com/bsdjhb/freebsd/tree/nvmf2](https://github.com/bsdjhb/freebsd/tree/nvmf2)
 
 联系人：John Baldwin [jhb@FreeBSD.org](mailto:jhb@FreeBSD.org)
 
@@ -756,15 +756,15 @@ NVMe over Fabrics（NVMe-oF）允许通过网络通信使用 NVMe 协议与存�
 
 NVMe over Fabrics 目前定义了用于光纤通道、RDMA 和 TCP 的网络传输。
 
-在 nvmf2 分支中的工作包括一个用户空间库（`lib/libnvmf`），其中包含用于传输的抽象和 TCP 传输的实现。它还对 nvmecontrol(8)进行了更改，以添加“discover”、“connect”和“disconnect”命令来管理与远程控制器的连接。
+在 nvmf2 分支中的工作包括一个用户空间库（`lib/libnvmf`），其中包含用于传输的抽象和 TCP 传输的实现。它还对 nvmecontrol(8) 进行了更改，以添加“discover”、“connect”和“disconnect”命令来管理与远程控制器的连接。
 
-该分支还包含一个内核中的 Fabrics 实现。`nvmf_transport.ko` 包含一个在 nvmf 主机（即 SCSI 中的 initiator）和各个传输之间的传输抽象。`nvmf_tcp.ko` 包含一个 TCP 传输层的实现。`nvmf.ko` 包含一个 NVMe over Fabrics 主机（initiator），它连接到远程控制器并将远程命名空间导出为磁盘设备。类似于 NVMe over PCIe 的 nvme(4)驱动程序，命名空间通过 `/dev/nvmeXnsY` 设备导出，这些设备仅支持简单操作，同时还通过 CAM 导出为 ndaX 磁盘设备。与 nvme(4)不同，nvmf(4)不支持 nvd(4)磁盘驱动程序。nvmecontrol(8) 可用于处理远程命名空间和远程控制器，例如获取日志页、显示识别信息等。
+该分支还包含一个内核中的 Fabrics 实现。`nvmf_transport.ko` 包含一个在 nvmf 主机（即 SCSI 中的 initiator）和各个传输之间的传输抽象。`nvmf_tcp.ko` 包含一个 TCP 传输层的实现。`nvmf.ko` 包含一个 NVMe over Fabrics 主机（initiator），它连接到远程控制器并将远程命名空间导出为磁盘设备。类似于 NVMe over PCIe 的 nvme(4) 驱动程序，命名空间通过 `/dev/nvmeXnsY` 设备导出，这些设备仅支持简单操作，同时还通过 CAM 导出为 ndaX 磁盘设备。与 nvme(4) 不同，nvmf(4) 不支持 nvd(4) 磁盘驱动程序。nvmecontrol(8) 可用于处理远程命名空间和远程控制器，例如获取日志页、显示识别信息等。
 
 请注意，nvmf(4) 目前还相对简单，有些错误情况仍在待办事项中。如果发生错误，队列（和后端网络连接）将被丢弃，但设备将保留，并暂停 I/O 请求。可以使用 `nvmecontrol reconnect` 命令连接一组新的网络连接以恢复操作。与使用持续型守护程序（iscsid(8)）在错误后重新连接的 iSCSI 不同，重新连接必须手动进行。
 
 当前的代码非常新，可能不太稳定。它肯定还没有准备好用于生产环境。有兴趣在 NVMe over Fabrics 上进行测试的有经验的用户，可以自行承担风险并开始测试。
 
-下一个主要任务是实现一个 Fabrics 控制器（SCSI 中的 target）。可能首先是在用户空间中实现一个简单的控制器，然后再实现一个“真实”的控制器，将数据处理外包给内核，但与 ctld(8)有一定的集成，以便通过 iSCSI 或 NVMe 导出各个磁盘设备，或者通过使用单个配置文件和守护程序来管理所有这些。这可能需要在 ctld 中进行一些重构，使其不那么依赖 iSCSI。在控制器侧的工作还将验证在传输无关层中目前未经充分测试的 API 设计决策。在此步骤之后，可能才有意义将任何 NVMe over Fabrics 的更改合并到树中。
+下一个主要任务是实现一个 Fabrics 控制器（SCSI 中的 target）。可能首先是在用户空间中实现一个简单的控制器，然后再实现一个“真实”的控制器，将数据处理外包给内核，但与 ctld(8) 有一定的集成，以便通过 iSCSI 或 NVMe 导出各个磁盘设备，或者通过使用单个配置文件和守护程序来管理所有这些。这可能需要在 ctld 中进行一些重构，使其不那么依赖 iSCSI。在控制器侧的工作还将验证在传输无关层中目前未经充分测试的 API 设计决策。在此步骤之后，可能才有意义将任何 NVMe over Fabrics 的更改合并到树中。
 
 赞助：Chelsio Communications
 
@@ -778,9 +778,9 @@ NVMe over Fabrics 目前定义了用于光纤通道、RDMA 和 TCP 的网络传�
 
 链接：
 
-Wiki 页面 网址: [https://wiki.freebsd.org/BootTime](https://wiki.freebsd.org/BootTime)
+Wiki 页面 网址：[https://wiki.freebsd.org/BootTime](https://wiki.freebsd.org/BootTime)
 
-BSDCan 演讲幻灯片 网址: [https://www.bsdcan.org/events/bsdcan_2023/sessions/session/116/slides/44/BSDCan23-Firecracker.pdf](https://www.bsdcan.org/events/bsdcan_2023/sessions/session/116/slides/44/BSDCan23-Firecracker.pdf)
+BSDCan 演讲幻灯片 网址：[https://www.bsdcan.org/events/bsdcan_2023/sessions/session/116/slides/44/BSDCan23-Firecracker.pdf](https://www.bsdcan.org/events/bsdcan_2023/sessions/session/116/slides/44/BSDCan23-Firecracker.pdf)
 
 联系人：Colin Percival [cperciva@FreeBSD.org](mailto:cperciva@FreeBSD.org)
 
@@ -794,7 +794,7 @@ Colin 在 BSDCan 上的“将 FreeBSD 移植到 Firecracker”演讲中讨论了
 
 这项工作得到了他的 FreeBSD/EC2 Patreon 的支持。
 
-赞助者: https://www.patreon.com/cperciva
+赞助者：https://www.patreon.com/cperciva
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -814,7 +814,7 @@ FreeBSD 支持多种体系结构、文件系统和磁盘分区方案。我正在
 
 目前脚本相关的工作似乎进展顺利，但在未来我需要找到各种 QEMU 配置以测试不同的环境。如果有任何工作中的 QEMU 配方适用于当前发布版本的 FreeBSD，请随时通过邮件发送至 smk@FreeBSD.org。
 
-赞助者: 2023 谷歌编程之夏项目
+赞助者：2023 谷歌编程之夏项目
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -828,7 +828,7 @@ FreeBSD 支持多种体系结构、文件系统和磁盘分区方案。我正在
 
 大多数现代 CPU 架构通过支持大于标准页面大小的页面来提供性能提升。不幸的是，由于高度的物理内存碎片化，分配这种页面可能会失败。这项工作实现了物理内存压缩作为一种主动减少运行系统碎片化的手段。这项工作是正在进行的谷歌编程之夏项目的一部分，其目标是向虚拟内存子系统添加各种物理内存抗碎片化措施。
 
-Differential [D40575](https://reviews.freebsd.org/D40575) 实现了用于量化物理内存碎片化程度的众所周知的度量标准。 Differential [D40772](https://reviews.freebsd.org/D40772) 实现了物理内存压缩，并添加了一个守护程序，监视系统并在需要时执行压缩。
+Differential [D40575](https://reviews.freebsd.org/D40575) 实现了用于量化物理内存碎片化程度的众所周知的度量标准。Differential [D40772](https://reviews.freebsd.org/D40772) 实现了物理内存压缩，并添加了一个守护程序，监视系统并在需要时执行压缩。
 
 计划的未来工作包括设计适当的基准测试套件，运行测试，并根据评审和测试结果调整代码。这仍然是一个正在进行的工作，因此非常欢迎进行任何测试、评审和反馈。
 
@@ -906,7 +906,7 @@ D40870 网址：[https://reviews.freebsd.org/D40870](https://reviews.freebsd.org
 
 联系人：Kristof Provost [kp@FreeBSD.org](mailto:kp@FreeBSD.org)
 
-pf(4)是 FreeBSD 中包含的防火墙之一，也可能是最受欢迎的。pf 最初由 OpenBSD 项目创建，后来移植到 FreeBSD。
+pf(4) 是 FreeBSD 中包含的防火墙之一，也可能是最受欢迎的。pf 最初由 OpenBSD 项目创建，后来移植到 FreeBSD。
 
 **OpenBSD 语法的向后兼容**
 
@@ -914,7 +914,7 @@ Kajetan 引入了"scrub"操作的 OpenBSD 语法在"match"和"pass"规则中。�
 
 **pfsync 协议版本**
 
-现在可以配置 pfsync(4)协议版本，允许在支持不同内核版本之间的状态同步的同时进行协议更改。主要好处是允许协议更改以实现新功能。
+现在可以配置 pfsync(4) 协议版本，允许在支持不同内核版本之间的状态同步的同时进行协议更改。主要好处是允许协议更改以实现新功能。
 
 **pfsync：在 IPv6 上传输**
 
@@ -938,7 +938,7 @@ pfsync 流量现在也可以通过 IPv6 进行传输。Naman 完成了 Luiz Amar
 
 IfAPI（原名 DrvAPI）项目始于 2014 年，其目标是隐藏网络驱动程序中的 ifnet(9) 结构。相反，所有对成员的访问都将通过访问器函数进行。这允许更改网络堆栈而无需重新编译驱动程序，还有可能让单个驱动程序支持多个 FreeBSD 版本。
 
-目前，在基本系统中已经实现了这一目标，但是还需要更新一些 port 来使用 IfAPI。有一个工具可以自动完成大部分的转换，即 `tools/ifnet/convert_ifapi.sh`。文档也正在准备中，但可能需要帮助。ifnet(9)需要进行大量的清理，因为目前其中的一些信息已经过时了。
+目前，在基本系统中已经实现了这一目标，但是还需要更新一些 port 来使用 IfAPI。有一个工具可以自动完成大部分的转换，即 `tools/ifnet/convert_ifapi.sh`。文档也正在准备中，但可能需要帮助。ifnet(9) 需要进行大量的清理，因为目前其中的一些信息已经过时了。
 
 赞助：Juniper Networks, Inc.
 
@@ -974,7 +974,7 @@ FreeBSD 拥有一套自己的并发安全数据结构和机制。其中一个机
 
 更新特定平台的功能，并为新的硬件平台提供支持。
 
-#### 增强 SIMD （针对 amd64 架构）
+#### 增强 SIMD（针对 amd64 架构）
 
 链接：
 
@@ -984,7 +984,7 @@ SIMD 调度框架草案 网址：[https://reviews.freebsd.org/D40693](https://re
 
 联系人：Robert Clausecker [clausecker@FreeBSD.org](mailto:clausecker@FreeBSD.org)
 
-SIMD 指令集扩展，如 SSE、AVX 和 NEON，在现代计算机上普遍存在，并为许多应用程序提供性能优势。该项目的目标是为常见的 libc 函数（主要是 string(3)中描述的函数）提供 SIMD 增强版本，加速大多数 C 程序的执行。
+SIMD 指令集扩展，如 SSE、AVX 和 NEON，在现代计算机上普遍存在，并为许多应用程序提供性能优势。该项目的目标是为常见的 libc 函数（主要是 string(3) 中描述的函数）提供 SIMD 增强版本，加速大多数 C 程序的执行。
 
 对于每个优化的函数，将提供多达四种实现：
 
@@ -1158,7 +1158,7 @@ FreeBSD 可在 x86（Intel 和 AMD）和 ARM64（Graviton）EC2 实例上使用�
 
 EC2 引导脚本最近已更新以支持 IMDSv2。这一变化将在 FreeBSD 14.0-RELEASE 中出现。
 
-如果 FreeBSD 13.2 的用户需要这些更新中的任何一项，作者可以提供 FreeBSD“13.2-RELEASE 加更新” AMI。
+如果 FreeBSD 13.2 的用户需要这些更新中的任何一项，作者可以提供 FreeBSD“13.2-RELEASE 加更新”AMI。
 
 此工作得到 Colin 的 FreeBSD/EC2 Patreon 的支持。
 
@@ -1236,7 +1236,7 @@ FreeBSD Weblate 实例现在运行在专用服务器上，大大提高了速度�
 
 [正在重新修订网络章节。](https://reviews.freebsd.org/D40546)
 
-**FreeBSD 网站改版- WebApps 工作组**
+**FreeBSD 网站改版 - WebApps 工作组**
 
 联系人：Sergio Carlavilla [carlavilla@FreeBSD.org](mailto:carlavilla@FreeBSD.org)
 
@@ -1388,7 +1388,7 @@ i386、amd64 和 aarch64 上的默认 bootstrap 选项从 LTO_BOOTSTRAP 回滚�
 
 链接：
 
-Puppet 网址: [https://puppet.com/docs/puppet/latest/puppet_index.html](https://puppet.com/docs/puppet/latest/puppet_index.html)
+Puppet 网址：[https://puppet.com/docs/puppet/latest/puppet_index.html](https://puppet.com/docs/puppet/latest/puppet_index.html)
 
 联系人：Puppet 团队 [puppet@FreeBSD.org](mailto:puppet@FreeBSD.org)
 
@@ -1408,9 +1408,9 @@ Puppet 6 已达到生命周期终点，并已被弃用。它现在已过期。�
 
 链接：
 
-MITRE Caldera 网址: [https://caldera.mitre.org/](https://caldera.mitre.org/)
+MITRE Caldera 网址：[https://caldera.mitre.org/](https://caldera.mitre.org/)
 
-Red Canary 网址: [https://www.redcanary.com/](https://www.redcanary.com/)
+Red Canary 网址：[https://www.redcanary.com/](https://www.redcanary.com/)
 
 联系人：José Alonso Cárdenas Márquez [acm@FreeBSD.org](mailto:acm@FreeBSD.org)
 
@@ -1440,7 +1440,7 @@ MITRE Caldera（security/caldera）于 2023 年 4 月添加到了 ports 中。�
 
 链接：
 
-Wazuh 网址: [https://www.wazuh.com/](https://www.wazuh.com/)
+Wazuh 网址：[https://www.wazuh.com/](https://www.wazuh.com/)
 
 联系人：José Alonso Cárdenas Márquez [acm@FreeBSD.org](mailto:acm@FreeBSD.org)
 
@@ -1478,9 +1478,9 @@ Wazuh 在 FreeBSD 上的移植由 Michael Muenz 开始。他在 2021 年 9 月�
 
 链接：
 
-网站网址: [https://alpha.pkgbase.live/](https://alpha.pkgbase.live/)
+网站网址：[https://alpha.pkgbase.live/](https://alpha.pkgbase.live/)
 
-源代码网址: [https://codeberg.org/pkgbase](https://codeberg.org/pkgbase)
+源代码网址：[https://codeberg.org/pkgbase](https://codeberg.org/pkgbase)
 
 联系人：Mina Galić [freebsd@igalic.co](mailto:freebsd@igalic.co)
 
@@ -1517,7 +1517,7 @@ PkgBase 的硬件由 FreeBSD 社区的一名成员慷慨赞助。
 
 链接：
 
-Pot 在 GitHub 上的组织 网址: [https://github.com/bsdpot](https://github.com/bsdpot)
+Pot 在 GitHub 上的组织 网址：[https://github.com/bsdpot](https://github.com/bsdpot)
 
 联系人：Luca Pizzamiglio (Pot) [pizzamig@FreeBSD.org](mailto:pizzamig@FreeBSD.org)
 

@@ -129,7 +129,7 @@ Matrix 实例和 Element-web 客户端的测试仍在进行中。计划在九月
 
 联系人：Deb Goodkin <[deb@FreeBSDFoundation.org](mailto:deb@FreeBSDFoundation.org)>
 
-FreeBSD 基金会是一家 501(c)(3)非营利组织，致力于支持和推动全球 FreeBSD 项目和社区。个人和公司的捐赠赞助和管理软件开发项目、会议和开发者峰会。我们还向 FreeBSD 贡献者提供差旅赞助，购买和支持硬件以改善和维护 FreeBSD 基础设施，并提供资源以提高安全性、质量保证和集群管理工作。我们发布营销材料以推广、教育和宣传 FreeBSD，促进商业供应商与 FreeBSD 开发者之间的合作，并最终代表 FreeBSD 项目执行合同、许可协议和其他需要认可法律实体的安排。
+FreeBSD 基金会是一家 501(c)(3) 非营利组织，致力于支持和推动全球 FreeBSD 项目和社区。个人和公司的捐赠赞助和管理软件开发项目、会议和开发者峰会。我们还向 FreeBSD 贡献者提供差旅赞助，购买和支持硬件以改善和维护 FreeBSD 基础设施，并提供资源以提高安全性、质量保证和集群管理工作。我们发布营销材料以推广、教育和宣传 FreeBSD，促进商业供应商与 FreeBSD 开发者之间的合作，并最终代表 FreeBSD 项目执行合同、许可协议和其他需要认可法律实体的安排。
 
 在本季度，我们协助 FreeBSD 庆祝其 30 周年！这一激动人心的时刻推动我们加速努力，推动 FreeBSD 在增长和创新方面取得进展，这使我们集中精力确定可以投入资源的关键领域。在 9 月份的董事会会议上，我们优化了我们的目标，重点放在增加 FreeBSD 的采用和可见性、多元化我们的资金来源，以及投资于项目的社区健康和长期稳定性。我们正在确定目标受众和市场，同时为这些目标制定可衡量的结果。
 
@@ -356,7 +356,7 @@ Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人�
   - 将 Rust 更新到 1.72.0
   - 将 Wine 更新到 8.0.2
 
-在上一季度，pgkmgr@ 进行了 18 次实验性运行，测试了各种 port 升级、 port 默认版本更新和 pycryptography 更改。
+在上一季度，pgkmgr@ 进行了 18 次实验性运行，测试了各种 port 升级、port 默认版本更新和 pycryptography 更改。
 
 ## 项目
 
@@ -379,7 +379,7 @@ Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人�
 
 [deskutils/qmediamanager](https://cgit.freebsd.org/ports/tree/deskutils/qmediamanager/)，与[sysutils/devd-mount](https://cgit.freebsd.org/ports/tree/sysutils/devd-mount/)和[sysutils/npmount](https://cgit.freebsd.org/ports/tree/sysutils/npmount/)一起，可以在从 devd 接收到通知时挂载插入的媒体，并显示一个弹出窗口，为用户提供显示文件系统信息、打开文件管理器、重新格式化、将磁盘镜像复制到设备或卸载的选项。它提供了一种便捷且安全的方式来处理外部媒体，如 USB 存储设备。
 
-第四个新 port - [deskutils/freebsd-update-notify](https://cgit.freebsd.org/ports/tree/deskutils/freebsd-update-notify/) - 在新的基本更新可用时或经过可配置的时间限制后显示一个弹出窗口通知。如果用户选择继续进行更新，则使用[auto-update-system(1)](https://man.freebsd.org/cgi/man.cgi?query=auto-update-system&sektion=1&format=html)（[sysutils/auto-admin](https://cgit.freebsd.org/ports/tree/sysutils/auto-admin/)的特性）更新整个系统（软件包、 port 和基本系统）。
+第四个新 port - [deskutils/freebsd-update-notify](https://cgit.freebsd.org/ports/tree/deskutils/freebsd-update-notify/) - 在新的基本更新可用时或经过可配置的时间限制后显示一个弹出窗口通知。如果用户选择继续进行更新，则使用[auto-update-system(1)](https://man.freebsd.org/cgi/man.cgi?query=auto-update-system&sektion=1&format=html)（[sysutils/auto-admin](https://cgit.freebsd.org/ports/tree/sysutils/auto-admin/)的特性）更新整个系统（软件包、port 和基本系统）。
 
 这些新工具使 FreeBSD 桌面体验更接近于最受欢迎的桌面操作系统的便利性。
 
@@ -496,9 +496,9 @@ Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人�
 
 工作代码包括：
 
-- 为目录读取支持实现 vop_lookup()和 vop_readdir()钩子。
-- 为文件读取支持实现 vop_read()和 vop_strategy()钩子。
-- 为符号链接读取支持实现 vop_readlink()钩子。
+- 为目录读取支持实现 vop_lookup() 和 vop_readdir() 钩子。
+- 为文件读取支持实现 vop_read() 和 vop_strategy() 钩子。
+- 为符号链接读取支持实现 vop_readlink() 钩子。
 
 我们还为 SquashFS 实现了扩展属性接口函数。现在只剩下实现它们的内核接口钩子。
 
@@ -508,7 +508,7 @@ Ports 管理团队负责监督 Ports 的整体方向、构建软件包以及人�
 
 我很高兴地说，SquashFS 将在即将发布的 FreeBSD 版本中找到其位置。
 
-赞助方： 2023 谷歌编程之夏
+赞助方：2023 谷歌编程之夏
 
 ### 进程可见性安全策略
 
@@ -526,7 +526,7 @@ FreeBSD 实现了三种内置的安全策略，限制了特定用户可以看到
 
 第二种可以防止非特权用户看到或与其凭据中没有用户是其成员的进程进行交互。可以通过将 sysctl `security.bsd.see_other_gids` 设置为 0（默认值为 1）来激活。
 
-第三种可以防止非特权用户的进程看到或与处于严格子 Jail 中的进程进行交互。 Jail 子系统已经阻止这样的进程看到不是其后代的 Jail 中的进程（参见 [jail(8)](https://man.freebsd.org/cgi/man.cgi?query=jail&sektion=8&format=html)，特别是“分层 Jail”一节）。此策略的一个可能的用途是与上面的第一种策略结合使用，以隐藏在具有与祖先 Jail 中的某个用户相同的实际 UID 的子 Jail 中的进程，因为在这些不同的 Jail 中具有相同 UID 的用户在逻辑上被视为不同的用户。可以通过将 sysctl `security.bsd.see_jail_proc` 设置为 0（默认值为 1）来激活。
+第三种可以防止非特权用户的进程看到或与处于严格子 Jail 中的进程进行交互。Jail 子系统已经阻止这样的进程看到不是其后代的 Jail 中的进程（参见 [jail(8)](https://man.freebsd.org/cgi/man.cgi?query=jail&sektion=8&format=html)，特别是“分层 Jail”一节）。此策略的一个可能的用途是与上面的第一种策略结合使用，以隐藏在具有与祖先 Jail 中的某个用户相同的实际 UID 的子 Jail 中的进程，因为在这些不同的 Jail 中具有相同 UID 的用户在逻辑上被视为不同的用户。可以通过将 sysctl `security.bsd.see_jail_proc` 设置为 0（默认值为 1）来激活。
 
 在审查这些策略的代码并进行实际测试之后，我们注意到了一些问题和限制，这促使我们对此进行了工作。
 
@@ -947,7 +947,7 @@ KDE Gear 每季度发布一次，KDE Plasma 每月更新一次，KDE Frameworks 
 
 #### 相关的 Ports
 
-KDE 生态系统包括各种 port —— 大多数由 kde@ 维护，所有这些 port 都建立在共享的 Qt 和 KDE Frameworks 基础上。kde@ 团队根据需要更新它们。例如，本季度 tcberner@ 和 arrowd@ 更新或修复了（远不止于此的）以下一系列 port ：
+KDE 生态系统包括各种 port —— 大多数由 kde@ 维护，所有这些 port 都建立在共享的 Qt 和 KDE Frameworks 基础上。kde@ 团队根据需要更新它们。例如，本季度 tcberner@ 和 arrowd@ 更新或修复了（远不止于此的）以下一系列 port：
 
 - [astro/merkaartor](https://cgit.freebsd.org/ports/tree/astro/merkaartor/)
 - [devel/massif-visualizer](https://cgit.freebsd.org/ports/tree/devel/massif-visualizer/)
@@ -1126,9 +1126,9 @@ GitLab 是一个 DevOps 平台。它为团队带来了高效的速度，充满�
 
 FreeBSD 提供了 Ports，为用户和管理员提供了一种安装应用程序的简单方法。在构建和安装之前可以配置一个 Port。`make config` 命令使用 [ports-mgmt/dialog4ports](https://cgit.freebsd.org/ports/tree/ports-mgmt/dialog4ports/) 和 [ports-mgmt/portconfig](https://cgit.freebsd.org/ports/tree/ports-mgmt/portconfig/) 通过文本用户界面（TUI）交互式设置 Port。
 
-不幸的是，屏幕阅读器在 TUI 中表现不佳；这是一个众所周知的可访问性问题。FreeBSD 提供了数以万计的 port； port 配置是一个关键功能，但对于视力受损的用户而言是不可访问的。
+不幸的是，屏幕阅读器在 TUI 中表现不佳；这是一个众所周知的可访问性问题。FreeBSD 提供了数以万计的 port；port 配置是一个关键功能，但对于视力受损的用户而言是不可访问的。
 
-PortOptsCLI（Port Options CLI）是一个通过命令行界面设置 port 选项的新实用程序。确切地说，PortOptsCLI 提供了导航配置对话框（复选框/单选按钮）并通过交互方式设置其项目的命令。它也适用于语音合成器；目前已与 [accessibility/orca](https://cgit.freebsd.org/ports/tree/accessibility/orca/) 进行了测试。可以通过 [ports-mgmt/portoptscli](https://cgit.freebsd.org/ports/tree/ports-mgmt/portoptscli/) port 或软件包安装 PortOptsCLI 。
+PortOptsCLI（Port Options CLI）是一个通过命令行界面设置 port 选项的新实用程序。确切地说，PortOptsCLI 提供了导航配置对话框（复选框/单选按钮）并通过交互方式设置其项目的命令。它也适用于语音合成器；目前已与 [accessibility/orca](https://cgit.freebsd.org/ports/tree/accessibility/orca/) 进行了测试。可以通过 [ports-mgmt/portoptscli](https://cgit.freebsd.org/ports/tree/ports-mgmt/portoptscli/) port 或软件包安装 PortOptsCLI。
 
 欢迎提供建议和新想法。如果可能，请将报告发送到 FreeBSD 可访问性邮件列表，以在公共位置共享和跟踪讨论。
 

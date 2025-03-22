@@ -13,11 +13,11 @@
 
 联系人：Kris Moore <[kmoore@FreeBSD.org](mailto:kmoore@FreeBSD.org)>
 
-在桌面工作组中，Kris Moore 总结了过去几个月 PC-BSD 领域的变化。基于新发布的 9.2-RELEASE 版本的构建正在进行中，基于 10-STABLE 的未来构建也将很快推出。计划是跟踪 10-STABLE 分支，直到其变成 11-STABLE。Kris 还描述了他们已切换到的滚动发布模型。该方法利用 freebsd-update(8)提供基于内核和用户空间工具的滚动更新，与此同时，pkg(8) 被用于桌面应用程序的包管理。还报告称，PC-BSD 团队已经改善了他们工具的 ZFS 集成，包括安装程序。即将发布的 PC-BSD 版本的另一个亮点是，它们将包括 Gleb Kurtsou 的 PEFS，提供基于 PAM 的认证来加密用户主目录。
+在桌面工作组中，Kris Moore 总结了过去几个月 PC-BSD 领域的变化。基于新发布的 9.2-RELEASE 版本的构建正在进行中，基于 10-STABLE 的未来构建也将很快推出。计划是跟踪 10-STABLE 分支，直到其变成 11-STABLE。Kris 还描述了他们已切换到的滚动发布模型。该方法利用 freebsd-update(8) 提供基于内核和用户空间工具的滚动更新，与此同时，pkg(8) 被用于桌面应用程序的包管理。还报告称，PC-BSD 团队已经改善了他们工具的 ZFS 集成，包括安装程序。即将发布的 PC-BSD 版本的另一个亮点是，它们将包括 Gleb Kurtsou 的 PEFS，提供基于 PAM 的认证来加密用户主目录。
 
 接下来，报告和讨论了当前进行中的项目。最近，Port sysutils/pcbsd-utils 和 sysutils/pcbsd-utils-qt4 已添加到 ports 中，其中包含所有 PC-BSD 开发的工具和实用程序，前者是命令行版本，后者是具有 GUI 支持的版本。PC-BSD 开发者们还在开发一个 Life-preserver ZFS 命令行和 GUI 工具，仍在积极开发中。此工具的目的是利用 ZFS 的快照和复制功能作为备份解决方案。
 
-最后，总结了 PC-BSD 10 的计划。PC-BSD 使用的 PBI 包格式正在修订，将更新为使用 pkg(8)仓库构建 PBI，并为服务器 PBI 提供更好的集成。作为此项工作的部分，将调查是否有可能在不实际安装的情况下运行 PBI。pc-sysinstall 将具有文本界面。起初将是基础版本，但以后将提供一个命令行接口，通过 pc-sysinstall 后端进行安装。
+最后，总结了 PC-BSD 10 的计划。PC-BSD 使用的 PBI 包格式正在修订，将更新为使用 pkg(8) 仓库构建 PBI，并为服务器 PBI 提供更好的集成。作为此项工作的部分，将调查是否有可能在不实际安装的情况下运行 PBI。pc-sysinstall 将具有文本界面。起初将是基础版本，但以后将提供一个命令行接口，通过 pc-sysinstall 后端进行安装。
 
 ---
 
@@ -39,7 +39,7 @@
 | ----- |
 | [摘要](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=20130928-eurobsdcon-dns-summary.pdf)      |
 
-联系人： Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
+联系人：Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
 
 FreeBSD 10 将不再包含 BIND，而是基于 unbound(8) 和 LDNS，这两个工具已被导入到基本系统中，同时还替代了简单的 host(1) 工具。LDNS 还附带了 drill(1)，需要一个简单的包装器使其与 dig(1) 命令行界面兼容。OpenSSH 可以使用 LDNS 来检查 SSH 指纹，这也意味着默认启用了 DNSSEC 验证。请注意，unbound(8) 将被隐藏，它仅作为本地解析器使用。对于其他用途，用户需要在 Ports 中安装其版本。
 
@@ -53,7 +53,7 @@ FreeBSD 10 将不再包含 BIND，而是基于 unbound(8) 和 LDNS，这两个�
 | ----- |
 | [摘要](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=DocWGSummaryReport.pdf)      |
 
-联系人： Benedict Reuschling <[bcr@FreeBSD.org](mailto:bcr@FreeBSD.org)>
+联系人：Benedict Reuschling <[bcr@FreeBSD.org](mailto:bcr@FreeBSD.org)>
 
 今年我们尝试了一些新方法，因此我们不再做大量讨论，而是集中精力实际工作，并与参与工作组的成员一起解决 PR 问题。结果发现这种方式并不那么奏效，因为我们有很多事情需要讨论，但最终一些问题还是得到了修复。
 
@@ -75,8 +75,8 @@ FreeBSD 10 将不再包含 BIND，而是基于 unbound(8) 和 LDNS，这两个�
 | [笔记](https://wiki.freebsd.org/201309DevSummit/Embedded)      |
 | [剑桥笔记](https://wiki.freebsd.org/201308DevSummit/Embedded)      |
 
-联系人： Warner Losh <[imp@FreeBSD.org](mailto:imp@FreeBSD.org)>  
-联系人： Brooks Davis <[brooks@FreeBSD.org](mailto:brooks@FreeBSD.org)>
+联系人：Warner Losh <[imp@FreeBSD.org](mailto:imp@FreeBSD.org)>  
+联系人：Brooks Davis <[brooks@FreeBSD.org](mailto:brooks@FreeBSD.org)>
 
 嵌入式平台的讨论开始于一个月前的剑桥，在那里，BrilliantService 公司展示了他们为头戴式增强现实显示器开发的 Viking 操作系统。接下来，我们讨论了开发板启动和与之相关的内核最小化问题。随后，围绕系统镜像创建以及如何使一些嵌入式平台成为一级平台展开了长时间的讨论。最后，我们讨论了电源管理。
 
@@ -86,7 +86,7 @@ FreeBSD 10 将不再包含 BIND，而是基于 unbound(8) 和 LDNS，这两个�
 
 在马耳他，我们讨论的第一个话题是尽力为外部工具链支持设定更好的目标和使用场景，以便在 FreeBSD 11 发布时，任何支持的架构都可以通过外部工具链进行构建。我们讨论了为没有本地工具链支持的架构在基于 QEMU 的软件包构建基础设施中工作的不同方法。到了 FreeBSD 11，我们还希望确保所有内容都文档化清晰，以便用户知道在给定平台上支持和不支持的内容。
 
-接下来，我们就 Alfred Perlstein 最近做的自动调优更改进行了长时间的讨论。对于内存大于一GB的机器，这些更改非常好，但对于几乎没有内存的机器则效果不佳，因此 Adrian Chadd 自愿修复这一问题（详情请参见幻灯片）。
+接下来，我们就 Alfred Perlstein 最近做的自动调优更改进行了长时间的讨论。对于内存大于一 GB 的机器，这些更改非常好，但对于几乎没有内存的机器则效果不佳，因此 Adrian Chadd 自愿修复这一问题（详情请参见幻灯片）。
 
 我们讨论了很多关于 FreeBSD 11 中 ARM 移植的内容，并为该领域设定了一些目标。以下是一些亮点：我们希望能够在任何 armv6 平台上启动一个内核——目前有一些技术障碍。我们希望在 11 版本中继续支持 armv4 和 armv5，直到有特别的理由不再支持它们。由于我们正在转向 Clang，外部工具链问题可能是最大的任务之一。此外，armv6 将增加硬件浮点支持，我们希望能够实现对称多处理（SMP）。我们还广泛讨论了发布工程中的一些任务：我们需要为流行的开发板（如 Raspberry Pi 和 BeagleBoard）提供镜像。在 10.1 版本发布时，我们希望在这方面取得一些进展。我们希望为 ARM 和 MIPS 构建软件包，并为 freebsd-update(8) 设置基础设施。还简要提到，目前 ARM 上没有良好的 GPU 支持，这一问题存在于 FreeBSD 端。我们需要制定一个尽可能少有缺点的策略，可能的方案是采用 Android ABI，并允许将 Android 的二进制文件直接使用。这方面存在不少挑战。
 
@@ -100,10 +100,10 @@ FreeBSD 10 将不再包含 BIND，而是基于 unbound(8) 和 LDNS，这两个�
 | ----- |
 | [笔记](https://wiki.freebsd.org/201309DevSummit/Networking)      |
 
-联系人： Lawrence Stewart <[lstewart@FreeBSD.org](mailto:lstewart@FreeBSD.org)>  
-联系人： Gleb Smirnoff <[glebius@FreeBSD.org](mailto:glebius@FreeBSD.org)>
+联系人：Lawrence Stewart <[lstewart@FreeBSD.org](mailto:lstewart@FreeBSD.org)>  
+联系人：Gleb Smirnoff <[glebius@FreeBSD.org](mailto:glebius@FreeBSD.org)>
 
-André Oppermann 汇报了他目前在网络堆栈与驱动程序之间接口的工作。他计划发布一份关于堆栈-驱动边界的正式文档，并将 ifnet 结构分成由堆栈和驱动各自拥有的部分。所有驱动程序将根据这一新秩序进行调整，相关的反馈征求将发布到相应的邮件列表。此更改正在项目的 projects/ifq Subversion 分支中实施，由 FreeBSD 基金会赞助的 Ed Maste 监督。André 即将完成他的 TCP-AO 工作，并正在将 IPsec 代码迁移到基于 pfil(9) 的内核模块中。Gleb Smirnoff 提出了实现轻量级引用计数以避免悬挂指针的问题，Alexander Chernikov 开始讨论路由性能。
+André Oppermann 汇报了他目前在网络堆栈与驱动程序之间接口的工作。他计划发布一份关于堆栈 - 驱动边界的正式文档，并将 ifnet 结构分成由堆栈和驱动各自拥有的部分。所有驱动程序将根据这一新秩序进行调整，相关的反馈征求将发布到相应的邮件列表。此更改正在项目的 projects/ifq Subversion 分支中实施，由 FreeBSD 基金会赞助的 Ed Maste 监督。André 即将完成他的 TCP-AO 工作，并正在将 IPsec 代码迁移到基于 pfil(9) 的内核模块中。Gleb Smirnoff 提出了实现轻量级引用计数以避免悬挂指针的问题，Alexander Chernikov 开始讨论路由性能。
 
 网络堆栈工作组的另一个亮点是关于测试的讨论，大家一致认为开发人员应该与能够测试不同工作负载性能的公司进行沟通。Olivier Cochard-Labbé（来自 Orange）和 Alexander Chernikov（来自 Yandex）已经表示对这一工作的兴趣，而奈飞的员工（Lawrence Stewart、Adrian Chadd 和 Scott Long）确认他们可以访问一个以 TCP 为主的生产工作负载。相关地，还提到奈飞希望定期在加利福尼亚州洛斯加图斯举办专注于网络的开发者峰会。
 
@@ -114,11 +114,11 @@ André Oppermann 汇报了他目前在网络堆栈与驱动程序之间接口的
 | [摘要](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=20130928-eurobsdcon-ports-summary.pdf)      |
 | [笔记](https://wiki.freebsd.org/201309DevSummit/Ports)      |
 
-联系人： Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
+联系人：Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
 
 我们有一场由 Allan Jude 主讲的完整报告，简要介绍了他们为 PC-BSD CDN（内容分发网络）所做的工作。例如，它使用 rsync(1) 的 --delay-update 标志来使更新操作更具原子性，使用了许多 ZFS 功能（如复制、快照管理），并实现了自动镜像选择。这是一次相当有趣的演讲，并介绍了一些我们可以借鉴并应用于 FreeBSD 软件包分发网络的有趣想法。接下来是 Jeremy Le Hen 的演讲，他谈到了堆栈保护（SSP）。在 FreeBSD 10.x 的 amd64 和 i386 平台上，SSP 将默认启用，但可以通过 SSP_UNSAFE 开关关闭。相反，它在 9.x 版本中默认没有启用，但可以通过另一个开关 WITH_SSP_PORT 启用。这将在 amd64 上生效，对 i386 没有影响。
 
-Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件包系统都已经实现了这一功能，现在我们也实现了。它带来了许多改进，比如我们可以在软件包实际安装到文件系统之前，更早地捕获打包列表错误。如果一个 Port 在构建和打包时需要 root 权限，可以使用 NEED_ROOT 开关。此外，它还简化了构建工厂中使用的大多数逻辑，因为许多检查可以通过这种方式自动化，从而捕捉到损坏的 plist 并帮助消除特殊的后安装脚本。它为我们未来想要添加的一些新功能奠定了基础，例如实现子软件包。拥有子软件包使得我们可以先构建软件包，将文件放入不同的小软件包中，然后单独安装它们。与所有其他选项相比，它默认是关闭的， Port 将逐个转换为这种格式——不过，最终我们可能会说，未转换为支持分阶段的 Port 将被删除。实际上，这将帮助我们找出树中哪些 Port 不再被使用。
+Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件包系统都已经实现了这一功能，现在我们也实现了。它带来了许多改进，比如我们可以在软件包实际安装到文件系统之前，更早地捕获打包列表错误。如果一个 Port 在构建和打包时需要 root 权限，可以使用 NEED_ROOT 开关。此外，它还简化了构建工厂中使用的大多数逻辑，因为许多检查可以通过这种方式自动化，从而捕捉到损坏的 plist 并帮助消除特殊的后安装脚本。它为我们未来想要添加的一些新功能奠定了基础，例如实现子软件包。拥有子软件包使得我们可以先构建软件包，将文件放入不同的小软件包中，然后单独安装它们。与所有其他选项相比，它默认是关闭的，Port 将逐个转换为这种格式——不过，最终我们可能会说，未转换为支持分阶段的 Port 将被删除。实际上，这将帮助我们找出树中哪些 Port 不再被使用。
 
 接下来，我们讨论了接下来的工作。我们已经讨论了软件包集至少三年，现在似乎我们终于能够实现它了。我们将尝试创建一个安全分支，并恢复 Ports 安全团队，与安全官员 Dag-Erling Smørgrav 合作。我们计划为该分支提供季度发布和每周安全更新。这是一个持续的计划，已经进行了三年，因为我们需要许多事情发生后才能继续推进，比如远离 CVS，推出新样式的二进制软件包，部署新的构建集群。我们终于得到了所有这些，实际上现在可以使用 pkg-test 设置来实现它。所以，我们希望能在 11 月初开始第一个季度发布。
 
@@ -133,7 +133,7 @@ Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件�
 | [摘要](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=201309+DevSummit+Security+Report.pdf)      |
 | [笔记](https://wiki.freebsd.org/201309DevSummit/Security)      |
 
-联系人： Dag-Erling Smørgrav <[des@FreeBSD.org](mailto:des@FreeBSD.org)>
+联系人：Dag-Erling Smørgrav <[des@FreeBSD.org](mailto:des@FreeBSD.org)>
 
 在安全工作组中，我们的议程上有四项内容。首先，我们讨论了当前的 `/dev/random` 状况。有一些已知的熵收集漏洞已经被修复，例如从网络栈中提供大量零数据。我们有一个可插拔的随机生成器框架，并为其提供了一些插件，Yarrow 是其中之一，RDRAND 和 Padlock 是另外两个，我们还有一个阻塞的插件和一个崩溃的插件，以及一些编码示例等等。对于 10，我们将回溯并移除 RDRAND 和 Padlock 后端，而是将其输出传递给 Yarrow，而不是直接交付给 `/dev/random`。仍然可以通过内联汇编或在用户空间使用 OpenSSL 来直接访问硬件随机数生成器，即 RDRAND、Padlock 等，但我们不再信任它们。除此之外，我们还希望在启动过程中尽早收集更多熵，因为我们希望摆脱 initrandom 脚本，这个脚本将大部分静态数据输入到 `/dev/random`，并假装它是熵，实际上它并不是。Pawel Jakub Dawidek 提供了一个补丁，这个补丁已经在浮动，并做了一些分析，最终我们得到了相关的数据。该补丁将每个设备连接到 /dev/random 所需的时间作为输入，结果发现从每个设备中可以获得大约 4 位有效的熵。我们还应该让安装程序在新安装的系统上填充 `/entropy` 文件，这样在系统第一次启动时就能有熵源。此外，还有一个问题（尤其是在虚拟化和克隆中，这些做法变得越来越常见）是确保克隆足够快地分叉。例如，我们讨论了让安装程序生成 SSH 密钥。但问题在于，如果你安装一个虚拟机并生成了 SSH 密钥，然后将其克隆，所有实例都会拥有相同的密钥。所以，当单个虚拟机启动时，如果在启动过程中没有足够的熵收集，那么密钥就会基于安装过程中安装程序提供的熵来生成，这几乎是同样糟糕的。设备附加补丁可以帮助解决这个问题。
 
@@ -152,7 +152,7 @@ Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件�
 | [剑桥笔记](https://wiki.freebsd.org/201308DevSummit/ToolchainAndBuild)      |
 | [路线图](https://wiki.freebsd.org/GPLinBase)      |
 
-联系人： Brooks Davis <[brooks@FreeBSD.org](mailto:brooks@FreeBSD.org)>
+联系人：Brooks Davis <[brooks@FreeBSD.org](mailto:brooks@FreeBSD.org)>
 
 关于工具链和构建系统的讨论始于一个月前在剑桥的会议。在那里，主要的议题是源代码分析、替换 GCC 的进展以及如何打包基本系统的讨论。关于这些以及其他话题的笔记可以在会议页面的 Wiki 上找到。
 
@@ -175,7 +175,7 @@ Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件�
 | [摘要](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=DevSummitUSB2013Status.pdf)      |
 | [笔记](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=DevSummitUSB2013.pdf)      |
 
-联系人： Hans-Petter Selasky <[hselasky@FreeBSD.org](mailto:hselasky@FreeBSD.org)>
+联系人：Hans-Petter Selasky <[hselasky@FreeBSD.org](mailto:hselasky@FreeBSD.org)>
 
 在 USB 工作组中，Hans-Petter Selasky 总结了 FreeBSD 在过去一年中 USB 堆栈的变化。他提到没有出现严重的问题，同时 USB 驱动程序在设备和控制器方面都有所改进。他还指出，许多系统已经开始在 FreeBSD 内核之外使用 USB 堆栈，例如 DragonFly BSD。Hans-Petter 简要回顾了改进 USB 支持的一些想法：他希望将更多的 Linux USB 串行 Port 和以太网设备驱动程序导入到用户空间，并通过他的 webcamd(8) 守护进程进行访问；将 NDIS（以太网和无线）USB 封装移到用户空间；并通过基于 Cuse4BSD 的守护进程在字符设备级别实现 Linux USB 文件系统的仿真，也是在用户空间中。
 
@@ -189,7 +189,7 @@ Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件�
 | ----- |
 | [摘要](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=20130928-eurobsdcon-vendor-summary.pdf)      |
 
-联系人： Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
+联系人：Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
 
 首先，Justin Gibbs 代表 FreeBSD 基金会做了一回状态更新。一个主要变化是，之前我们只有一名兼职员工，Deb Goodkin，现在我们有两名全职技术人员参与一些当前项目，例如 Kostik Belousov，他仍在努力改善我们的 X.org 支持。他们还帮助改进不同团队之间的持续性，比如发布工程团队和安全团队。我们还雇用了 Glen Barber 作为系统管理员，他与 FreeBSD 集群管理员一起监督项目的机器，并且也在帮助发布工程。Ed Maste 被聘为兼职项目经理，负责监督基金会赞助项目的进展。我们希望能让更多的人参与其中，尤其是在行政和市场营销方面。
 
@@ -206,7 +206,7 @@ Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件�
 | [摘要](https://wiki.freebsd.org/201309DevSummit?action=AttachFile&do=get&target=eurobsdcon_summary.pdf)      |
 | [笔记](https://wiki.freebsd.org/201309DevSummit/Virtualization)      |
 
-联系人： Peter Grehan <[grehan@FreeBSD.org](mailto:grehan@FreeBSD.org)>
+联系人：Peter Grehan <[grehan@FreeBSD.org](mailto:grehan@FreeBSD.org)>
 
 在虚拟化工作组中，Peter Grehan 提供了一个状态报告。在 FreeBSD 10 中，过去两年间进行了大量工作，我们正在逐步将 Xen、PHVM、Hyper-V 驱动程序以及 bhyve(4) 客户支持集成到 10.0-RELEASE 中。我们简要讨论了 Neel 长期在进行的 bhyve(4) 内存过度提交工作，但我们希望它也能进入 10 版本。这项工作提供了与 FreeBSD 虚拟内存子系统的更好集成，使我们能够将客户内存分页到交换空间。我们还讨论了 bhyve(4) 未来的工作方向：我们希望逐步摆脱用户空间启动加载程序，使用 Intel 提供的 BSD 许可的 UEFI 代码作为启动 ROM；我们希望在某个时候支持更多的 Windows 客户，并获得挂起和恢复客户的能力，最终实现支持实时迁移。
 
@@ -215,8 +215,8 @@ Baptiste Daroussin 介绍了最近提交的分阶段安装。其他所有软件�
 | 链接 |
 | ----- |
 
-联系人： Martin Matuška <[mm@FreeBSD.org](mailto:mm@FreeBSD.org)>  
-联系人： Matthew Ahrens <[mahrens@delphix.com](mailto:mahrens@delphix.com)>
+联系人：Martin Matuška <[mm@FreeBSD.org](mailto:mm@FreeBSD.org)>  
+联系人：Matthew Ahrens <[mahrens@delphix.com](mailto:mahrens@delphix.com)>
 
 首先，Justin Gibbs 对来自硬件供应商的新技术——磁道叠加介质（Shingled Media）进行了概述。我们讨论了与此相关的一些性能问题，并提出了一些简单的想法，旨在确保系统可以充分利用这一技术，或者在不删除数据而仅覆盖数据时避免性能下降。最后我们得出结论，可能很难做得比这更好。
 
