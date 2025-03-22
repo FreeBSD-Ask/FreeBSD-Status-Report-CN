@@ -19,7 +19,7 @@ Lorenzo Salvadore，代表状态团队。
   - [FreeBSD 基金会](https://www.freebsd.org/status/report-2023-07-2023-09/#_freebsd_foundation)
   - [FreeBSD 发布工程团队](https://www.freebsd.org/status/report-2023-07-2023-09/#_freebsd_release_engineering_team)
   - [持续集成](https://www.freebsd.org/status/report-2023-07-2023-09/#_continuous_integration)
-  - [Ports ](https://www.freebsd.org/status/report-2023-07-2023-09/#_ports_collection)
+  - [Ports](https://www.freebsd.org/status/report-2023-07-2023-09/#_ports_collection)
 
 - [项目](https://www.freebsd.org/status/report-2023-07-2023-09/#projects)
 
@@ -56,7 +56,7 @@ Lorenzo Salvadore，代表状态团队。
   - [FreeBSD 在线编辑器和手册编辑器](https://www.freebsd.org/status/report-2023-07-2023-09/#_freebsd_online_editor_and_man_page_editor)
   - [FreeBSD 专家系统](https://www.freebsd.org/status/report-2023-07-2023-09/#_freebsd_expert_system)
 
-- [ port ](https://www.freebsd.org/status/report-2023-07-2023-09/#ports)
+- [port](https://www.freebsd.org/status/report-2023-07-2023-09/#ports)
 
   - [FreeBSD 上的 KDE](https://www.freebsd.org/status/report-2023-07-2023-09/#_kde_on_freebsd)
   - [FreeBSD 上的 Pantheon 桌面](https://www.freebsd.org/status/report-2023-07-2023-09/#_pantheon_desktop_on_freebsd)
@@ -268,7 +268,7 @@ FreeBSD 发布工程团队负责制定和发布 FreeBSD 官方项目的发布计
 - [FreeBSD CI Tinderbox 视图](https://tinderbox.freebsd.org/) URL: [https://https://tinderbox.freebsd.org](https://https//tinderbox.freebsd.org)
 - [FreeBSD CI 构件存档](https://artifact.ci.freebsd.org/) URL: [https://artifact.ci.FreeBSD.org](https://artifact.ci.freebsd.org/)
 - [托管 CI 维基](https://wiki.freebsd.org/HostedCI) URL: [https://wiki.FreeBSD.org/HostedCI](https://wiki.freebsd.org/HostedCI)
-- [第三方软件 CI](https://wiki.freebsd.org/3rdPartySoftwareCI) URL: [https://wiki.FreeBSD.org/3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI) -[与 freebsd-testing@相关的问题](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals) URL: [https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)​[_open_](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)​[&amp;email1=testing%40FreeBSD.org&amp;emailassigned_to1=1&amp;emailcc1=1&amp;emailtype1=equals](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)
+- [第三方软件 CI](https://wiki.freebsd.org/3rdPartySoftwareCI) URL: [https://wiki.FreeBSD.org/3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI) -[与 freebsd-testing@相关的问题](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals) URL: [https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)​[*open*](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)​[&amp;email1=testing%40FreeBSD.org&amp;emailassigned_to1=1&amp;emailcc1=1&amp;emailtype1=equals](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)
 - [FreeBSD CI 存储库](https://github.com/freebsd/freebsd-ci) URL: [https://github.com/freebsd/freebsd-ci](https://github.com/freebsd/freebsd-ci)
 - [dev-ci 邮件列表](https://lists.freebsd.org/subscription/dev-ci) URL: [https://lists.FreeBSD.org/subscription/dev-ci](https://lists.FreeBSD.org/subscription/dev-ci)
 
@@ -753,7 +753,7 @@ Wei Hu 和 Souradeep Chakrabarti 在 arm64 中解决了几个关键 bug：
 
 - 在 [Microsoft Learn](https://learn.microsoft.com/) 上更新 FreeBSD 相关文档
 - 在 [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines/) 中支持 FreeBSD
-- 将 [Azure 代理 port ](https://www.freshports.org/sysutils/azure-agent) 更新到最新版本
+- 将 [Azure 代理 port](https://www.freshports.org/sysutils/azure-agent) 更新到最新版本
 - 将 [Azure 代理的本地修改](https://github.com/Azure/WALinuxAgent/pull/1892) 上游
 
 赞助方：对于 Microsoft 的人员和为其他方提供资源的一切，由 The FreeBSD Foundation 赞助。
@@ -864,11 +864,11 @@ Handbook 中已添加了新的 `USES` 标记：
 负责创建新的 FreeBSD 文档门户并重新设计 FreeBSD 主网站及其组件的工作组。FreeBSD 开发者可以在 FreeBSD Slack 频道 #wg-www21 上关注并加入这个工作组。工作将分为三个阶段：
 
 1. 重新设计 Web 上的手册页
-   使用 mandoc 生成 HTML 页面的脚本。 (_已完成，已由 Doceng 批准，部署日期尚未确定_) [https://man-dev.FreeBSD.org](https://man-dev.freebsd.org/) 上的公共实例。
+   使用 mandoc 生成 HTML 页面的脚本。 (*已完成，已由 Doceng 批准，部署日期尚未确定*) [https://man-dev.FreeBSD.org](https://man-dev.freebsd.org/) 上的公共实例。
 2. 重新设计 FreeBSD 主网站
-   新设计，响应式和深色主题。 (_几乎完成，在 EuroBSDCon 上进行了演示_)
+   新设计，响应式和深色主题。 (*几乎完成，在 EuroBSDCon 上进行了演示*)
 3. 重新设计 Web 上的 Ports 页面
-   用于创建应用程序门户的 Ports 脚本。 (_进行中_)
+   用于创建应用程序门户的 Ports 脚本。 (*进行中*)
 
 ### FreeBSD 在线编辑器和 Man 手册编辑器
 
@@ -1034,7 +1034,7 @@ FreeBSD Office 团队致力于开发一系列办公相关的软件套件和工�
 
 [项目 GitHub 页面](https://github.com/pgj/freebsd-wifibox) URL: [https://github.com/pgj/freebsd-wifibox](https://github.com/pgj/freebsd-wifibox)
 
-[net/wifibox port ](https://cgit.freebsd.org/ports/tree/net/wifibox) URL: [https://cgit.freebsd.org/ports/tree/net/wifibox](https://cgit.freebsd.org/ports/tree/net/wifibox)
+[net/wifibox port](https://cgit.freebsd.org/ports/tree/net/wifibox) URL: [https://cgit.freebsd.org/ports/tree/net/wifibox](https://cgit.freebsd.org/ports/tree/net/wifibox)
 
 联系人：PÁLI Gábor János <[pali.gabor@gmail.com](mailto:pali.gabor@gmail.com)>
 
@@ -1112,7 +1112,7 @@ GitLab 是一个 DevOps 平台。它为团队带来了高效的速度，充满�
 
 可以在 [https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/install/16.3-freebsd.md?ref_type=heads](https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/install/16.3-freebsd.md?ref_type=heads) 找到。升级的文档可在 [https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/update/16.1-16.3-freebsd.md?ref_type=heads](https://gitlab.fechner.net/mfechner/Gitlab-docu/-/blob/master/update/16.1-16.3-freebsd.md?ref_type=heads) 找到安装文档。
 
-我将等到 16.4 版本升级（预计在 20.9 或 22.9 左右发布，不确定），直到创建 ports 的 _quarterly_ 分支 2023Q4，以避免破坏不使用主分支 (_latest_) 的系统。GitLab 用户应始终选择主分支，如安装手册中所述。
+我将等到 16.4 版本升级（预计在 20.9 或 22.9 左右发布，不确定），直到创建 ports 的 *quarterly* 分支 2023Q4，以避免破坏不使用主分支 (*latest*) 的系统。GitLab 用户应始终选择主分支，如安装手册中所述。
 
 ### PortOptsCLI — Ports 可访问性
 

@@ -301,7 +301,7 @@ dev-ci 邮件列表网址：[https://lists.FreeBSD.org/subscription/dev-ci](http
 
 - 添加了 [FreeBSD-stable-13-amd64-gcc12_build](https://ci.freebsd.org/job/FreeBSD-stable-13-amd64-gcc12_build/) 任务。
 - 将 main 分支和 stable/13 分支的构建环境更改为 13.2-RELEASE，将 stable/12 分支更改为 12.4-RELEASE。
-- 使用 gcc12 的\*-build 任务正在向[ dev-ci 邮件列表](https://lists.freebsd.org/subscription/dev-ci)发送故障报告。
+- 使用 gcc12 的\*-build 任务正在向[dev-ci 邮件列表](https://lists.freebsd.org/subscription/dev-ci)发送故障报告。
 - 在 [BSDCan 2023 开发者峰会](https://wiki.freebsd.org/DevSummit/202305)上展示测试/CI 状态更新。
 
 正在进行的任务：

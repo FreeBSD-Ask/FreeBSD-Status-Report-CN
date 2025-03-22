@@ -36,12 +36,12 @@ FreeBSD 核心团队是 FreeBSD 的管理机构。
 
 #### Commit 权限  
 
-* 核心团队批准了 Cheng Cui (cc@) 的 src commit 权限。  
-* 核心团队批准恢复 Joseph Koshy (jkoshy@) 的 src commit 权限。  
+- 核心团队批准了 Cheng Cui (cc@) 的 src commit 权限。  
+- 核心团队批准恢复 Joseph Koshy (jkoshy@) 的 src commit 权限。  
 
 ### FreeBSD 基金会  
 
-**相关链接**： 
+**相关链接**：
 
 [FreeBSD 基金会](https://www.freebsdfoundation.org/)：[https://www.freebsdfoundation.org](https://www.freebsdfoundation.org/)  
 [技术路线图](https://freebsdfoundation.org/blog/technology-roadmap/)：[https://freebsdfoundation.org/blog/technology-roadmap/](https://freebsdfoundation.org/blog/technology-roadmap/)  
@@ -76,22 +76,22 @@ FreeBSD 基金会是一家 501(c)(3) 非营利组织，致力于支持和推广 
 
 在 2023 年第一季度，共有 **226** 个 src、**39** 个 ports 和 **12** 个 doc 树的提交将基金会标注作为赞助方。其中部分工作在单独的报告条目中进行了详细介绍：  
 
-* 持续集成  
-* 在启用了日志式软更新的文件系统上启用快照  
-* FreeBSD 作为一级架构 cloud-init 平台  
-* FreeBSD 发行工程团队  
-* 改进 **kinst DTrace** 提供程序  
-* 在 FreeBSD 上运行 **OpenStack**  
+- 持续集成  
+- 在启用了日志式软更新的文件系统上启用快照  
+- FreeBSD 作为一级架构 cloud-init 平台  
+- FreeBSD 发行工程团队  
+- 改进 **kinst DTrace** 提供程序  
+- 在 FreeBSD 上运行 **OpenStack**  
 
 此外，基金会还赞助了以下工作：  
 
-* **OpenSSH** 修复与更新至 **9.2p1** 和 **9.3p1** 版本  
-* **libpcap** 导入第三方并更新至 **1.10.3** 版本  
-* **tmpfs**、**msdosfs** 和 **makefs** 的改进  
-* 新增 **kqueue1** 系统调用  
-* **man 页面** 更新  
-* **DTrace** 和 **bhyve** 的修复  
-* **LinuxKPI** 相关工作  
+- **OpenSSH** 修复与更新至 **9.2p1** 和 **9.3p1** 版本  
+- **libpcap** 导入第三方并更新至 **1.10.3** 版本  
+- **tmpfs**、**msdosfs** 和 **makefs** 的改进  
+- 新增 **kqueue1** 系统调用  
+- **man 页面** 更新  
+- **DTrace** 和 **bhyve** 的修复  
+- **LinuxKPI** 相关工作  
 
 #### 持续集成与质量保证  
 
@@ -107,22 +107,22 @@ FreeBSD 基金会赞助了全球众多会议、活动和峰会。这些活动可
 
 看看我们在宣传与教育方面的一些工作：
 
-* 在比利时布鲁塞尔举办的 FOSDEM 2023（2023 年 2 月 4-5 日）设立了展位。查看 [行程报告](https://freebsdfoundation.org/blog/fosdem-2023-conference-report/)。
-* 在英国伦敦举办的 State of Open Con 2023（2023 年 2 月 7-8 日）设立了展台。 [了解更多](https://freebsdfoundation.org/blog/advocating-for-freebsd-around-the-world/)。
-* 在美国加州帕萨迪纳举办的 SCALE 20x（2023 年 3 月 9-12 日）中赞助并举办了研讨会，同时设立了展位。查看 [行程报告](https://freebsdfoundation.org/blog/freebsd-at-scale-20x/)。
-* 在美国北卡罗来纳州夏洛特赞助了 Open Source 101（2023 年 3 月 23 日）。
-* 赞助并开始筹划将于 2023 年 5 月 17-18 日在加拿大安大略省渥太华举办的面对面 [开发者峰会](https://wiki.freebsd.org/DevSummit/202305)。
-* 确保了我们的媒体合作伙伴赞助地位，并为将于 2023 年 10 月 15-17 日在美国北卡罗来纳州罗利举行的 [All Things Open](https://2023.allthingsopen.org/) 提交了研讨会方案。
-* 为将于 2023 年 7 月 13-16 日在美国俄勒冈州波特兰举行的 [FOSSY](https://sfconservancy.org/fossy/) 提交了研讨会提案。
-* FreeBSD 项目已被接纳为谷歌编程之夏的 [参与组织](https://summerofcode.withgoogle.com/programs/2023/organizations/the-freebsd-project)。
-* 我们举办了 [GSoC 办公时间](https://youtu.be/NpOkTR_d8os) 以帮助潜在参与者解答疑问。
-* 发布了 [三月通讯](https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-march-2023/)。
-* 其他博客文章：
-  * [探索 FreeBSD 与 Ampere Altra 的内核秘密](https://freebsdfoundation.org/blog/under-the-hood-with-freebsd-and-ampere-altra/)
-  * [招聘启事：FreeBSD 用户空间软件开发工程师](https://freebsdfoundation.org/blog/under-the-hood-with-freebsd-and-ampere-altra/) — 注：该职位目前已停止招聘。
-  * [BSDCan 2023 差旅补助申请现已开启](https://freebsdfoundation.org/blog/bsdcan-2023-travel-grant-application-now-open/) — 注：申请现已结束。
-* FreeBSD 新闻报道：
-  * [VMBlog 与 Deb Goodkin 对谈“开放大会现状”](https://freebsdfoundation.org/news-and-events/latest-news/vmblog-state-of-open-con-qa-with-deb-goodkin/)
+- 在比利时布鲁塞尔举办的 FOSDEM 2023（2023 年 2 月 4-5 日）设立了展位。查看 [行程报告](https://freebsdfoundation.org/blog/fosdem-2023-conference-report/)。
+- 在英国伦敦举办的 State of Open Con 2023（2023 年 2 月 7-8 日）设立了展台。 [了解更多](https://freebsdfoundation.org/blog/advocating-for-freebsd-around-the-world/)。
+- 在美国加州帕萨迪纳举办的 SCALE 20x（2023 年 3 月 9-12 日）中赞助并举办了研讨会，同时设立了展位。查看 [行程报告](https://freebsdfoundation.org/blog/freebsd-at-scale-20x/)。
+- 在美国北卡罗来纳州夏洛特赞助了 Open Source 101（2023 年 3 月 23 日）。
+- 赞助并开始筹划将于 2023 年 5 月 17-18 日在加拿大安大略省渥太华举办的面对面 [开发者峰会](https://wiki.freebsd.org/DevSummit/202305)。
+- 确保了我们的媒体合作伙伴赞助地位，并为将于 2023 年 10 月 15-17 日在美国北卡罗来纳州罗利举行的 [All Things Open](https://2023.allthingsopen.org/) 提交了研讨会方案。
+- 为将于 2023 年 7 月 13-16 日在美国俄勒冈州波特兰举行的 [FOSSY](https://sfconservancy.org/fossy/) 提交了研讨会提案。
+- FreeBSD 项目已被接纳为谷歌编程之夏的 [参与组织](https://summerofcode.withgoogle.com/programs/2023/organizations/the-freebsd-project)。
+- 我们举办了 [GSoC 办公时间](https://youtu.be/NpOkTR_d8os) 以帮助潜在参与者解答疑问。
+- 发布了 [三月通讯](https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-march-2023/)。
+- 其他博客文章：
+  - [探索 FreeBSD 与 Ampere Altra 的内核秘密](https://freebsdfoundation.org/blog/under-the-hood-with-freebsd-and-ampere-altra/)
+  - [招聘启事：FreeBSD 用户空间软件开发工程师](https://freebsdfoundation.org/blog/under-the-hood-with-freebsd-and-ampere-altra/) — 注：该职位目前已停止招聘。
+  - [BSDCan 2023 差旅补助申请现已开启](https://freebsdfoundation.org/blog/bsdcan-2023-travel-grant-application-now-open/) — 注：申请现已结束。
+- FreeBSD 新闻报道：
+  - [VMBlog 与 Deb Goodkin 对谈“开放大会现状”](https://freebsdfoundation.org/news-and-events/latest-news/vmblog-state-of-open-con-qa-with-deb-goodkin/)
 
 我们通过发布专业制作的 **FreeBSD 期刊** 来教育全球用户了解 FreeBSD。如前所述，FreeBSD 期刊现已免费发行。你可以在 [https://www.freebsdfoundation.org/journal/](https://www.freebsdfoundation.org/journal/) 了解更多信息并获取最新期刊。
 
@@ -169,22 +169,22 @@ FreeBSD 集群管理团队负责管理项目依赖的机器，这些机器用于
 
 本季度，团队的工作内容包括：
 
-* 定期支持 FreeBSD.org 用户账户。
-* 为所有物理主机和镜像站提供定期的磁盘及零部件支持（包括更换）。
-* 改进 PowerPC 软件包构建器。
-  * 借助 FreeBSD 基金会提供的新零件，构建器现在配置了带散热片的新 NVMe 硬盘和更多内存，成功解决了过热问题，并显著加快了软件包构建速度。
-* 将动态资源与主网站解耦。
-  * 与文档工程团队（doceng）和网站管理员（webmaster）协调工作，将动态资源从 www.FreeBSD.org 和 docs.FreeBSD.org 网站中解耦出来。
+- 定期支持 FreeBSD.org 用户账户。
+- 为所有物理主机和镜像站提供定期的磁盘及零部件支持（包括更换）。
+- 改进 PowerPC 软件包构建器。
+  - 借助 FreeBSD 基金会提供的新零件，构建器现在配置了带散热片的新 NVMe 硬盘和更多内存，成功解决了过热问题，并显著加快了软件包构建速度。
+- 将动态资源与主网站解耦。
+  - 与文档工程团队（doceng）和网站管理员（webmaster）协调工作，将动态资源从 www.FreeBSD.org 和 docs.FreeBSD.org 网站中解耦出来。
 
 #### 正在进行的工作
 
-* 对主站进行大规模网络升级。
-  * 我们的主站已收到新的 [Juniper](https://www.juniper.net/) 交换机，以替换旧设备。感谢 Juniper 的捐赠。
-* 更换主站和部分镜像站中的旧服务器。
-  * 除了已损坏的 CI 服务器外，我们还有几台旧服务器存在磁盘损坏和电源故障的问题。此项任务正与 FreeBSD 基金会及其他捐赠者/赞助商共同推进。
-* 部署镜像网站的基础设施。
-  * 由于 FreeBSD 网站现已基本为静态内容，我们已开始部署基础设施，以在全球 FreeBSD 项目管理的镜像站点上镜像 www.FreeBSD.org 和 docs.FreeBSD.org。
-* 为内部 FreeBSD.org 搜索需求创建全新的搜索数据库引擎，支持例如邮件列表和文档的搜索。
+- 对主站进行大规模网络升级。
+  - 我们的主站已收到新的 [Juniper](https://www.juniper.net/) 交换机，以替换旧设备。感谢 Juniper 的捐赠。
+- 更换主站和部分镜像站中的旧服务器。
+  - 除了已损坏的 CI 服务器外，我们还有几台旧服务器存在磁盘损坏和电源故障的问题。此项任务正与 FreeBSD 基金会及其他捐赠者/赞助商共同推进。
+- 部署镜像网站的基础设施。
+  - 由于 FreeBSD 网站现已基本为静态内容，我们已开始部署基础设施，以在全球 FreeBSD 项目管理的镜像站点上镜像 www.FreeBSD.org 和 docs.FreeBSD.org。
+- 为内部 FreeBSD.org 搜索需求创建全新的搜索数据库引擎，支持例如邮件列表和文档的搜索。
 
 #### FreeBSD 官方镜像概况
 
@@ -193,19 +193,19 @@ FreeBSD 集群管理团队负责管理项目依赖的机器，这些机器用于
 
 硬件和网络连接由下列单位慷慨提供：
 
-* [Bytemark Hosting](https://www.bytemark.co.uk/)
-* [BroadBand Tower, Inc. 的云与 SDN 实验室](https://www.bbtower.co.jp/en/corporate/)
-* [國立陽明交通大學資訊工程學系](https://www.cs.nycu.edu.tw/)
-* [Equinix](https://deploy.equinix.com/)
-* [澳大利亚互联网协会](https://internet.asn.au/)
-* [Internet Systems Consortium](https://www.isc.org/)
-* [INX-ZA](https://www.inx.net.za/)
-* [KDDI Web Communications Inc](https://www.kddi-webcommunications.co.jp/english/)
-* [马来西亚研究与教育网络](https://www.mohe.gov.my/en/services/research/myren)
-* [Metapeer](https://www.metapeer.com/)
-* [New York Internet](https://www.nyi.net/)
-* [NIC.br](https://nic.br/)
-* [Your.Org](https://your.org/)
+- [Bytemark Hosting](https://www.bytemark.co.uk/)
+- [BroadBand Tower, Inc. 的云与 SDN 实验室](https://www.bbtower.co.jp/en/corporate/)
+- [國立陽明交通大學資訊工程學系](https://www.cs.nycu.edu.tw/)
+- [Equinix](https://deploy.equinix.com/)
+- [澳大利亚互联网协会](https://internet.asn.au/)
+- [Internet Systems Consortium](https://www.isc.org/)
+- [INX-ZA](https://www.inx.net.za/)
+- [KDDI Web Communications Inc](https://www.kddi-webcommunications.co.jp/english/)
+- [马来西亚研究与教育网络](https://www.mohe.gov.my/en/services/research/myren)
+- [Metapeer](https://www.metapeer.com/)
+- [New York Internet](https://www.nyi.net/)
+- [NIC.br](https://nic.br/)
+- [Your.Org](https://your.org/)
 
 位于法兰克福的单机镜像是欧洲主要的带宽和使用量最大的镜像站。
 
@@ -230,48 +230,48 @@ FreeBSD 集群管理团队负责管理项目依赖的机器，这些机器用于
 [dev-ci 邮件列表](https://lists.freebsd.org/subscription/dev-ci)
 
 **联系方式**：  
-* Jenkins 管理员 <[jenkins-admin@FreeBSD.org](mailto:jenkins-admin@FreeBSD.org)>  
-* 許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>  
-* [freebsd-testing 邮件列表](https://lists.freebsd.org/mailman/listinfo/freebsd-testing)  
-* [EFNet 上的 IRC #freebsd-ci 频道]()
+- Jenkins 管理员 <[jenkins-admin@FreeBSD.org](mailto:jenkins-admin@FreeBSD.org)>  
+- 許立文 <[lwhsu@FreeBSD.org](mailto:lwhsu@FreeBSD.org)>  
+- [freebsd-testing 邮件列表](https://lists.freebsd.org/mailman/listinfo/freebsd-testing)  
+- [EFNet 上的 IRC #freebsd-ci 频道]()
 
 在 2023 年第一季度，我们与项目的贡献者和开发者合作，满足他们的测试需求。同时，我们也与外部项目和公司合作，通过在 FreeBSD 上进行更多测试来提升他们产品的质量。
 
 **已完成的重要任务：**
 
-* [FreeBSD-main-aarch64-KASAN_test](https://ci.freebsd.org/job/FreeBSD-main-aarch64-KASAN_test/) 以及相关支持任务已添加。
-* [FreeBSD-stable-13-amd64-KASAN_test](https://ci.freebsd.org/job/FreeBSD-stable-13-amd64-KASAN_test/) 以及相关支持任务已添加。
-* [FreeBSD-main-amd64-gcc12_build](https://ci.freebsd.org/job/FreeBSD-main-amd64-gcc12_build/) 现已向可能相关的提交者发送失败报告。
-* 对 trasz@ 提交的非 x86 架构测试进行了各种修复或变通处理。
-* 在 [AsiaBSDCon 2023 开发者峰会](https://wiki.freebsd.org/DevSummit/202303) 上进行了测试/CI 状态更新报告。
+- [FreeBSD-main-aarch64-KASAN_test](https://ci.freebsd.org/job/FreeBSD-main-aarch64-KASAN_test/) 以及相关支持任务已添加。
+- [FreeBSD-stable-13-amd64-KASAN_test](https://ci.freebsd.org/job/FreeBSD-stable-13-amd64-KASAN_test/) 以及相关支持任务已添加。
+- [FreeBSD-main-amd64-gcc12_build](https://ci.freebsd.org/job/FreeBSD-main-amd64-gcc12_build/) 现已向可能相关的提交者发送失败报告。
+- 对 trasz@ 提交的非 x86 架构测试进行了各种修复或变通处理。
+- 在 [AsiaBSDCon 2023 开发者峰会](https://wiki.freebsd.org/DevSummit/202303) 上进行了测试/CI 状态更新报告。
 
 **正在进行的任务：**
 
-* 设计并实现提交前（pre-commit）的 CI 构建和测试（以支持 [工作流程工作组](https://gitlab.com/bsdimp/freebsd-workflow)）。
-* 设计并实现利用 CI 集群构建发行构件，类似发行工程的工作方式。
-* 简化贡献者和开发者搭建 CI/测试环境的流程。
-* 搭建 CI 阶段环境，并在其上部署实验性任务。
-* 整理 freebsd-ci 代码仓库中的脚本，为合并到 src 代码仓库做准备。
-* 改进硬件测试实验室，并增加更多用于测试的硬件。
-* 合并 [https://reviews.freebsd.org/D38815](https://reviews.freebsd.org/D38815)。
-* 合并 [https://reviews.freebsd.org/D36257](https://reviews.freebsd.org/D36257)。
+- 设计并实现提交前（pre-commit）的 CI 构建和测试（以支持 [工作流程工作组](https://gitlab.com/bsdimp/freebsd-workflow)）。
+- 设计并实现利用 CI 集群构建发行构件，类似发行工程的工作方式。
+- 简化贡献者和开发者搭建 CI/测试环境的流程。
+- 搭建 CI 阶段环境，并在其上部署实验性任务。
+- 整理 freebsd-ci 代码仓库中的脚本，为合并到 src 代码仓库做准备。
+- 改进硬件测试实验室，并增加更多用于测试的硬件。
+- 合并 [https://reviews.freebsd.org/D38815](https://reviews.freebsd.org/D38815)。
+- 合并 [https://reviews.freebsd.org/D36257](https://reviews.freebsd.org/D36257)。
 
 **待办或排队的任务：**
 
-* 收集和整理 [CI 任务和想法](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)。
-* 为运行测试的虚拟机设置公共网络访问。
-* 实现使用裸金属硬件运行测试套件。
-* 添加针对 -CURRENT 版本的 drm ports 构建测试。
-* 计划运行 ztest 测试。
-* 帮助更多软件将 FreeBSD 支持集成到其 CI 流水线中（相关 Wiki 页面：[3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI) 和 [HostedCI](https://wiki.freebsd.org/HostedCI)）。
-* 与托管 CI 提供商合作，以获得更好的 FreeBSD 支持。
+- 收集和整理 [CI 任务和想法](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)。
+- 为运行测试的虚拟机设置公共网络访问。
+- 实现使用裸金属硬件运行测试套件。
+- 添加针对 -CURRENT 版本的 drm ports 构建测试。
+- 计划运行 ztest 测试。
+- 帮助更多软件将 FreeBSD 支持集成到其 CI 流水线中（相关 Wiki 页面：[3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI) 和 [HostedCI](https://wiki.freebsd.org/HostedCI)）。
+- 与托管 CI 提供商合作，以获得更好的 FreeBSD 支持。
 
 有关更多正在进行中的信息，请参阅 [freebsd-testing@ 相关的 Bugzilla 工单](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)，并欢迎你加入我们的工作！
 
 **赞助商：FreeBSD 基金会**
 
 
-### Ports 
+### Ports
 
 **相关链接：**  
 [关于 FreeBSD Ports](https://www.freebsd.org/ports/)  
@@ -290,6 +290,7 @@ Ports 管理团队负责监督 Ports Tree 的总体方向、构建软件包（�
 - 今年前三个月，`main` 分支有 163 位提交者提交了 9,021 次提交，而 `2023Q1` 分支有 55 位提交者提交了 701 次提交。与 `2022Q4` 相比，这意味着 Port 数量、Port PR、Port 提交次数以及活跃的 Ports 提交者都有小幅增长。
 
 本季度期间，我们迎来了以下新成员或回归成员：  
+
 - 欢迎 Robert Clausecker (fuz@)、Vladimir Druzenko (vvd@) 以及 Robert Nagy (rnagy@)；  
 - 欢迎 Norikatsu Shigemura (nork@) 回归；  
 - 向 Marius Strobl (marius@) 道别。  
@@ -352,7 +353,7 @@ Ports 管理团队负责监督 Ports Tree 的总体方向、构建软件包（�
 
 涉及基本系统及其内置程序的变更。
 
-### 改进 daemon(8) 
+### 改进 daemon(8)
 
 **相关链接：**  
 [daemon(8)](https://man.freebsd.org/cgi/man.cgi?query=daemon&sektion=8&format=html)  
@@ -458,8 +459,8 @@ kinst 是由 christos@ 和 markj@ 创建的一个全新的 DTrace 提供程序�
 
 进一步的目标包括：
 
-* 在 D 语言中实现一个 `locals` 结构，用于存储被跟踪函数的局部变量。例如，对于 `kinst::foo:<x>`，我们可以在 D 脚本中通过 `print(locals→bar)` 来打印局部变量 `bar`。
-* 将 kinst 移植到 riscv / arm64 平台。
+- 在 D 语言中实现一个 `locals` 结构，用于存储被跟踪函数的局部变量。例如，对于 `kinst::foo:<x>`，我们可以在 D 脚本中通过 `print(locals→bar)` 来打印局部变量 `bar`。
+- 将 kinst 移植到 riscv / arm64 平台。
 
 **赞助商：** FreeBSD 基金会
 
@@ -498,10 +499,10 @@ Kyle Evans <[kevans@FreeBSD.org](mailto:kevans@FreeBSD.org)>
 
 此前在多种机器上已进行了测试，包括：
 
-* 各种 Ampere Altra 机器
-* QEMU 虚拟机
-* Microsoft 的 "Volterra" 开发板
-* bhyve（正在进行中）。
+- 各种 Ampere Altra 机器
+- QEMU 虚拟机
+- Microsoft 的 "Volterra" 开发板
+- bhyve（正在进行中）。
 
 我们欢迎并感激在其他硬件上的进一步测试。
 
@@ -533,13 +534,13 @@ Warner Losh <[imp@FreeBSD.org](mailto:imp@FreeBSD.org)>
 
 除了 Doug 的修复外，Warner 本季度也对代码做了一些清理工作：
 
-* Warner 移除了模拟器中最后剩余的“在任何 BSD 上运行”代码。
-* 尽管基本的系统调用可以在所有 BSD 之间进行模拟，但它们的系统调用接口已经分歧太大，并且功能过于丰富，短期内难以实现通用化。
-* Warner 原计划直接移除 NetBSD 和 OpenBSD 的部分，但至少 NetBSD 那边对使代码能编译起来表现出了一定兴趣。
-* 现在 NetBSD 那边已有了联系方式并明确了方向，Warner 希望他们能提交 pull request 以便在 NetBSD 上构建 bsd-user。
-* Warner 增加了 SIGSYS 支持，这样可以更早捕获未实现的系统调用，并改进其报告机制以收集更多失败信息。
-* Warner 对 `blitz` 分支中的部分代码进行了清理。
-* 我们已经在 `blitz` 分支中上游合并到了 8.0rc1 版本，以保持最新状态。
+- Warner 移除了模拟器中最后剩余的“在任何 BSD 上运行”代码。
+- 尽管基本的系统调用可以在所有 BSD 之间进行模拟，但它们的系统调用接口已经分歧太大，并且功能过于丰富，短期内难以实现通用化。
+- Warner 原计划直接移除 NetBSD 和 OpenBSD 的部分，但至少 NetBSD 那边对使代码能编译起来表现出了一定兴趣。
+- 现在 NetBSD 那边已有了联系方式并明确了方向，Warner 希望他们能提交 pull request 以便在 NetBSD 上构建 bsd-user。
+- Warner 增加了 SIGSYS 支持，这样可以更早捕获未实现的系统调用，并改进其报告机制以收集更多失败信息。
+- Warner 对 `blitz` 分支中的部分代码进行了清理。
+- 我们已经在 `blitz` 分支中上游合并到了 8.0rc1 版本，以保持最新状态。
 
 #### 编程之夏项目
 
@@ -549,11 +550,11 @@ Warner Losh <[imp@FreeBSD.org](mailto:imp@FreeBSD.org)>
 
 我们始终欢迎对 bsd-user 项目的帮助：
 
-* 欢迎针对新增系统调用的 pull request。
-* 对于许多我们手工完成的工作（如系统调用参数跟踪）的自动化将大有裨益。
-* 热心的志愿者如果愿意协助我进行上游合并工作也非常欢迎（许多任务都很简单且耗时不多，适合不想长期承诺的人）。
-* 与 NetBSD 那边的人员进行协调，以及清理他们提出的问题。
-* 需要修复一些 bug（特别是线程相关的 bug）。
+- 欢迎针对新增系统调用的 pull request。
+- 对于许多我们手工完成的工作（如系统调用参数跟踪）的自动化将大有裨益。
+- 热心的志愿者如果愿意协助我进行上游合并工作也非常欢迎（许多任务都很简单且耗时不多，适合不想长期承诺的人）。
+- 与 NetBSD 那边的人员进行协调，以及清理他们提出的问题。
+- 需要修复一些 bug（特别是线程相关的 bug）。
 
 ## Cloud
 
@@ -597,22 +598,22 @@ Chih-Hsin Chang <[starbops@hey.com](mailto:starbops@hey.com)>
 
 在 2023 Q1 中，大新闻是我们已经能够在 OpenStack 平台上通过 [bhyve(8)](https://man.freebsd.org/cgi/man.cgi?query=bhyve&sektion=8&format=html) 启动 FreeBSD 实例。但对于启动的实例，其功能仍存在一些主要限制，需要解决：
 
-* 无自助服务网络（仅支持扁平网络）
-* 实例内无网络连通性
-* 仅支持 FreeBSD 原始镜像（已测试 `FreeBSD-13.1-RELEASE-amd64.raw`）
-* 无磁盘大小调整功能
-* 无控制台集成（需要手动使用 [cu(1)](https://man.freebsd.org/cgi/man.cgi?query=cu&sektion=1&format=html) 命令）
+- 无自助服务网络（仅支持扁平网络）
+- 实例内无网络连通性
+- 仅支持 FreeBSD 原始镜像（已测试 `FreeBSD-13.1-RELEASE-amd64.raw`）
+- 无磁盘大小调整功能
+- 无控制台集成（需要手动使用 [cu(1)](https://man.freebsd.org/cgi/man.cgi?query=cu&sektion=1&format=html) 命令）
 
 构建 POC 站点的详细步骤文档可以在 [`docs` 仓库](https://github.com/openstack-on-freebsd/docs) 中找到。各个 OpenStack 组件的打补丁版本均在同一 GitHub 组织下管理。
 
 此外，我们于 3 月底参加了 AsiaBSDCon 2023，并在开发者峰会上就当前项目状态做了简短汇报。活动中获得了宝贵反馈，下一季度我们将重点关注以下问题：
 
-* 解决 Open vSwitch 网络问题
-* 将各个 OpenStack 组件转换为 FreeBSD  Port
+- 解决 Open vSwitch 网络问题
+- 将各个 OpenStack 组件转换为 FreeBSD  Port
 
 有兴趣参与该项目的人可以首先按照安装指南检查文档。以下是项目的一项待办事项
 
-* 针对 oslo.privsep 库的 FreeBSD 特定实现
+- 针对 oslo.privsep 库的 FreeBSD 特定实现
 
 我们始终欢迎反馈和帮助。
 

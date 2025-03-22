@@ -47,7 +47,7 @@ FreeBSD 传统上是一个支持非常高性能网络的平台。这是它被选
 
 
 
-## [ Ports 和软件包](https://www.freebsd.org/status/report-2013-05-devsummit.html#Ports-and-Packages)
+## [Ports 和软件包](https://www.freebsd.org/status/report-2013-05-devsummit.html#Ports-and-Packages)
 
 | 链接 |
 | --- |
