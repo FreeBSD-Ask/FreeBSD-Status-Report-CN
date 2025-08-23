@@ -10,7 +10,7 @@
 
 祝阅读愉快。
 
-Lorenzo Salvadore 
+Lorenzo Salvadore
 
 代表状态团队敬上。
 
@@ -74,7 +74,7 @@ FreeBSD 核心团队是 FreeBSD 的管理机构。
 
 FreeBSD 基金会是一家 501(c)(3) 非营利组织，致力于支持和推广全球的 FreeBSD 项目与社区。来自个人和企业的捐赠用于资助和管理软件开发项目、会议及开发者峰会。我们还为 FreeBSD 贡献者提供差旅补助，购买并支持硬件以改善和维护 FreeBSD 基础设施，并提供资源以提升安全性、质量保证和发布工程工作。我们发布宣传材料以推广、教育和宣传 FreeBSD 项目，促进商业供应商与 FreeBSD 开发者之间的合作，并代表 FreeBSD 项目执行合同、许可协议及其他需要具备合法主体的法律事务。
 
-#### FreeBSD 生日快乐，三十岁了！
+#### FreeBSD 生日快乐，三十岁了
 
 二十三年来，我们始终自豪地支持这个非凡的操作系统及其充满活力的社区，并期待在将来的日子里继续提供支持。在本次进展中，我们将概述基金会在多个领域对 FreeBSD 的贡献。内容涵盖项目开发举措，其中一些已有详细报告。此外，我们还将展示对 FreeBSD 的推广工作、促进社区参与的努力，以及拓展合作伙伴关系的进展。最后，我们将探讨为争取更多资金而开展的持续工作，从而能够投入更多资源来填补项目中的空白。
 
@@ -100,19 +100,19 @@ FreeBSD 基金会是一家 501(c)(3) 非营利组织，致力于支持和推广�
 
 本季度其他合作相关活动包括：
 
-* 我制作了 [这些幻灯片](https://docs.google.com/presentation/d/1tDCpbfxbqIucmJF6H15vK-ETrQsCMOVtxoqLem_V0Z0/edit?usp=sharing)，介绍了与基金会合作如何推动 FreeBSD 的发展。如果你对改进这些幻灯片有建议，或希望我向你的组织进行展示，请[发邮件给我](mailto:greg@freebsdfoundation.org)或[安排通话](https://calendly.com/greg-freebsdfound/30min)。欢迎随意分享此演示文稿，无论是部分还是全部内容。
-* 我与基金会同事合作，为向行业分析师的演示制作了多份行业特定的使用案例幻灯片。
-* 我还在寻求包括以下机构的资助机会：
-  * NSF 安全与可信赖网络空间（SaTC）
-  * 主权科技基金（Sovereign Tech Fund）
-  * NGI
+- 我制作了 [这些幻灯片](https://docs.google.com/presentation/d/1tDCpbfxbqIucmJF6H15vK-ETrQsCMOVtxoqLem_V0Z0/edit?usp=sharing)，介绍了与基金会合作如何推动 FreeBSD 的发展。如果你对改进这些幻灯片有建议，或希望我向你的组织进行展示，请[发邮件给我](mailto:greg@freebsdfoundation.org)或[安排通话](https://calendly.com/greg-freebsdfound/30min)。欢迎随意分享此演示文稿，无论是部分还是全部内容。
+- 我与基金会同事合作，为向行业分析师的演示制作了多份行业特定的使用案例幻灯片。
+- 我还在寻求包括以下机构的资助机会：
+  - NSF 安全与可信赖网络空间（SaTC）
+  - 主权科技基金（Sovereign Tech Fund）
+  - NGI
 
 在研究方面，我的总体目标是确保社区的所有专业知识能够在全球关于计算性能、安全性和能源效率的讨论中得到体现。作为一个社区，我们有很多内容可以贡献。
 
 到目前为止，我一直在跟踪并参与以下讨论：
 
-* [欧洲开放论坛](https://openforumeurope.org/open-source/)
-* [CHIPS 研究与开发](https://www.nist.gov/chips/research-and-development-program)
+- [欧洲开放论坛](https://openforumeurope.org/open-source/)
+- [CHIPS 研究与开发](https://www.nist.gov/chips/research-and-development-program)
 
 如果你有研究想法或希望在该领域合作，请[发邮件给我](mailto:greg@freebsdfoundation.org)或[安排通话](https://calendly.com/greg-freebsdfound/30min)。
 
@@ -120,25 +120,25 @@ FreeBSD 基金会是一家 501(c)(3) 非营利组织，致力于支持和推广�
 
 在 2023 年第二季度，共有 339 个 src、155 个 Ports 和 20 个 doc 树提交标注 FreeBSD 基金会为赞助方。其中部分及其他基金会赞助的工作在单独报告条目中有所描述：
 
-* [持续集成](https://www.freebsd.org/status/report-2023-04-2023-06/#_continuous_integration)
-* [作为一级 cloud-init 平台的 FreeBSD](https://www.freebsd.org/status/report-2023-04-2023-06/#_freebsd_as_a_tier_1_cloud_init_platform)
-* [基本系统中的 OpenSSL 3](https://www.freebsd.org/status/report-2023-04-2023-06/#_openssl_3_in_base)
-* [FreeBSD 上的 OpenStack](https://www.freebsd.org/status/report-2023-04-2023-06/#_openstack_on_freebsd)
-* [使用 ktrace(1) 的安全沙箱](https://www.freebsd.org/status/report-2023-04-2023-06/#_security_sandboxing_using_ktrace1)
-* [amd64 SIMD 增强](https://www.freebsd.org/status/report-2023-04-2023-06/#_simd_enhancements_for_amd64)
+- [持续集成](https://www.freebsd.org/status/report-2023-04-2023-06/#_continuous_integration)
+- [作为一级 cloud-init 平台的 FreeBSD](https://www.freebsd.org/status/report-2023-04-2023-06/#_freebsd_as_a_tier_1_cloud_init_platform)
+- [基本系统中的 OpenSSL 3](https://www.freebsd.org/status/report-2023-04-2023-06/#_openssl_3_in_base)
+- [FreeBSD 上的 OpenStack](https://www.freebsd.org/status/report-2023-04-2023-06/#_openstack_on_freebsd)
+- [使用 ktrace(1) 的安全沙箱](https://www.freebsd.org/status/report-2023-04-2023-06/#_security_sandboxing_using_ktrace1)
+- [amd64 SIMD 增强](https://www.freebsd.org/status/report-2023-04-2023-06/#_simd_enhancements_for_amd64)
 
 以下是其他基金会赞助工作的示例：
 
-* 修复 [fsck_ffs(8)(https://man.freebsd.org/cgi/man.cgi?query=fsck_ffs&sektion=8&format=html) 的 Bug
-* 修复 [killpg(2)(https://man.freebsd.org/cgi/man.cgi?query=killpg&sektion=2&format=html) 的 Bug
-* 改进 hwpmc 
-* 改进 vmm
-* LLVM 16 与 OpenSSL 3.0 的 Ports 修复与解决方案
-* 将 Port kinst 移植到 RISC-V 及相关 DTrace 工作
-* 更新 libfido2 到版本 1.9.0
-* 各类 LinuxKPI 802.11 改进
-* 各类 RISC-V 改进
-* 从版本 4.9.3 更新并导入 tcpdump 至版本 4.99.4
+- 修复 [fsck_ffs(8)(https://man.freebsd.org/cgi/man.cgi?query=fsck_ffs&sektion=8&format=html) 的 Bug
+- 修复 [killpg(2)(https://man.freebsd.org/cgi/man.cgi?query=killpg&sektion=2&format=html) 的 Bug
+- 改进 hwpmc
+- 改进 vmm
+- LLVM 16 与 OpenSSL 3.0 的 Ports 修复与解决方案
+- 将 Port kinst 移植到 RISC-V 及相关 DTrace 工作
+- 更新 libfido2 到版本 1.9.0
+- 各类 LinuxKPI 802.11 改进
+- 各类 RISC-V 改进
+- 从版本 4.9.3 更新并导入 tcpdump 至版本 4.99.4
 
 可在 [基金会项目页面](https://freebsdfoundation.org/our-work/projects/) 查看当前及以往基金会承包工作的状态。
 
@@ -156,23 +156,23 @@ FreeBSD 基金会在全球范围内赞助许多会议、活动和峰会。这些
 
 以下是我们在推广和教育方面的一些工作：
 
-* 协助组织并参加了 2023 年 5 月 17-18 日在加拿大安大略渥太华举办的 [开发者峰会](https://wiki.freebsd.org/DevSummit/202305)
-* 在 2023 年 5 月 17-20 日举办的 [BSDCan](https://www.bsdcan.org/2023/) 中设立展台并赞助手提袋
-  * 可在 [博客](https://freebsdfoundation.org/our-work/latest-updates/) 查看行程报告
-* 在 BSDCan 庆祝项目 30 周年，提供蛋糕及特刊 [FreeBSD 期刊 30 周年纪念版](https://freebsdfoundation.org/past-issues/freebsd-30th-anniversary-special-edition/)
-* 在 2023 年 7 月 13-16 日于美国俄勒冈州波特兰的 [FOSSY](https://sfconservancy.org/fossy/) 安排 FreeBSD 研讨会与讲座
-* 确认对 2023 年 9 月 14-17 日在葡萄牙科英布拉举行的 [EuroBSDCon 2023](https://2023.eurobsdcon.org/) 的银级赞助
-* 确认对 2023 年 10 月 15-17 日在美国北卡罗来纳州罗利举行的 [All Things Open](https://2023.allthingsopen.org/) 展位支持
-* 开始规划 FreeBSD 秋季厂商峰会
-* 欢迎两位 [新团队成员](https://freebsdfoundation.org/blog/freebsd-foundation-welcomes-new-team-members/)：Greg Wallace 和 Pierre Pronchery
-* 发布 [4 月](https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-april-2023/) 和 [6 月](https://freebsdfoundation.org/news-and-events/newsletter/12518/) 通讯
-* 通过特别视频和博客文章庆祝 [FreeBSD 日](https://freebsdfoundation.org/national-freebsd-day/) 及项目 30 周年纪念，活动日期为 6 月 19 日及当周
-* 其他博客文章：
-  * [EuroBSDCon 2023 差旅补助申请开启](https://freebsdfoundation.org/blog/eurobsdcon-2023-travel-grant-application-now-open/) - 注意：申请截止日期为 2023 年 8 月 2 日
-  * [AsiaBSDcon 行程报告](https://freebsdfoundation.org/blog/asiabsdcon-2023-trip-report/)
-* FreeBSD 新闻报道：
+- 协助组织并参加了 2023 年 5 月 17-18 日在加拿大安大略渥太华举办的 [开发者峰会](https://wiki.freebsd.org/DevSummit/202305)
+- 在 2023 年 5 月 17-20 日举办的 [BSDCan](https://www.bsdcan.org/2023/) 中设立展台并赞助手提袋
+  - 可在 [博客](https://freebsdfoundation.org/our-work/latest-updates/) 查看行程报告
+- 在 BSDCan 庆祝项目 30 周年，提供蛋糕及特刊 [FreeBSD 期刊 30 周年纪念版](https://freebsdfoundation.org/past-issues/freebsd-30th-anniversary-special-edition/)
+- 在 2023 年 7 月 13-16 日于美国俄勒冈州波特兰的 [FOSSY](https://sfconservancy.org/fossy/) 安排 FreeBSD 研讨会与讲座
+- 确认对 2023 年 9 月 14-17 日在葡萄牙科英布拉举行的 [EuroBSDCon 2023](https://2023.eurobsdcon.org/) 的银级赞助
+- 确认对 2023 年 10 月 15-17 日在美国北卡罗来纳州罗利举行的 [All Things Open](https://2023.allthingsopen.org/) 展位支持
+- 开始规划 FreeBSD 秋季厂商峰会
+- 欢迎两位 [新团队成员](https://freebsdfoundation.org/blog/freebsd-foundation-welcomes-new-team-members/)：Greg Wallace 和 Pierre Pronchery
+- 发布 [4 月](https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-april-2023/) 和 [6 月](https://freebsdfoundation.org/news-and-events/newsletter/12518/) 通讯
+- 通过特别视频和博客文章庆祝 [FreeBSD 日](https://freebsdfoundation.org/national-freebsd-day/) 及项目 30 周年纪念，活动日期为 6 月 19 日及当周
+- 其他博客文章：
+  - [EuroBSDCon 2023 差旅补助申请开启](https://freebsdfoundation.org/blog/eurobsdcon-2023-travel-grant-application-now-open/) - 注意：申请截止日期为 2023 年 8 月 2 日
+  - [AsiaBSDcon 行程报告](https://freebsdfoundation.org/blog/asiabsdcon-2023-trip-report/)
+- FreeBSD 新闻报道：
 
-  * [信息世界：FreeBSD 30 周年快乐！](https://freebsdfoundation.org/news-and-events/latest-news/infoworld-happy-30th-freebsd/)
+  - [信息世界：FreeBSD 30 周年快乐！](https://freebsdfoundation.org/news-and-events/latest-news/infoworld-happy-30th-freebsd/)
 
 我们通过发布专业制作的 FreeBSD 期刊，帮助全球了解 FreeBSD。正如之前提到的，FreeBSD 期刊现免费发行。了解更多信息及访问最新期刊，请访问 [https://www.freebsdfoundation.org/journal/](https://www.freebsdfoundation.org/journal/)。
 
@@ -222,19 +222,19 @@ FreeBSD 集群管理团队成员负责管理项目依赖的机器，用于同步
 
 本季度，团队完成了以下工作：
 
-* 定期支持 FreeBSD.org 用户账户。
-* 定期维护（含替换）所有物理主机和镜像的磁盘及部件。
-* 启用 FreeBSD 项目管理镜像对 [https://www.FreeBSD.org](https://www.freebsd.org/) 和 [https://docs.FreeBSD.org](https://docs.freebsd.org/) 的镜像同步。
-* 集群刷新，将所有主机和 jail 升级至 14-CURRENT、13-STABLE 和 12-STABLE 的最新版本。
+- 定期支持 FreeBSD.org 用户账户。
+- 定期维护（含替换）所有物理主机和镜像的磁盘及部件。
+- 启用 FreeBSD 项目管理镜像对 [https://www.FreeBSD.org](https://www.freebsd.org/) 和 [https://docs.FreeBSD.org](https://docs.freebsd.org/) 的镜像同步。
+- 集群刷新，将所有主机和 jail 升级至 14-CURRENT、13-STABLE 和 12-STABLE 的最新版本。
 
 #### 正在进行的工作
 
-* 主要站点的大规模网络升级
-  * 新的 [Juniper](https://www.juniper.net/) 交换机已到达主站点以替换旧设备。感谢 Juniper 的捐赠。
-* 更换主站点及部分镜像的旧服务器
-  * 除了损坏的 CI 服务器外，还有几台旧服务器存在损坏磁盘和故障电源问题。此任务与 FreeBSD 基金会及捐助方/赞助方合作完成。
-* 安装新的 CI（持续集成）机器，这些机器由包构建器重新利用。
-* 审查运行在 FreeBSD 集群中的服务的备份配置。
+- 主要站点的大规模网络升级
+  - 新的 [Juniper](https://www.juniper.net/) 交换机已到达主站点以替换旧设备。感谢 Juniper 的捐赠。
+- 更换主站点及部分镜像的旧服务器
+  - 除了损坏的 CI 服务器外，还有几台旧服务器存在损坏磁盘和故障电源问题。此任务与 FreeBSD 基金会及捐助方/赞助方合作完成。
+- 安装新的 CI（持续集成）机器，这些机器由包构建器重新利用。
+- 审查运行在 FreeBSD 集群中的服务的备份配置。
 
 #### FreeBSD 官方镜像概览
 
@@ -242,19 +242,19 @@ FreeBSD 集群管理团队成员负责管理项目依赖的机器，用于同步
 
 硬件及网络连接由以下机构慷慨提供：
 
-* [Bytemark Hosting](https://www.bytemark.co.uk/)
-* [BroadBand Tower, Inc 云与 SDN 实验室](https://www.bbtower.co.jp/en/corporate/)
-* [國立陽明交通大學資訊工程學系](https://www.cs.nycu.edu.tw/)
-* [Equinix](https://deploy.equinix.com/)
-* [澳大利亚互联网协会](https://internet.asn.au/)
-* [互联网系统联盟](https://www.isc.org/)
-* [INX-ZA](https://www.inx.net.za/)
-* [KDDI Web Communications Inc](https://www.kddi-webcommunications.co.jp/english/)
-* [马来西亚研究与教育网络](https://www.mohe.gov.my/en/services/research/myren)
-* [Metapeer](https://www.metapeer.com/)
-* [NIC.br](https://nic.br/)
-* [Your.Org](https://your.org/)
-* [365 Data Centers](https://365datacenters.com/)
+- [Bytemark Hosting](https://www.bytemark.co.uk/)
+- [BroadBand Tower, Inc 云与 SDN 实验室](https://www.bbtower.co.jp/en/corporate/)
+- [國立陽明交通大學資訊工程學系](https://www.cs.nycu.edu.tw/)
+- [Equinix](https://deploy.equinix.com/)
+- [澳大利亚互联网协会](https://internet.asn.au/)
+- [互联网系统联盟](https://www.isc.org/)
+- [INX-ZA](https://www.inx.net.za/)
+- [KDDI Web Communications Inc](https://www.kddi-webcommunications.co.jp/english/)
+- [马来西亚研究与教育网络](https://www.mohe.gov.my/en/services/research/myren)
+- [Metapeer](https://www.metapeer.com/)
+- [NIC.br](https://nic.br/)
+- [Your.Org](https://your.org/)
+- [365 Data Centers](https://365datacenters.com/)
 
 法兰克福单服务器镜像是欧洲主要镜像站，在带宽和使用量上居首。
 
@@ -297,31 +297,31 @@ FreeBSD 集群管理团队成员负责管理项目依赖的机器，用于同步
 
 已完成的重要任务：
 
-* 新增 [FreeBSD-stable-13-amd64-gcc12_build](https://ci.freebsd.org/job/FreeBSD-stable-13-amd64-gcc12_build/) 作业。
-* main 和 stable/13 分支的构建环境已更新到 13.2-RELEASE，stable/12 分支更新为 12.4-RELEASE。
-* 使用 gcc12 的 *-build 作业已将失败报告发送至 [dev-ci 邮件列表](https://lists.freebsd.org/subscription/dev-ci)。
-* 在 [BSDCan 2023 开发者峰会](https://wiki.freebsd.org/DevSummit/202305) 上展示 Testing/CI 状态更新。
+- 新增 [FreeBSD-stable-13-amd64-gcc12_build](https://ci.freebsd.org/job/FreeBSD-stable-13-amd64-gcc12_build/) 作业。
+- main 和 stable/13 分支的构建环境已更新到 13.2-RELEASE，stable/12 分支更新为 12.4-RELEASE。
+- 使用 gcc12 的 *-build 作业已将失败报告发送至 [dev-ci 邮件列表](https://lists.freebsd.org/subscription/dev-ci)。
+- 在 [BSDCan 2023 开发者峰会](https://wiki.freebsd.org/DevSummit/202305) 上展示 Testing/CI 状态更新。
 
 正在进行的任务：
 
-* 设计并实现 pre-commit CI 构建和测试（支持 [workflow 工作组](https://gitlab.com/bsdimp/freebsd-workflow)）
-* 设计并实现使用 CI 集群构建发行产物（如发布工程操作）
-* 简化贡献者和开发者的 CI/测试环境配置
-* 设置 CI 阶段环境并运行实验性作业
-* 整理 freebsd-ci 仓库脚本，为合并到 src 仓库做准备
-* 改进硬件测试实验室并增加测试硬件
-* 合并 [D38815](https://reviews.freebsd.org/D38815)
-* 合并 [D36257](https://reviews.freebsd.org/D36257)
+- 设计并实现 pre-commit CI 构建和测试（支持 [workflow 工作组](https://gitlab.com/bsdimp/freebsd-workflow)）
+- 设计并实现使用 CI 集群构建发行产物（如发布工程操作）
+- 简化贡献者和开发者的 CI/测试环境配置
+- 设置 CI 阶段环境并运行实验性作业
+- 整理 freebsd-ci 仓库脚本，为合并到 src 仓库做准备
+- 改进硬件测试实验室并增加测试硬件
+- 合并 [D38815](https://reviews.freebsd.org/D38815)
+- 合并 [D36257](https://reviews.freebsd.org/D36257)
 
 开放或排队任务：
 
-* 收集并整理 [CI 任务和想法](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)
-* 为运行测试的虚拟机提供公共网络访问
-* 使用裸机硬件运行测试套件
-* 为 -CURRENT 构建 drm ports 测试
-* 计划运行 ztest 测试
-* 帮助更多软件在其 CI 流程中支持 FreeBSD（Wiki 页面：[3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI)、[HostedCI](https://wiki.freebsd.org/HostedCI)）
-* 与托管 CI 提供商合作，提升 FreeBSD 支持
+- 收集并整理 [CI 任务和想法](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)
+- 为运行测试的虚拟机提供公共网络访问
+- 使用裸机硬件运行测试套件
+- 为 -CURRENT 构建 drm ports 测试
+- 计划运行 ztest 测试
+- 帮助更多软件在其 CI 流程中支持 FreeBSD（Wiki 页面：[3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI)、[HostedCI](https://wiki.freebsd.org/HostedCI)）
+- 与托管 CI 提供商合作，提升 FreeBSD 支持
 
 更多 WIP 信息请参见 [freebsd-testing@ 相关工单](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)，欢迎加入我们的工作！
 
@@ -439,7 +439,7 @@ PowerPC 可以构建，但其状态未知。尝试获取合适的 PlayStation 3 
 
 赞助方：奈飞
 
-### 改进内核模块 LLDB 
+### 改进内核模块 LLDB
 
 链接：
 
@@ -688,6 +688,7 @@ extracting: baz/baz.txt
 1926 unzip    NAMI  "baz/baz.txt"
 1926 unzip    CAP   openat: restricted VFS lookup: AT_FDCWD
 ```
+
 对于 [unzip(1)(https://man.freebsd.org/cgi/man.cgi?query=unzip&sektion=1&format=html) 的违规追踪输出，更接近开发者第一次对自己程序进行追踪时所看到的情况。大多数程序都会链接到库。在此例中，[unzip(1)(https://man.freebsd.org/cgi/man.cgi?query=unzip&sektion=1&format=html) 链接了 [libarchive(3)(https://man.freebsd.org/cgi/man.cgi?query=libarchive&sektion=3&format=html)，这一点在追踪结果中得到了体现：
 
 ```sh
@@ -855,7 +856,7 @@ SquashFS 是一种只读文件系统，可高效压缩整个文件系统或单�
 
 赞助方：2023 谷歌编程之夏项目
 
-### 改进 Pf 
+### 改进 Pf
 
 链接：
 
@@ -964,10 +965,10 @@ SIMD 指令集（如 SSE、AVX、NEON）在现代计算机中广泛使用，可�
 
 每个函数将提供最多四个实现：
 
-* **标量**：为 amd64 优化，但不使用 SIMD
-* **基线**：使用 SSE 和 SSE2，或 **x86-64-v2** 实现，使用 SSE4.2 前所有扩展
-* **x86-64-v3**：使用 AVX 和 AVX2
-* **x86-64-v4**：使用 AVX-512F/BW/CD/DQ
+- **标量**：为 amd64 优化，但不使用 SIMD
+- **基线**：使用 SSE 和 SSE2，或 **x86-64-v2** 实现，使用 SSE4.2 前所有扩展
+- **x86-64-v3**：使用 AVX 和 AVX2
+- **x86-64-v4**：使用 AVX-512F/BW/CD/DQ
 
 用户可通过设置 `AMD64_ARCHLEVEL` 环境变量选择 SIMD 增强级别。
 
@@ -1023,9 +1024,9 @@ cloud-init 是云服务器的标准初始化方式，但对非 Linux 系统支�
 
 本季度进展：
 
-* 临时网络类已重写并实现平台无关，可用于多个云提供商初始化临时网络。
-* cloud-init 已在 Vultr 成功测试，希望下一版本可推动 Vultr 将 FreeBSD 镜像切换为 cloud-init。
-* 扩展了 BSD 的 rsyslog 支持，并为 cloud-init 的 ds-identify 添加了 rc 脚本，实现零配置启动速度大幅提升：ds-identify 首先快速猜测云提供商，cloud-init 使用该猜测而非遍历全部提供商。用户可通过删除 `/usr/local/etc/rc.d/dsidentify` 禁用，并提供自定义列表，进一步节省启动时间。
+- 临时网络类已重写并实现平台无关，可用于多个云提供商初始化临时网络。
+- cloud-init 已在 Vultr 成功测试，希望下一版本可推动 Vultr 将 FreeBSD 镜像切换为 cloud-init。
+- 扩展了 BSD 的 rsyslog 支持，并为 cloud-init 的 ds-identify 添加了 rc 脚本，实现零配置启动速度大幅提升：ds-identify 首先快速猜测云提供商，cloud-init 使用该猜测而非遍历全部提供商。用户可通过删除 `/usr/local/etc/rc.d/dsidentify` 禁用，并提供自定义列表，进一步节省启动时间。
 
 下一步计划包括继续网络重构任务，并为 FreeBSD 添加 LXD 支持，以纳入 CI 测试，这涉及 [LXD](https://github.com/canonical/lxd/pull/11761) 和 [FreeBSD virtio 子系统](https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=271793) 的工作。
 
@@ -1049,11 +1050,11 @@ cloud-init 是云服务器的标准初始化方式，但对非 Linux 系统支�
 
 本季度成果：
 
-* 移植 `nova-novncproxy` 和 `nova-serialproxy`，增加实例控制台访问方式
-* 将开发环境从物理机迁移至虚拟机
-* 解决实例内部网络连接问题
-* 可启动多个实例
-* 从 Python 3.8 移植至 3.9
+- 移植 `nova-novncproxy` 和 `nova-serialproxy`，增加实例控制台访问方式
+- 将开发环境从物理机迁移至虚拟机
+- 解决实例内部网络连接问题
+- 可启动多个实例
+- 从 Python 3.8 移植至 3.9
 
 下季度计划继续优化控制台代理服务，使整体流程更流畅。
 
@@ -1085,34 +1086,34 @@ POC 构建指南可在 [docs 仓库](https://github.com/openstack-on-freebsd/doc
 
 本季度工作重点为 ARM64 架构支持及向 [Azure community gallery](https://learn.microsoft.com/azure/virtual-machines/share-gallery-community) 构建和发布镜像。测试镜像示例：
 
-* FreeBSD-CURRENT-testing
-* FreeBSD-CURRENT-gen2-testing
-* FreeBSD-CURRENT-arm64-testing
+- FreeBSD-CURRENT-testing
+- FreeBSD-CURRENT-gen2-testing
+- FreeBSD-CURRENT-arm64-testing
 
 使用方法：创建虚拟机时，在“Select an Image”步骤选择“Community Images (PREVIEW)”并搜索 `FreeBSD`。
 
 进行中的任务：
 
-* 自动化镜像构建与发布并合并到 src/release/
-* 构建和发布基于 ZFS 的 Azure Marketplace 镜像（已合并到 main，可通过 `VMFS=zfs` 创建）
-* 构建并发布 Hyper-V gen2 VM 镜像至 Azure Marketplace
-* 构建并发布快照版本至 Azure community gallery
+- 自动化镜像构建与发布并合并到 src/release/
+- 构建和发布基于 ZFS 的 Azure Marketplace 镜像（已合并到 main，可通过 `VMFS=zfs` 创建）
+- 构建并发布 Hyper-V gen2 VM 镜像至 Azure Marketplace
+- 构建并发布快照版本至 Azure community gallery
 
 上述任务由 FreeBSD 基金会赞助，微软提供部分资源。
 
 微软的 Wei Hu 与 Souradeep Chakrabarti 承担以下任务：
 
-* 将 Hyper-V 客户端支持移植至 aarch64
+- 将 Hyper-V 客户端支持移植至 aarch64
 
-  * [Bug 267654](https://bugs.freebsd.org/267654)
-  * [Bug 272461](https://bugs.freebsd.org/272461)
+  - [Bug 267654](https://bugs.freebsd.org/267654)
+  - [Bug 272461](https://bugs.freebsd.org/272461)
 
 待完成任务：
 
-* 更新微软 Learn 上 FreeBSD 相关文档
-* 支持 [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines/) 的 FreeBSD
-* 更新 [Azure agent port](https://www.freshports.org/sysutils/azure-agent) 至最新版本
-* 回溯 [Azure agent 本地修改](https://github.com/Azure/WALinuxAgent/pull/1892)
+- 更新微软 Learn 上 FreeBSD 相关文档
+- 支持 [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines/) 的 FreeBSD
+- 更新 [Azure agent port](https://www.freshports.org/sysutils/azure-agent) 至最新版本
+- 回溯 [Azure agent 本地修改](https://github.com/Azure/WALinuxAgent/pull/1892)
 
 赞助方：微软（针对 Microsoft 团队人员及资源）
 
@@ -1156,9 +1157,9 @@ EC2 启动脚本最近已更新以支持 IMDSv2，该更新也将在 FreeBSD 14.
 
 本季度：
 
-* fernape@ 被任命为新成员
-* [www/gohugo](https://cgit.freebsd.org/ports/tree/www/gohugo/) Port 维护权已转交给文档工程团队，因其是文档基础设施关键部分，该决定已与前维护者达成一致
-* 改进了翻译工作流程（如下节所述）
+- fernape@ 被任命为新成员
+- [www/gohugo](https://cgit.freebsd.org/ports/tree/www/gohugo/) Port 维护权已转交给文档工程团队，因其是文档基础设施关键部分，该决定已与前维护者达成一致
+- 改进了翻译工作流程（如下节所述）
 
 #### Port 开发者手册
 
@@ -1178,29 +1179,29 @@ EC2 启动脚本最近已更新以支持 IMDSv2，该更新也将在 FreeBSD 14.
 
 ##### 2023 年第二季度状态
 
-* 支持 15 种语言
-* 注册用户 183 人
-* [新 Weblate 服务器](https://lists.freebsd.org/archives/freebsd-translators/2023-April/000111.html)
+- 支持 15 种语言
+- 注册用户 183 人
+- [新 Weblate 服务器](https://lists.freebsd.org/archives/freebsd-translators/2023-April/000111.html)
 
 FreeBSD Weblate 实例现运行在专用服务器上，显著提高速度和翻译效率，特别感谢 ebrandi@ 提供硬件升级。
 
 ##### 语言进展
 
-* 中文（简体）(zh-cn) 进度：7%
-* 中文（繁体）(zh-tw) 进度：3%
-* 荷兰语 (nl) 进度：1%
-* 法语 (fr) 进度：1%
-* 德语 (de) 进度：1%
-* 印尼语 (id) 进度：1%
-* 意大利语 (it) 进度：5%
-* 韩语 (ko) 进度：32%
-* 挪威语 (nb-no) 进度：1%
-* 波斯语 (fa-ir) 进度：3%
-* 波兰语 进度：1%
-* 葡萄牙语 (pt-br) 进度：22%
-* 僧伽罗语 (si) 进度：1%
-* 西班牙语 (es) 进度：33%
-* 土耳其语 (tr) 进度：2%
+- 中文（简体）(zh-cn) 进度：7%
+- 中文（繁体）(zh-tw) 进度：3%
+- 荷兰语 (nl) 进度：1%
+- 法语 (fr) 进度：1%
+- 德语 (de) 进度：1%
+- 印尼语 (id) 进度：1%
+- 意大利语 (it) 进度：5%
+- 韩语 (ko) 进度：32%
+- 挪威语 (nb-no) 进度：1%
+- 波斯语 (fa-ir) 进度：3%
+- 波兰语 进度：1%
+- 葡萄牙语 (pt-br) 进度：22%
+- 僧伽罗语 (si) 进度：1%
+- 西班牙语 (es) 进度：33%
+- 土耳其语 (tr) 进度：2%
 
 感谢所有参与翻译或审校文档的贡献者，也请在当地用户组中推广此工作，我们始终需要更多志愿者。
 
@@ -1247,12 +1248,12 @@ KDE 团队 (kde@) 是 desktop@ 和 x11@ 的一部分，构建软件栈，使 Fre
 
 更新 Qt5 Ports：
 
-* [devel/qt5-webengine](https://cgit.freebsd.org/ports/tree/devel/qt5-webengine/) 修复了在 Clang 16 下构建的问题，为即将发布的 FreeBSD 14 做准备。
-* [devel/qt5-qmake](https://cgit.freebsd.org/ports/tree/devel/qt5-qmake/) 修复了在 Qt 未安装系统上安装 qmake 会引发异常的边缘情况。
+- [devel/qt5-webengine](https://cgit.freebsd.org/ports/tree/devel/qt5-webengine/) 修复了在 Clang 16 下构建的问题，为即将发布的 FreeBSD 14 做准备。
+- [devel/qt5-qmake](https://cgit.freebsd.org/ports/tree/devel/qt5-qmake/) 修复了在 Qt 未安装系统上安装 qmake 会引发异常的边缘情况。
 
 更新 Qt6 Ports：
 
-* [devel/qt6-tools](https://cgit.freebsd.org/ports/tree/devel/qt6-tools/) 修复了在 Clang 16 下构建的问题，为 FreeBSD 14 发布做准备。
+- [devel/qt6-tools](https://cgit.freebsd.org/ports/tree/devel/qt6-tools/) 修复了在 Clang 16 下构建的问题，为 FreeBSD 14 发布做准备。
 
 [accessibility/at-spi2-core](https://cgit.freebsd.org/ports/tree/accessibility/at-spi2-core/) Port（桌面辅助技术关键组件）已更新至 2.48.0，并改进了对非 X11 桌面的支持，提升了 Wayland 系统兼容性。感谢 Jan Beich 的贡献。
 
@@ -1264,33 +1265,33 @@ KDE 团队 (kde@) 是 desktop@ 和 x11@ 的一部分，构建软件栈，使 Fre
 
 KDE Gear 每季度发布，KDE Plasma 每月更新，KDE Frameworks 也每月发布新版本。上述更新在上游发布后不久即可在 Ports 中体现。
 
-* KDE Frameworks 更新到 5.105、5.106 与 5.107
-* KDE Gear 更新至 23.04.0，并随即发布 .1 与 .2 修复版本
-* KDE Plasma Desktop 更新至 5.27.4，随后发布 .5 与 .6 修复版本
+- KDE Frameworks 更新到 5.105、5.106 与 5.107
+- KDE Gear 更新至 23.04.0，并随即发布 .1 与 .2 修复版本
+- KDE Plasma Desktop 更新至 5.27.4，随后发布 .5 与 .6 修复版本
 
 #### 相关 Port
 
 弃用：
 
-* [graphics/ikona](https://cgit.freebsd.org/ports/tree/graphics/ikona/)（Rust + Qt 图标查看器）上游已放弃
-* [polish/kadu](https://cgit.freebsd.org/ports/tree/polish/kadu/)（曾在波兰流行的聊天应用）已弃用
-* [sysutils/plasma5-ksysguard](https://cgit.freebsd.org/ports/tree/sysutils/plasma5-ksysguard/)（系统监控应用）上游弃用，将不再更新
+- [graphics/ikona](https://cgit.freebsd.org/ports/tree/graphics/ikona/)（Rust + Qt 图标查看器）上游已放弃
+- [polish/kadu](https://cgit.freebsd.org/ports/tree/polish/kadu/)（曾在波兰流行的聊天应用）已弃用
+- [sysutils/plasma5-ksysguard](https://cgit.freebsd.org/ports/tree/sysutils/plasma5-ksysguard/)（系统监控应用）上游弃用，将不再更新
 
 更新：
 
-* [astro/kstars](https://cgit.freebsd.org/ports/tree/astro/kstars/) 更新至 3.6.4
-* [devel/qcoro](https://cgit.freebsd.org/ports/tree/devel/qcoro/) 更新至 0.9.0
-* [devel/qtcreator](https://cgit.freebsd.org/ports/tree/devel/qtcreator/) 更新至 10.0.2
-* [games/gcompris-qt](https://cgit.freebsd.org/ports/tree/games/gcompris-qt/) 更新至 3.2
-* [graphics/kphotoalbum](https://cgit.freebsd.org/ports/tree/graphics/kphotoalbum/) 更新至 5.10.0
-* [net-im/tokodon](https://cgit.freebsd.org/ports/tree/net-im/tokodon/) 加入 KDE Gear
-* [textproc/kdiff3](https://cgit.freebsd.org/ports/tree/textproc/kdiff3/) 更新至 1.10.1
+- [astro/kstars](https://cgit.freebsd.org/ports/tree/astro/kstars/) 更新至 3.6.4
+- [devel/qcoro](https://cgit.freebsd.org/ports/tree/devel/qcoro/) 更新至 0.9.0
+- [devel/qtcreator](https://cgit.freebsd.org/ports/tree/devel/qtcreator/) 更新至 10.0.2
+- [games/gcompris-qt](https://cgit.freebsd.org/ports/tree/games/gcompris-qt/) 更新至 3.2
+- [graphics/kphotoalbum](https://cgit.freebsd.org/ports/tree/graphics/kphotoalbum/) 更新至 5.10.0
+- [net-im/tokodon](https://cgit.freebsd.org/ports/tree/net-im/tokodon/) 加入 KDE Gear
+- [textproc/kdiff3](https://cgit.freebsd.org/ports/tree/textproc/kdiff3/) 更新至 1.10.1
 
 新软件：
 
-* [devel/kommit](https://cgit.freebsd.org/ports/tree/devel/kommit/)（Git 客户端）新增，为 gitklient 的重命名
-* [multimedia/kasts](https://cgit.freebsd.org/ports/tree/multimedia/kasts/) KDE 社区新推出的播客收听应用
-* [textproc/arianna](https://cgit.freebsd.org/ports/tree/textproc/arianna/) KDE 社区新推出的移动电子书阅读器，可用于阅读 FreeBSD 文档
+- [devel/kommit](https://cgit.freebsd.org/ports/tree/devel/kommit/)（Git 客户端）新增，为 gitklient 的重命名
+- [multimedia/kasts](https://cgit.freebsd.org/ports/tree/multimedia/kasts/) KDE 社区新推出的播客收听应用
+- [textproc/arianna](https://cgit.freebsd.org/ports/tree/textproc/arianna/) KDE 社区新推出的移动电子书阅读器，可用于阅读 FreeBSD 文档
 
 
 
@@ -1314,8 +1315,8 @@ KDE Gear 每季度发布，KDE Plasma 每月更新，KDE Frameworks 也每月发
 
 GCC 13.1（首个 GCC 13 版本）发布后，在 Ports 树中创建了两个新 Port：
 
-* [lang/gcc13](https://cgit.freebsd.org/ports/tree/lang/gcc13/) 跟踪 GCC 13 发布
-* [lang/gcc14-devel](https://cgit.freebsd.org/ports/tree/lang/gcc14-devel/) 跟踪 GCC 14 上游快照
+- [lang/gcc13](https://cgit.freebsd.org/ports/tree/lang/gcc13/) 跟踪 GCC 13 发布
+- [lang/gcc14-devel](https://cgit.freebsd.org/ports/tree/lang/gcc14-devel/) 跟踪 GCC 14 上游快照
 
 #### *-devel Ports
 
@@ -1323,8 +1324,8 @@ GCC 13.1（首个 GCC 13 版本）发布后，在 Ports 树中创建了两个新
 
 i386、amd64 与 aarch64 默认 bootstrap 选项已从 LTO_BOOTSTRAP 回退到 STANDARD_BOOTSTRAP：
 
-* LTO bootstrap 在这些架构上产生过多包构建失败
-* LTO_BOOTSTRAP 仍可供需要的用户使用
+- LTO bootstrap 在这些架构上产生过多包构建失败
+- LTO_BOOTSTRAP 仍可供需要的用户使用
 
 这些更改将向生产 Ports 推送。
 
@@ -1334,15 +1335,15 @@ i386、amd64 与 aarch64 默认 bootstrap 选项已从 LTO_BOOTSTRAP 回退到 S
 
 为简化维护者和用户工作，计划同时测试并更新以下内容：
 
-* [lang/gcc10](https://cgit.freebsd.org/ports/tree/lang/gcc10/)、[lang/gcc11](https://cgit.freebsd.org/ports/tree/lang/gcc11/)、[lang/gcc12](https://cgit.freebsd.org/ports/tree/lang/gcc12/) 更新
-* 将 GCC_DEFAULT 更新为 13
-* 在生产 Ports 启用 .init_array 与 .fini_array
-* 将生产 Ports 的 bootstrap 从 LTO_BOOTSTRAP 切换回 STANDARD_BOOTSTRAP
+- [lang/gcc10](https://cgit.freebsd.org/ports/tree/lang/gcc10/)、[lang/gcc11](https://cgit.freebsd.org/ports/tree/lang/gcc11/)、[lang/gcc12](https://cgit.freebsd.org/ports/tree/lang/gcc12/) 更新
+- 将 GCC_DEFAULT 更新为 13
+- 在生产 Ports 启用 .init_array 与 .fini_array
+- 将生产 Ports 的 bootstrap 从 LTO_BOOTSTRAP 切换回 STANDARD_BOOTSTRAP
 
 优势：
 
-* 测试次数更多但实验运行更少
-* Ports 用户构建次数更少
+- 测试次数更多但实验运行更少
+- Ports 用户构建次数更少
 
 ### Puppet
 
@@ -1356,8 +1357,8 @@ Puppet 是一款自由软件配置管理工具，由 Puppet Server 提供信任�
 
 Puppet 团队维护 Puppet 及相关工具的 Ports。
 
-* Puppet 8 最近发布，并已加入 Ports 树
-* Puppet 6 已到达生命周期终点并弃用，建议用户升级到 Puppet 7 或 Puppet 8
+- Puppet 8 最近发布，并已加入 Ports 树
+- Puppet 6 已到达生命周期终点并弃用，建议用户升级到 Puppet 7 或 Puppet 8
 
 目前，Puppet 7 仍为依赖 Puppet 的 Ports 默认版本。Puppet 社区正在努力确保各种模块与最新代码兼容，当前升级到 Puppet 8 可能存在挑战。随着模块更新完成，预计几个月后将 Puppet 8 设为默认版本。
 
@@ -1387,9 +1388,9 @@ MITRE Caldera ([security/caldera](https://cgit.freebsd.org/ports/tree/security/c
 
 #### 待办事项
 
-* 增加 Caldera 测试基础设施 makejail
-* 将 FreeBSD 添加到 MITRE Caldera 官方支持平台中，参见 [https://github.com/mitre/caldera/pull/2752](https://github.com/mitre/caldera/pull/2752)
-* 将 FreeBSD 添加到 Red Canary 官方支持平台中，参见 [https://github.com/redcanaryco/atomic-red-team/pull/2450](https://github.com/redcanaryco/atomic-red-team/pull/2450)
+- 增加 Caldera 测试基础设施 makejail
+- 将 FreeBSD 添加到 MITRE Caldera 官方支持平台中，参见 [https://github.com/mitre/caldera/pull/2752](https://github.com/mitre/caldera/pull/2752)
+- 将 FreeBSD 添加到 Red Canary 官方支持平台中，参见 [https://github.com/redcanaryco/atomic-red-team/pull/2450](https://github.com/redcanaryco/atomic-red-team/pull/2450)
 
 ### FreeBSD 上的 Wazuh
 
@@ -1419,9 +1420,9 @@ Wazuh 解决方案由端点安全代理和管理服务器组成。管理服务�
 
 #### 待办事项
 
-* 增加 Wazuh 集群模式基础设施 makejail（进行中）
-* 将 FreeBSD 添加到 Wazuh Inc 官方支持平台；参见 [https://github.com/wazuh/wazuh-kibana-app/pull/5413](https://github.com/wazuh/wazuh-kibana-app/pull/5413)
-* 添加 FreeBSD SCA 策略（进行中）
+- 增加 Wazuh 集群模式基础设施 makejail（进行中）
+- 将 FreeBSD 添加到 Wazuh Inc 官方支持平台；参见 [https://github.com/wazuh/wazuh-kibana-app/pull/5413](https://github.com/wazuh/wazuh-kibana-app/pull/5413)
+- 添加 FreeBSD SCA 策略（进行中）
 
 ## 第三方项目
 
@@ -1443,16 +1444,16 @@ PkgBase.live 是 FreeBSD [PkgBase 项目](https://wiki.freebsd.org/PkgBase) 的�
 
 目前提供构建版本：
 
-* FreeBSD 13.2-RELEASE
-* FreeBSD 13-STABLE
-* FreeBSD 14-CURRENT
+- FreeBSD 13.2-RELEASE
+- FreeBSD 13-STABLE
+- FreeBSD 14-CURRENT
 
 支持平台：
 
-* amd64
-* aarch64
-* armv7
-* i386
+- amd64
+- aarch64
+- armv7
+- i386
 
 RISCv64 暂时未提供。
 

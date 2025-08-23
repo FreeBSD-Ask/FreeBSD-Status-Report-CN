@@ -8,7 +8,7 @@
 
 祝阅读愉快。
 
-Lorenzo Salvadore 
+Lorenzo Salvadore
 
 代表状态团队敬上。
 
@@ -100,30 +100,30 @@ FreeBSD 基金会在全球范围内赞助许多会议、活动和峰会。这些
 
 我们的部分宣传工作包括：
 
-* 2023 年 7 月 13-16 日，在波特兰的 [FOSSY](https://sfconservancy.org/fossy/) 举办研讨会并设立展台
-* 2023 年 7 月 27-29 日，在台湾新北市成为 COSCUP 友好级赞助商
-* 在 EuroBSDCon FreeBSD 开发者峰会上进行演讲，并在 [EuroBSDCon 2023](https://2023.eurobsdcon.org/)（2023 年 9 月 14-17 日，葡萄牙科英布拉）赞助并设立展台
-* 参加 [Open Source Summit, Europe](https://events.linuxfoundation.org/open-source-summit-europe/)（2023 年 9 月 19-21 日，西班牙毕尔巴鄂）
-* 继续筹备 [2023 年 11 月 FreeBSD 厂商峰会](https://freebsdfoundation.org/news-and-events/event-calendar/november-2023-freebsd-vendor-summit/)（11 月 2-3 日，加州圣何塞）
-* 持续管理谷歌编程之夏项目
-* 发布 [七月通讯](https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-july-2023/)
-* 其他博客文章
-  * [在活动中宣传：2023 年五月 FreeBSD 开发者峰会和 BSDCan](https://freebsdfoundation.org/blog/advocating-at-events-may-2023-freebsd-dev-summit-and-bsdcan/)
-  * [升级到 FreeBSD 13.2 的十大理由](https://freebsdfoundation.org/blog/top-ten-reasons-to-upgrade-to-freebsd-13-2/)
-  * [2023 年七月软件开发项目更新](https://freebsdfoundation.org/blog/july-2023-software-development-projects-update/)
-  * [用于研究的 FreeBSD：CHERI/Morello](https://freebsdfoundation.org/blog/freebsd-for-research-cheri-morello/)
-  * 介绍 FreeBSD 谷歌编程之夏 2023 学生
-    * [Soobin Rho](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-soobin-rho/)
-    * [Raghav Sharma](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-raghav-sharma/)
-    * [Sudhanshu Mohan Kashyap](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-sudhanshu-mohan-kashyap/)
-    * [Aymeric Wibo](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-aymeric-wibo/)
-  * [介绍 2023 年夏季滑铁卢大学实习生：Naman Sood](https://freebsdfoundation.org/blog/meet-the-summer-2023-university-of-waterloo-co-op-student-naman-sood/)
-  * [介绍 FreeBSD 基金会 2023 年夏季实习生：Jake Freeland](https://freebsdfoundation.org/blog/meet-freebsd-foundation-2023-summer-intern-jake-freeland/)
-* FreeBSD 新闻
+- 2023 年 7 月 13-16 日，在波特兰的 [FOSSY](https://sfconservancy.org/fossy/) 举办研讨会并设立展台
+- 2023 年 7 月 27-29 日，在台湾新北市成为 COSCUP 友好级赞助商
+- 在 EuroBSDCon FreeBSD 开发者峰会上进行演讲，并在 [EuroBSDCon 2023](https://2023.eurobsdcon.org/)（2023 年 9 月 14-17 日，葡萄牙科英布拉）赞助并设立展台
+- 参加 [Open Source Summit, Europe](https://events.linuxfoundation.org/open-source-summit-europe/)（2023 年 9 月 19-21 日，西班牙毕尔巴鄂）
+- 继续筹备 [2023 年 11 月 FreeBSD 厂商峰会](https://freebsdfoundation.org/news-and-events/event-calendar/november-2023-freebsd-vendor-summit/)（11 月 2-3 日，加州圣何塞）
+- 持续管理谷歌编程之夏项目
+- 发布 [七月通讯](https://freebsdfoundation.org/news-and-events/newsletter/freebsd-foundation-update-july-2023/)
+- 其他博客文章
+  - [在活动中宣传：2023 年五月 FreeBSD 开发者峰会和 BSDCan](https://freebsdfoundation.org/blog/advocating-at-events-may-2023-freebsd-dev-summit-and-bsdcan/)
+  - [升级到 FreeBSD 13.2 的十大理由](https://freebsdfoundation.org/blog/top-ten-reasons-to-upgrade-to-freebsd-13-2/)
+  - [2023 年七月软件开发项目更新](https://freebsdfoundation.org/blog/july-2023-software-development-projects-update/)
+  - [用于研究的 FreeBSD：CHERI/Morello](https://freebsdfoundation.org/blog/freebsd-for-research-cheri-morello/)
+  - 介绍 FreeBSD 谷歌编程之夏 2023 学生
+    - [Soobin Rho](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-soobin-rho/)
+    - [Raghav Sharma](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-raghav-sharma/)
+    - [Sudhanshu Mohan Kashyap](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-sudhanshu-mohan-kashyap/)
+    - [Aymeric Wibo](https://freebsdfoundation.org/blog/meet-the-2023-freebsd-google-summer-of-code-students-aymeric-wibo/)
+  - [介绍 2023 年夏季滑铁卢大学实习生：Naman Sood](https://freebsdfoundation.org/blog/meet-the-summer-2023-university-of-waterloo-co-op-student-naman-sood/)
+  - [介绍 FreeBSD 基金会 2023 年夏季实习生：Jake Freeland](https://freebsdfoundation.org/blog/meet-freebsd-foundation-2023-summer-intern-jake-freeland/)
+- FreeBSD 新闻
 
-  * [FreeBSD 基金会加入 OSI 开放政策联盟](https://freebsdfoundation.org/news-and-events/latest-news/freebsd-foundation-joins-osis-open-policy-alliance/)
-  * [Hackernoon: 我们使用开源 FreeBSD 作为企业操作系统的 5 个理由](https://freebsdfoundation.org/news-and-events/latest-news/hackernoon-5-reasons-we-use-open-source-freebsd-as-our-enterprise-os/)
-  * [What the Dev Podcast: FreeBSD 项目的演变](https://freebsdfoundation.org/news-and-events/latest-news/what-the-dev-podcast-the-evolution-of-the-freebsd-project/)
+  - [FreeBSD 基金会加入 OSI 开放政策联盟](https://freebsdfoundation.org/news-and-events/latest-news/freebsd-foundation-joins-osis-open-policy-alliance/)
+  - [Hackernoon: 我们使用开源 FreeBSD 作为企业操作系统的 5 个理由](https://freebsdfoundation.org/news-and-events/latest-news/hackernoon-5-reasons-we-use-open-source-freebsd-as-our-enterprise-os/)
+  - [What the Dev Podcast: FreeBSD 项目的演变](https://freebsdfoundation.org/news-and-events/latest-news/what-the-dev-podcast-the-evolution-of-the-freebsd-project/)
 
 我们通过出版专业制作的 FreeBSD 期刊来向全球普及 FreeBSD。如前所述，FreeBSD 期刊现已免费提供。详情及最新期刊请访问 [https://www.freebsdfoundation.org/journal/](https://www.freebsdfoundation.org/journal/)。
 
@@ -133,39 +133,39 @@ FreeBSD 基金会在全球范围内赞助许多会议、活动和峰会。这些
 
 在 2023 年第三季度，共有 282 个 src、652 个 ports 和 24 个 doc 树提交标注 FreeBSD 基金会为赞助方。其中部分基金会赞助的工作在单独报告中进行了描述：
 
-* [通过使用日志软更新启用文件系统快照](https://www.freebsd.org/status/report-2023-07-2023-09/#_enabling_snapshots_on_filesystems_using_journaled_soft_updates)
-* [登录类修复与改进](https://www.freebsd.org/status/report-2023-07-2023-09/#_login_classes_fixes_and_improvements)
-* [改进基于基本系统的 OpenSSL 3](https://www.freebsd.org/status/report-2023-07-2023-09/#_openssl_3_in_baseimproved)
-* [FreeBSD 上的 OpenStack](https://www.freebsd.org/status/report-2023-07-2023-09/#_openstack_on_freebsd)
-* [进程可见性安全策略](https://www.freebsd.org/status/report-2023-07-2023-09/#_process_visibility_security_policies)
-* [amd64 的 SIMD 增强](https://www.freebsd.org/status/report-2023-07-2023-09/#_simd_enhancements_for_amd64)
+- [通过使用日志软更新启用文件系统快照](https://www.freebsd.org/status/report-2023-07-2023-09/#_enabling_snapshots_on_filesystems_using_journaled_soft_updates)
+- [登录类修复与改进](https://www.freebsd.org/status/report-2023-07-2023-09/#_login_classes_fixes_and_improvements)
+- [改进基于基本系统的 OpenSSL 3](https://www.freebsd.org/status/report-2023-07-2023-09/#_openssl_3_in_baseimproved)
+- [FreeBSD 上的 OpenStack](https://www.freebsd.org/status/report-2023-07-2023-09/#_openstack_on_freebsd)
+- [进程可见性安全策略](https://www.freebsd.org/status/report-2023-07-2023-09/#_process_visibility_security_policies)
+- [amd64 的 SIMD 增强](https://www.freebsd.org/status/report-2023-07-2023-09/#_simd_enhancements_for_amd64)
 
 技术团队成员参加了在葡萄牙科英布拉举行的 EuroBSDCon 2023。許立文 举办了教程，帮助新手参与 FreeBSD 项目。在会议之前，举行了 FreeBSD 开发者峰会，团队在会上展示了他们的 [近期工作简报](https://wiki.freebsd.org/DevSummit/202309?action=AttachFile&do=view&target=Foundation_Technology_Team_Devsummit_Fall_2023.pdf)。
 
 六个暑期实习/项目顺利结束：
 
-* [Jake Freeland](https://freebsdfoundation.org/blog/meet-freebsd-foundation-2023-summer-intern-jake-freeland/) 在暑期参与 [Capsicum 项目](https://freebsdfoundation.org/project/capsicum-internship/)，进行违规追踪、适配各类守护进程如 [syslogd(8)](https://man.freebsd.org/cgi/man.cgi?query=syslogd&sektion=8&format=html)，并编写文档。
-* [Naman Sood](https://freebsdfoundation.org/blog/meet-the-summer-2023-university-of-waterloo-co-op-student-naman-sood/) 完成了[各种任务，主要与网络相关](https://freebsdfoundation.org/project/networking-summer-internship/)。
-* En-Wei Wu 完成了 [另一项无线网络实习](https://freebsdfoundation.org/project/wireless-internship/)，改进并扩展了 net80211(4) WiFi 模拟器 wtap。
-* Yan-Hao Wang 参与了 [文档与测试项目](https://freebsdfoundation.org/project/documentation-and-testing-internship/)，如构建在线 man 页编辑器并为部分用户空间工具添加测试用例。
-* Christos Margiolis 完成了 [改进 kinst DTrace 提供者的项目](https://freebsdfoundation.org/project/improving-the-kinst-dtrace-provider/)，实现了内联函数追踪，并将 kinst 移植到 arm64 和 riscv。
-* 为了准备 FreeBSD 14.0，Muhammad Moinur (Moin) Rahman 提交了 700 多个针对近期 OpenSSL 和 LLVM 更新影响 ports 的修复或解决方法。
+- [Jake Freeland](https://freebsdfoundation.org/blog/meet-freebsd-foundation-2023-summer-intern-jake-freeland/) 在暑期参与 [Capsicum 项目](https://freebsdfoundation.org/project/capsicum-internship/)，进行违规追踪、适配各类守护进程如 [syslogd(8)](https://man.freebsd.org/cgi/man.cgi?query=syslogd&sektion=8&format=html)，并编写文档。
+- [Naman Sood](https://freebsdfoundation.org/blog/meet-the-summer-2023-university-of-waterloo-co-op-student-naman-sood/) 完成了[各种任务，主要与网络相关](https://freebsdfoundation.org/project/networking-summer-internship/)。
+- En-Wei Wu 完成了 [另一项无线网络实习](https://freebsdfoundation.org/project/wireless-internship/)，改进并扩展了 net80211(4) WiFi 模拟器 wtap。
+- Yan-Hao Wang 参与了 [文档与测试项目](https://freebsdfoundation.org/project/documentation-and-testing-internship/)，如构建在线 man 页编辑器并为部分用户空间工具添加测试用例。
+- Christos Margiolis 完成了 [改进 kinst DTrace 提供者的项目](https://freebsdfoundation.org/project/improving-the-kinst-dtrace-provider/)，实现了内联函数追踪，并将 kinst 移植到 arm64 和 riscv。
+- 为了准备 FreeBSD 14.0，Muhammad Moinur (Moin) Rahman 提交了 700 多个针对近期 OpenSSL 和 LLVM 更新影响 ports 的修复或解决方法。
 
 有关当前和过去基金会承包工作的更多信息，请访问 [基金会项目页面](https://freebsdfoundation.org/our-work/projects/)。
 
 本季度完成的其他基金会赞助工作示例：
 
-* 改进 riscv64 CPU 身份与特性检测
-* 从零重写 [intro(9)](https://man.freebsd.org/cgi/man.cgi?query=intro&sektion=9&format=html) man 页
-* 对 [hwpmc(4)](https://man.freebsd.org/cgi/man.cgi?query=hwpmc&sektion=4&format=html) 模块以及 [pmc(3)](https://man.freebsd.org/cgi/man.cgi?query=pmc&sektion=3&format=html) 库和工具进行代码维护与 bug 修复
-* 为 FreeBSD 14.0 做准备，提交了多项 [freebsd-update(8)](https://man.freebsd.org/cgi/man.cgi?query=freebsd-update&sektion=8&format=html) 修复
-* 对 LinuxKPI、iwlwifi 和 net802.11 代码提交了 37 项更新与修复
-* 更新 SSH，先为 OpenSSH 9.3p2，再为 9.4p1
-* 修补 ssh-keygen，使其在无参数调用时生成 Ed25519 密钥
-* 添加 Linux [membarrier(2)](https://man.freebsd.org/cgi/man.cgi?query=membarrier&sektion=2&format=html) 系统调用的全新实现
-* 将 amd64 和 arm64 的 MAXCPU 增加至 1024
-* 提交修复以防止受影响机器上 Zenbleed 自动误操作/数据泄露（通过 chicken bit）
-* 审查内核中调度优先级的使用情况，以强化 rtprio() 系统调用，并在某些情况下提高其实用性
+- 改进 riscv64 CPU 身份与特性检测
+- 从零重写 [intro(9)](https://man.freebsd.org/cgi/man.cgi?query=intro&sektion=9&format=html) man 页
+- 对 [hwpmc(4)](https://man.freebsd.org/cgi/man.cgi?query=hwpmc&sektion=4&format=html) 模块以及 [pmc(3)](https://man.freebsd.org/cgi/man.cgi?query=pmc&sektion=3&format=html) 库和工具进行代码维护与 bug 修复
+- 为 FreeBSD 14.0 做准备，提交了多项 [freebsd-update(8)](https://man.freebsd.org/cgi/man.cgi?query=freebsd-update&sektion=8&format=html) 修复
+- 对 LinuxKPI、iwlwifi 和 net802.11 代码提交了 37 项更新与修复
+- 更新 SSH，先为 OpenSSH 9.3p2，再为 9.4p1
+- 修补 ssh-keygen，使其在无参数调用时生成 Ed25519 密钥
+- 添加 Linux [membarrier(2)](https://man.freebsd.org/cgi/man.cgi?query=membarrier&sektion=2&format=html) 系统调用的全新实现
+- 将 amd64 和 arm64 的 MAXCPU 增加至 1024
+- 提交修复以防止受影响机器上 Zenbleed 自动误操作/数据泄露（通过 chicken bit）
+- 审查内核中调度优先级的使用情况，以强化 rtprio() 系统调用，并在某些情况下提高其实用性
 
 #### 支持 FreeBSD 基础设施
 
@@ -220,7 +220,7 @@ FreeBSD 发布工程团队负责制定并发布 FreeBSD 官方版本的发布计
 
 [第三方软件 CI](https://wiki.freebsd.org/3rdPartySoftwareCI) URL: [https://wiki.FreeBSD.org/3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI)
 
-[freebsd-testing@ 相关工单](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals) URL: 
+[freebsd-testing@ 相关工单](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals) URL:
 
 [https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)
 
@@ -240,30 +240,30 @@ FreeBSD 发布工程团队负责制定并发布 FreeBSD 官方版本的发布计
 
 已完成的重要任务：
 
-* 为 stable/14 分支添加构建任务
-* 更新 CI 结果的 ["Tinderbox" 视图](https://tinderbox.freebsd.org/)，现在包括测试结果和当前失败或不稳定系列的“起点”
-* 该工作主要由基金会实习生 Yan-Hao Wang 完成，他的其他贡献在本报告的其他条目中有所记录
+- 为 stable/14 分支添加构建任务
+- 更新 CI 结果的 ["Tinderbox" 视图](https://tinderbox.freebsd.org/)，现在包括测试结果和当前失败或不稳定系列的“起点”
+- 该工作主要由基金会实习生 Yan-Hao Wang 完成，他的其他贡献在本报告的其他条目中有所记录
 
 进行中的任务：
 
-* 设计与实现 pre-commit CI 构建和测试，以及基于 pull/merge 请求的系统（支持 [工作流工作组](https://gitlab.com/bsdimp/freebsd-workflow)）
-* 概念验证系统正在开发中
-* 设计与实现使用 CI 集群构建发布构件的能力
-* 简化贡献者和开发者的 CI/测试环境配置
-* 设置 CI 阶段环境并放置实验任务
-* 改进硬件测试实验室并增加更多测试硬件
-* 合并 [https://reviews.freebsd.org/D38815](https://reviews.freebsd.org/D38815)
-* 合并 [https://reviews.freebsd.org/D36257](https://reviews.freebsd.org/D36257)
+- 设计与实现 pre-commit CI 构建和测试，以及基于 pull/merge 请求的系统（支持 [工作流工作组](https://gitlab.com/bsdimp/freebsd-workflow)）
+- 概念验证系统正在开发中
+- 设计与实现使用 CI 集群构建发布构件的能力
+- 简化贡献者和开发者的 CI/测试环境配置
+- 设置 CI 阶段环境并放置实验任务
+- 改进硬件测试实验室并增加更多测试硬件
+- 合并 [https://reviews.freebsd.org/D38815](https://reviews.freebsd.org/D38815)
+- 合并 [https://reviews.freebsd.org/D36257](https://reviews.freebsd.org/D36257)
 
 开放或排队任务：
 
-* 收集和整理 [CI 任务与想法](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)
-* 为运行测试的 VM 客户机设置公网访问
-* 使用裸机硬件运行测试套件
-* 为 -CURRENT 分支添加 drm ports 构建测试
-* 计划运行 ztest 测试
-* 协助更多软件在其 CI 流程中支持 FreeBSD（Wiki 页面：[3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI)、[HostedCI](https://wiki.freebsd.org/HostedCI)）
-* 与托管 CI 提供商合作，提升对 FreeBSD 的支持
+- 收集和整理 [CI 任务与想法](https://hackmd.io/@FreeBSD-CI/freebsd-ci-todo)
+- 为运行测试的 VM 客户机设置公网访问
+- 使用裸机硬件运行测试套件
+- 为 -CURRENT 分支添加 drm ports 构建测试
+- 计划运行 ztest 测试
+- 协助更多软件在其 CI 流程中支持 FreeBSD（Wiki 页面：[3rdPartySoftwareCI](https://wiki.freebsd.org/3rdPartySoftwareCI)、[HostedCI](https://wiki.freebsd.org/HostedCI)）
+- 与托管 CI 提供商合作，提升对 FreeBSD 的支持
 
 更多进行中任务信息请参见 [freebsd-testing@ 相关工单](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=testing%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=equals)，欢迎加入我们的工作！
 
@@ -289,30 +289,30 @@ FreeBSD 发布工程团队负责制定并发布 FreeBSD 官方版本的发布计
 
 Ports 管理团队负责把控 Ports 数据树的整体方向、构建包及人员事务。以下是上一季度的工作概况：
 
-* 根据 INDEX，目前 Ports 共有 34,600 个 ports。目前有 3,000 个开放的 ports PR，其中约 730 个未分配。上一季度，main 分支有 130 位提交者完成 11,454 次提交，2023Q3 分支有 37 位提交者完成 828 次提交。相比上一季度，未分配 PR 数量略有下降，main 分支提交数增加 10%，但季度分支的回移次数减少，ports 总数略有增长。
+- 根据 INDEX，目前 Ports 共有 34,600 个 ports。目前有 3,000 个开放的 ports PR，其中约 730 个未分配。上一季度，main 分支有 130 位提交者完成 11,454 次提交，2023Q3 分支有 37 位提交者完成 828 次提交。相比上一季度，未分配 PR 数量略有下降，main 分支提交数增加 10%，但季度分支的回移次数减少，ports 总数略有增长。
 
 在第三季度，我们欢迎 Joel Bodenmann (jbo@) 成为新的 ports 提交者，为已经是 src 提交者的 mizhka@ 授予了 ports 提交权限，同时收回了 knu@ 和 uqs@ 的提交权限以保管，因他们一年未活跃。
 
 Portmgr 在第三季度讨论并处理了以下事项：
 
-* 对子包（sub-packages）取得一些进展，并由 pizzamig@ 在 EuroBSDCon 做了 lightning talk
-* 重构 ports 树的部分内容（LIB_DEPENDS、PREFIX、MANPREFIX、MANPATH）
+- 对子包（sub-packages）取得一些进展，并由 pizzamig@ 在 EuroBSDCon 做了 lightning talk
+- 重构 ports 树的部分内容（LIB_DEPENDS、PREFIX、MANPREFIX、MANPATH）
 
 Ports 数据树中对 FreeBSD 13.1 的支持已于 8 月 1 日达到生命周期终止，被移除。
 
 基础设施方面的更新：
 
-* 为 ebur128 和 guile 添加了 USES
-* Mono、Perl、PostgreSQL 的默认版本分别更新为 5.20、5.34 和 15
-* ebur128、guile 和 pycryptography 的默认版本分别设置为 "rust"、2.2 和 "rust"
-* 主要 ports 更新如下：
+- 为 ebur128 和 guile 添加了 USES
+- Mono、Perl、PostgreSQL 的默认版本分别更新为 5.20、5.34 和 15
+- ebur128、guile 和 pycryptography 的默认版本分别设置为 "rust"、2.2 和 "rust"
+- 主要 ports 更新如下：
 
-  * pkg 更新到 1.20.7
-  * chromium 更新到 117.0.5938.132
-  * Firefox 更新到 118.0.1
-  * KDE 更新到 5.27.8
-  * Rust 更新到 1.72.0
-  * Wine 更新到 8.0.2
+  - pkg 更新到 1.20.7
+  - chromium 更新到 117.0.5938.132
+  - Firefox 更新到 118.0.1
+  - KDE 更新到 5.27.8
+  - Rust 更新到 1.72.0
+  - Wine 更新到 8.0.2
 
 上一季度，pgkmgr@ 进行了 18 次 exp-run，用于测试各类 ports 升级、默认版本更新以及 pycryptography 的变更。
 
@@ -387,9 +387,9 @@ LLDB 内核模块改进项目（前一季度报告中提及）为 FreeBSD 内核
 
 修复内容包括：
 
-* 将 engines 和 legacy provider 与 libcrypto.so 共享对象链接，以确保符号可见性，为此在构建系统中 [需要应用 hack](https://cgit.freebsd.org/src/commit/Makefile.inc1?id=1a18383a52bc373e316d224cef1298debf6f7e25)
-* 修正 FIPS provider 的源文件列表
-* 确保对已废弃的 0.9.8 API 的向后兼容性，这对于基于 OpenSSH [ssh-agent(1)](https://man.freebsd.org/cgi/man.cgi?query=ssh-agent&sektion=1&format=html) 认证机制的 [security/pam_ssh_agent_auth](https://cgit.freebsd.org/ports/tree/security/pam_ssh_agent_auth/) PAM 模块尤其有用
+- 将 engines 和 legacy provider 与 libcrypto.so 共享对象链接，以确保符号可见性，为此在构建系统中 [需要应用 hack](https://cgit.freebsd.org/src/commit/Makefile.inc1?id=1a18383a52bc373e316d224cef1298debf6f7e25)
+- 修正 FIPS provider 的源文件列表
+- 确保对已废弃的 0.9.8 API 的向后兼容性，这对于基于 OpenSSH [ssh-agent(1)](https://man.freebsd.org/cgi/man.cgi?query=ssh-agent&sektion=1&format=html) 认证机制的 [security/pam_ssh_agent_auth](https://cgit.freebsd.org/ports/tree/security/pam_ssh_agent_auth/) PAM 模块尤其有用
 
 ### 登录类修复与改进
 
@@ -411,8 +411,8 @@ LLDB 内核模块改进项目（前一季度报告中提及）为 FreeBSD 内核
 
 修复内容：
 
-* 修复当 `priority` 指定实时优先级时，最终使用的优先级出现 off-by-one 错误（实时类中数值最高优先级 31 无法设置）
-* 安全性：防止 setuid/setgid 进程应用某些用户 **~/.login_conf** 中的指令（因权限不足而无法应用的指令可能在此类进程中被错误应用）
+- 修复当 `priority` 指定实时优先级时，最终使用的优先级出现 off-by-one 错误（实时类中数值最高优先级 31 无法设置）
+- 安全性：防止 setuid/setgid 进程应用某些用户 **~/.login_conf** 中的指令（因权限不足而无法应用的指令可能在此类进程中被错误应用）
 
 相关手册页已更新以反映新功能，并改进了 [login.conf(5)](https://man.freebsd.org/cgi/man.cgi?query=login.conf&sektion=5&format=html) 中 `priority` 和 `umask` 的说明。
 
@@ -458,9 +458,9 @@ LLDB 内核模块改进项目（前一季度报告中提及）为 FreeBSD 内核
 
 代码工作包括：
 
-* 实现目录读取支持的 vop_lookup() 和 vop_readdir() 钩子。
-* 实现文件读取支持的 vop_read() 和 vop_strategy() 钩子。
-* 实现符号链接读取支持的 vop_readlink() 钩子。
+- 实现目录读取支持的 vop_lookup() 和 vop_readdir() 钩子。
+- 实现文件读取支持的 vop_read() 和 vop_strategy() 钩子。
+- 实现符号链接读取支持的 vop_readlink() 钩子。
 
 我们还为 SquashFS 实现了扩展属性接口函数。剩下的工作是实现它们的内核接口钩子。
 
@@ -496,8 +496,8 @@ FreeBSD 实现了三种内置安全策略，用于限制特定用户可以看到
 
 由 `security.bsd.see_jail_proc` 控制的策略已进行了以下修复和改进：
 
-* 强化 `security.bsd.see_jail_proc` 策略，防止未授权用户尝试随机终止、改变优先级或调试子 jail 中相同真实 UID 的进程。此前，如果正确猜到 PID，即使这些进程不可见，也可能成功。
-* 使该策略可以被 MAC 策略覆盖，与其他策略一致。
+- 强化 `security.bsd.see_jail_proc` 策略，防止未授权用户尝试随机终止、改变优先级或调试子 jail 中相同真实 UID 的进程。此前，如果正确猜到 PID，即使这些进程不可见，也可能成功。
+- 使该策略可以被 MAC 策略覆盖，与其他策略一致。
 
 由 `security.bsd.see_other_gids` 控制的策略已修复为在判断用户是否属于某进程的组时，考虑进程的真实组而非有效组。其理由是某些用户在通过 setgid 位获得额外权限时，仍应继续看到其启动的进程；反之，用户不应看到由特权用户启动且临时加入其主组的进程。此新行为与 `security.bsd.see_other_uids` 对用户 ID 一直采用的方式一致（即考虑进程的真实 UID，而非有效 UID）。
 
@@ -551,12 +551,12 @@ DPAA2 是某些 NXP SoC 中的硬件级网络架构，包含多个硬件模块�
 
 #### 与上次报告的变化
 
-* 改进了 DPAA2 通道之间的隔离 [改进](https://cgit.freebsd.org/src/commit/?id=58983e4b0253ad38a3e1ef2166fedd3133fdb552)。
-* 修复了高网络负载下的 panic [修复](https://github.com/mcusim/freebsd-src/issues/19)。
-* 支持 FDT/ACPI MDIO。
-* NFS 根挂载在通过 DPAA2 网络启动时不再挂起 [修复](https://github.com/mcusim/freebsd-src/issues/7)。
-* 驱动开始 [启动](https://github.com/mcusim/freebsd-src/issues/2) 使用自己的命令门户（DPMCP）与 MC 通信。
-* [所有已关闭问题列表](https://github.com/mcusim/freebsd-src/issues?q=is%3Aissue+is%3Aclosed)。
+- 改进了 DPAA2 通道之间的隔离 [改进](https://cgit.freebsd.org/src/commit/?id=58983e4b0253ad38a3e1ef2166fedd3133fdb552)。
+- 修复了高网络负载下的 panic [修复](https://github.com/mcusim/freebsd-src/issues/19)。
+- 支持 FDT/ACPI MDIO。
+- NFS 根挂载在通过 DPAA2 网络启动时不再挂起 [修复](https://github.com/mcusim/freebsd-src/issues/7)。
+- 驱动开始 [启动](https://github.com/mcusim/freebsd-src/issues/2) 使用自己的命令门户（DPMCP）与 MC 通信。
+- [所有已关闭问题列表](https://github.com/mcusim/freebsd-src/issues?q=is%3Aissue+is%3Aclosed)。
 
 #### 进行中的工作
 
@@ -564,10 +564,10 @@ DPAA2 是某些 NXP SoC 中的硬件级网络架构，包含多个硬件模块�
 
 #### 计划
 
-* 高网络负载测试（2.5 Gbit/s、10 Gbit/s）及瓶颈缓解。
-* 基于缓存内存的软件门户。
-* 驱动资源释放，以正确卸载 dpaa2.ko。
-* 硬件支持的进一步模块（DPSW、DCE 等）。
+- 高网络负载测试（2.5 Gbit/s、10 Gbit/s）及瓶颈缓解。
+- 基于缓存内存的软件门户。
+- 驱动资源释放，以正确卸载 dpaa2.ko。
+- 硬件支持的进一步模块（DPSW、DCE 等）。
 
 赞助：Traverse Technologies（提供 Ten64 硬件用于测试）
 
@@ -585,10 +585,10 @@ SIMD 指令集扩展（如 SSE、AVX 和 NEON）在现代计算机中广泛存�
 
 每个优化函数将提供最多四种实现：
 
-* **标量** 实现：针对 amd64 优化，但不使用 SIMD。
-* **基线** 实现：使用 SSE 和 SSE2，或 **x86-64-v2** 实现：使用所有 SSE 扩展直至 SSE4.2。
-* **x86-64-v3** 实现：使用 AVX 和 AVX2。
-* **x86-64-v4** 实现：使用 AVX-512F/BW/CD/DQ。
+- **标量** 实现：针对 amd64 优化，但不使用 SIMD。
+- **基线** 实现：使用 SSE 和 SSE2，或 **x86-64-v2** 实现：使用所有 SSE 扩展直至 SSE4.2。
+- **x86-64-v3** 实现：使用 AVX 和 AVX2。
+- **x86-64-v4** 实现：使用 AVX-512F/BW/CD/DQ。
 
 用户可通过设置 `ARCHLEVEL` 环境变量选择使用的 SIMD 加速等级。
 
@@ -677,11 +677,11 @@ OpenStack 是一款开源云操作系统，为在云平台上部署各种资源�
 
 本季度，我们主要工作在 ARM64 架构支持，以及构建并发布基于 UFS 和 ZFS 的镜像至 [Azure 社区图库](https://learn.microsoft.com/azure/virtual-machines/share-gallery-community)。项目测试公共图库中有部分测试镜像，名称为 `FreeBSDCGTest-d8a43fa5-745a-4910-9f71-0c9da2ac22bf`：
 
-* FreeBSD-CURRENT-testing
-* FreeBSD-CURRENT-gen2-testing
-* FreeBSD-CURRENT-arm64-testing
-* FreeBSD-CURRENT-zfs-testing
-* FreeBSD-CURRENT-zfs-gen1-testing
+- FreeBSD-CURRENT-testing
+- FreeBSD-CURRENT-gen2-testing
+- FreeBSD-CURRENT-arm64-testing
+- FreeBSD-CURRENT-zfs-testing
+- FreeBSD-CURRENT-zfs-gen1-testing
 
 使用方法：创建虚拟机时，在“选择镜像”步骤中选择“其他项”下的“社区镜像”，然后搜索 `FreeBSD`。
 
@@ -689,17 +689,17 @@ OpenStack 是一款开源云操作系统，为在云平台上部署各种资源�
 
 进行中的任务：
 
-* 自动化镜像构建与发布流程，并合并到 src/release/
-* 构建并发布所有支持的 VM 镜像到 Azure Marketplace
-* 构建并发布快照版本至 Azure community gallery
+- 自动化镜像构建与发布流程，并合并到 src/release/
+- 构建并发布所有支持的 VM 镜像到 Azure Marketplace
+- 构建并发布快照版本至 Azure community gallery
 
 上述任务由 FreeBSD 基金会赞助，微软提供资源支持。
 
 Wei Hu 和 Souradeep Chakrabarti 修复了 ARM64 上的若干关键 bug：
 
-* [https://bugs.freebsd.org/267654](https://bugs.freebsd.org/267654)
-* [https://bugs.freebsd.org/272461](https://bugs.freebsd.org/272461)
-* [https://bugs.freebsd.org/272666](https://bugs.freebsd.org/272666)
+- [https://bugs.freebsd.org/267654](https://bugs.freebsd.org/267654)
+- [https://bugs.freebsd.org/272461](https://bugs.freebsd.org/272461)
+- [https://bugs.freebsd.org/272666](https://bugs.freebsd.org/272666)
 
 根因已在 [e7a9817b8d32: Hyper-V: vmbus: implementat bus_get_dma_tag in vmbus](https://cgit.freebsd.org/src/commit/?id=e7a9817b8d328dda04069b65944ce2ed6f54c6f0) 修复。
 
@@ -707,10 +707,10 @@ Wei Hu 和 Souradeep Chakrabarti 修复了 ARM64 上的若干关键 bug：
 
 待办事项：
 
-* 更新 FreeBSD 相关文档于 [Microsoft Learn](https://learn.microsoft.com/)
-* 支持 FreeBSD 在 [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines/) 上运行
-* 将 [Azure agent port](https://www.freshports.org/sysutils/azure-agent) 更新至最新版本
-* 回溯 [Azure agent 本地修改](https://github.com/Azure/WALinuxAgent/pull/1892)
+- 更新 FreeBSD 相关文档于 [Microsoft Learn](https://learn.microsoft.com/)
+- 支持 FreeBSD 在 [Azure Pipelines](https://azure.microsoft.com/products/devops/pipelines/) 上运行
+- 将 [Azure agent port](https://www.freshports.org/sysutils/azure-agent) 更新至最新版本
+- 回溯 [Azure agent 本地修改](https://github.com/Azure/WALinuxAgent/pull/1892)
 
 赞助：微软（人员及资源支持）
 
@@ -752,16 +752,16 @@ FreeBSD 可在 x86（Intel 和 AMD）和 ARM64（Graviton）EC2 实例上使用�
 
 本季度：
 
-* 文档门户的搜索功能从 DuckDuckGo 转移到我们自己的搜索引擎；更多信息见 [此提交](https://cgit.freebsd.org/doc/commit/?id=ac4fd34edfa1e5e2edb6fb9fc61acd782a0ed33b)
-* 根据请求，grahamperrin@ 的 doc 提交权限被暂存
-* 根据请求，pluknet@ 的 doc 提交权限被暂存
+- 文档门户的搜索功能从 DuckDuckGo 转移到我们自己的搜索引擎；更多信息见 [此提交](https://cgit.freebsd.org/doc/commit/?id=ac4fd34edfa1e5e2edb6fb9fc61acd782a0ed33b)
+- 根据请求，grahamperrin@ 的 doc 提交权限被暂存
+- 根据请求，pluknet@ 的 doc 提交权限被暂存
 
 #### Port 开发者手册
 
 手册中新增了 `USES` 选项：
 
-* [`USES= ebur128`](https://cgit.freebsd.org/doc/commit/?id=ee08121ef177489c031870601de1cc728de646e5)
-* [`USES= guile`](https://cgit.freebsd.org/doc/commit/?id=4f16184d81f1c02196d91e8d2511f23fd48e8822)
+- [`USES= ebur128`](https://cgit.freebsd.org/doc/commit/?id=ee08121ef177489c031870601de1cc728de646e5)
+- [`USES= guile`](https://cgit.freebsd.org/doc/commit/?id=4f16184d81f1c02196d91e8d2511f23fd48e8822)
 
 #### Weblate 上的 FreeBSD 翻译
 
@@ -773,32 +773,32 @@ FreeBSD 可在 x86（Intel 和 AMD）和 ARM64（Graviton）EC2 实例上使用�
 
 ##### 2023 年第三季度状态
 
-* 17 种团队语言
-* 189 位注册用户
+- 17 种团队语言
+- 189 位注册用户
 
 四位新翻译人员加入 Weblate：
 
-* minso：韩语（ko）和法语（fr_FR）
-* strgalt-t：德语（de_DE）
-* bsdmeg：德语（de_DE）
-* mvsf：葡萄牙语（pt_BR）
+- minso：韩语（ko）和法语（fr_FR）
+- strgalt-t：德语（de_DE）
+- bsdmeg：德语（de_DE）
+- mvsf：葡萄牙语（pt_BR）
 
 ##### 语言进度
 
-* 中文（简体)](zh-cn) (进度：7%)
-* 中文（繁体)](zh-tw) (进度：3%)
-* 荷兰语 (nl) (进度：1%)
-* 法语 (fr) (进度：1%)
-* 德语 (de) (进度：1%)
-* 印度尼西亚语 (id) (进度：1%)
-* 意大利语 (it) (进度：5%)
-* 韩语 (ko) (进度：33%)
-* 挪威语 (nb-no) (进度：1%)
-* 波斯语 (fa-ir) (进度：2%)
-* 波兰语 (进度：1%)
-* 葡萄牙语 (pt-br) (进度：22%)
-* 西班牙语 (es) (进度：35%)
-* 土耳其语 (tr) (进度：2%)
+- 中文（简体)](zh-cn) (进度：7%)
+- 中文（繁体)](zh-tw) (进度：3%)
+- 荷兰语 (nl) (进度：1%)
+- 法语 (fr) (进度：1%)
+- 德语 (de) (进度：1%)
+- 印度尼西亚语 (id) (进度：1%)
+- 意大利语 (it) (进度：5%)
+- 韩语 (ko) (进度：33%)
+- 挪威语 (nb-no) (进度：1%)
+- 波斯语 (fa-ir) (进度：2%)
+- 波兰语 (进度：1%)
+- 葡萄牙语 (pt-br) (进度：22%)
+- 西班牙语 (es) (进度：35%)
+- 土耳其语 (tr) (进度：2%)
 
 感谢所有参与翻译或审阅文档的人员。同时请在本地用户组中推广此工作，我们始终需要更多志愿者。
 
@@ -806,9 +806,9 @@ FreeBSD 可在 x86（Intel 和 AMD）和 ARM64（Graviton）EC2 实例上使用�
 
 联系人：Sergio Carlavilla [carlavilla@FreeBSD.org](mailto:carlavilla@FreeBSD.org)
 
-* [已重写网络章节](https://reviews.freebsd.org/D40546)
-* [已重写 Jail 章节已](https://cgit.freebsd.org/doc/commit/?id=612b7cc1721224c494c5b2600188e1508bb5611b)
-* 下一步工作是文件系统部分：UFS、OpenZFS、其他文件系统
+- [已重写网络章节](https://reviews.freebsd.org/D40546)
+- [已重写 Jail 章节已](https://cgit.freebsd.org/doc/commit/?id=612b7cc1721224c494c5b2600188e1508bb5611b)
+- 下一步工作是文件系统部分：UFS、OpenZFS、其他文件系统
 
 #### FAQ 工作组
 
@@ -865,7 +865,7 @@ FreeBSD 可在 x86（Intel 和 AMD）和 ARM64（Graviton）EC2 实例上使用�
 
 然而，在项目的以下方面我们仍需要帮助：
 
-* 因为我不是机器学习或深度学习专家，可在这些领域我们遇到了许多困难，例如数据清理的充分性以及最终插件开发过程中的不确定性。我们希望在这方面获得指导。
+- 因为我不是机器学习或深度学习专家，可在这些领域我们遇到了许多困难，例如数据清理的充分性以及最终插件开发过程中的不确定性。我们希望在这方面获得指导。
 
 赞助：FreeBSD 基金会
 
@@ -901,21 +901,21 @@ CMake 本季度无更新，因此至少落后一个小版本。最新版本的�
 
 KDE Gear 每季度发布，KDE Plasma 每月更新，KDE Frameworks 每月也有新版本。这些大型更新在上游发布后不久合并，不单独列出。
 
-* KDE Frameworks 达到 5.110 版本。KDE Frameworks 5 系列正在收尾，约六个月后上游进入长期支持。
-* KDE Plasma Desktop 更新至 5.27.8。与 Frameworks 类似，KDE Plasma 5 的开发正逐渐结束，上游将转向 KDE Plasma 6。
-* KDE Gear 更新至 23.08.1。
+- KDE Frameworks 达到 5.110 版本。KDE Frameworks 5 系列正在收尾，约六个月后上游进入长期支持。
+- KDE Plasma Desktop 更新至 5.27.8。与 Frameworks 类似，KDE Plasma 5 的开发正逐渐结束，上游将转向 KDE Plasma 6。
+- KDE Gear 更新至 23.08.1。
 
 #### 相关 Ports
 
 KDE 生态包含大量的 Ports，大部分由 kde@ 维护，均基于 Qt 和 KDE Frameworks。kde@ 团队根据需要更新所有相关 Ports。本季度，例如 tcberner@ 和 arrowd@ 更新或修复了以下 Ports（远不止这些）：
 
-* [astro/merkaartor](https://cgit.freebsd.org/ports/tree/astro/merkaartor/)
-* [devel/massif-visualizer](https://cgit.freebsd.org/ports/tree/devel/massif-visualizer/)
-* [finance/alkimia](https://cgit.freebsd.org/ports/tree/finance/alkimia/)
-* [irc/quassel](https://cgit.freebsd.org/ports/tree/irc/quassel/)
-* [net-im/kaidan](https://cgit.freebsd.org/ports/tree/net-im/kaidan/)
-* [sysutils/bsdisks](https://cgit.freebsd.org/ports/tree/sysutils/bsdisks/)
-* [sysutils/k3b](https://cgit.freebsd.org/ports/tree/sysutils/k3b/)
+- [astro/merkaartor](https://cgit.freebsd.org/ports/tree/astro/merkaartor/)
+- [devel/massif-visualizer](https://cgit.freebsd.org/ports/tree/devel/massif-visualizer/)
+- [finance/alkimia](https://cgit.freebsd.org/ports/tree/finance/alkimia/)
+- [irc/quassel](https://cgit.freebsd.org/ports/tree/irc/quassel/)
+- [net-im/kaidan](https://cgit.freebsd.org/ports/tree/net-im/kaidan/)
+- [sysutils/bsdisks](https://cgit.freebsd.org/ports/tree/sysutils/bsdisks/)
+- [sysutils/k3b](https://cgit.freebsd.org/ports/tree/sysutils/k3b/)
 
 感谢 jhale@ 更新了 [devel/qtcreator](https://cgit.freebsd.org/ports/tree/devel/qtcreator/) 至 11.0.3，为 Qt 和 KDE 应用开发提供更多功能的集成开发环境。
 
@@ -941,24 +941,24 @@ Pantheon 桌面环境为 elementary OS 设计，基于 GNOME 技术（如 Mutter
 
 我已提交多项补丁以保持这些 Port 更新：
 
-* [deskutils/iconbrowser](https://cgit.freebsd.org/ports/tree/deskutils/iconbrowser/)
-* [multimedia/elementary-videos](https://cgit.freebsd.org/ports/tree/multimedia/elementary-videos/)
-* [x11-themes/gnome-icons-elementary](https://cgit.freebsd.org/ports/tree/x11-themes/gnome-icons-elementary/)
-* [editors/elementary-code](https://cgit.freebsd.org/ports/tree/editors/elementary-code/)
+- [deskutils/iconbrowser](https://cgit.freebsd.org/ports/tree/deskutils/iconbrowser/)
+- [multimedia/elementary-videos](https://cgit.freebsd.org/ports/tree/multimedia/elementary-videos/)
+- [x11-themes/gnome-icons-elementary](https://cgit.freebsd.org/ports/tree/x11-themes/gnome-icons-elementary/)
+- [editors/elementary-code](https://cgit.freebsd.org/ports/tree/editors/elementary-code/)
 
 Bugzilla 上仍有以下 Ports 的更新问题待解决：[bug 列表](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&query_format=advanced&short_desc=elementary-calendar%20elementary-terminal%20granite7&short_desc_type=anywordssubstr)：
 
-* [x11-toolkits/granite7](https://cgit.freebsd.org/ports/tree/x11-toolkits/granite7/)：更新至 7.3.0
-* [deskutils/elementary-calendar](https://cgit.freebsd.org/ports/tree/deskutils/elementary-calendar/)：更新至 7.0.0
-* [x11/elementary-terminal](https://cgit.freebsd.org/ports/tree/x11/elementary-terminal/)：更新至 6.1.2
+- [x11-toolkits/granite7](https://cgit.freebsd.org/ports/tree/x11-toolkits/granite7/)：更新至 7.3.0
+- [deskutils/elementary-calendar](https://cgit.freebsd.org/ports/tree/deskutils/elementary-calendar/)：更新至 7.0.0
+- [x11/elementary-terminal](https://cgit.freebsd.org/ports/tree/x11/elementary-terminal/)：更新至 6.1.2
 
 同时，我也在更新 GNOME 栈（尤其是 WebKitGTK、libwnck、Mutter、Vala），发现 [x11/plank](https://cgit.freebsd.org/ports/tree/x11/plank/) 出现若干回归（与监控打开的应用相关）。
 
 开发仓库中新增三个应用：
 
-* deskutils/atlas：地图查看器
-* deskutils/nimbus：天气小工具
-* audio/leopod：播客客户端
+- deskutils/atlas：地图查看器
+- deskutils/nimbus：天气小工具
+- audio/leopod：播客客户端
 
 ### FreeBSD Office 团队
 
@@ -984,8 +984,8 @@ FreeBSD Office 团队致力于办公相关软件套件和工具，如 OpenOffice
 
 我们正在寻找帮助完成以下开放任务的人：
 
-* [开放 Bug 列表](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=office%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=substring&list_id=650685&order=Bug+Number&query_format=advanced) 包含所有待处理问题
-* 回溯 [Ports 中的本地补丁](https://cgit.freebsd.org/ports/tree/editors/libreoffice/files)
+- [开放 Bug 列表](https://bugs.freebsd.org/bugzilla/buglist.cgi?bug_status=%3Cem%3Eopen%3C/em%3E&email1=office%40FreeBSD.org&emailassigned_to1=1&emailcc1=1&emailtype1=substring&list_id=650685&order=Bug+Number&query_format=advanced) 包含所有待处理问题
+- 回溯 [Ports 中的本地补丁](https://cgit.freebsd.org/ports/tree/editors/libreoffice/files)
 
 补丁、意见和异议均欢迎在邮件列表和 Bugzilla 中提交。
 
@@ -1001,12 +1001,12 @@ FreeBSD Office 团队致力于办公相关软件套件和工具，如 OpenOffice
 
 Wifibox 是一项实验性项目，用于探索在 FreeBSD 主机系统上通过虚拟化 Linux 客机驱动无线网卡的方法。已有手动设置指南，而 Wifibox 旨在将这些想法整合为一个易于使用的软件包。
 
-* 它使用 [bhyve(8)](https://man.freebsd.org/cgi/man.cgi?query=bhyve&sektion=8&format=html) 运行嵌入式 Linux 系统，从而实现低资源占用。要求 x64 CPU 带 I/O MMU（AMD-Vi、Intel VT-d）、约 150 MB 物理内存，以及可用磁盘空间用于虚拟机虚拟磁盘镜像，在某些情况下仅需约 30 MB。适用于 FreeBSD 12 及更高版本，部分网卡可能需要 FreeBSD 13。
-* 虚拟机使用 [Alpine Linux](https://alpinelinux.org/)，这是一个面向安全的轻量级发行版，基于 [musl libc](https://www.musl-libc.org/) 和 [BusyBox](https://busybox.net/)，并引入了一些来自 [Arch Linux](https://archlinux.org/) 的自定义扩展和补丁。内置多种诊断工具以便更好管理硬件。近期版本基于 Linux 6.1，也可选择 Linux 6.5。
-* 配置文件与主机系统共享。虚拟机可使用 [wpa_supplicant(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_supplicant&sektion=8&format=html) 或 [hostapd(8)](https://man.freebsd.org/cgi/man.cgi?query=hostapd&sektion=8&format=html)](取决于配置），可直接导入主机的 [wpa_supplicant.conf(5)](https://man.freebsd.org/cgi/man.cgi?query=wpa_supplicant.conf&sektion=5&format=html) 或 [hostapd.conf(5)](https://man.freebsd.org/cgi/man.cgi?query=hostapd.conf&sektion=5&format=html) 文件，无需修改。
-* 配置完成后，客机可暴露 [wpa_supplicant(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_supplicant&sektion=8&format=html) 和 [hostapd(8)](https://man.freebsd.org/cgi/man.cgi?query=hostapd&sektion=8&format=html) 的控制套接字，使主机可直接使用相关工具，如 [wpa_cli(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_cli&sektion=8&format=html)、[wpa_gui(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_gui&sektion=8&format=html)](来自 [net/wpa_supplicant_gui](https://cgit.freebsd.org/ports/tree/net/wpa_supplicant_gui/) 包）或 [hostapd_cli(8)](https://man.freebsd.org/cgi/man.cgi?query=hostapd_cli&sektion=8&format=html)。
-* 软件以单一包形式提供，易于安装和卸载，带 [rc(8)](https://man.freebsd.org/cgi/man.cgi?query=rc&sektion=8&format=html) 系统服务，可在启动时自动运行客机，关机时自动停止。
-* 可配置 IPv6 流量转发，当前为实验性选项，默认开启。
+- 它使用 [bhyve(8)](https://man.freebsd.org/cgi/man.cgi?query=bhyve&sektion=8&format=html) 运行嵌入式 Linux 系统，从而实现低资源占用。要求 x64 CPU 带 I/O MMU（AMD-Vi、Intel VT-d）、约 150 MB 物理内存，以及可用磁盘空间用于虚拟机虚拟磁盘镜像，在某些情况下仅需约 30 MB。适用于 FreeBSD 12 及更高版本，部分网卡可能需要 FreeBSD 13。
+- 虚拟机使用 [Alpine Linux](https://alpinelinux.org/)，这是一个面向安全的轻量级发行版，基于 [musl libc](https://www.musl-libc.org/) 和 [BusyBox](https://busybox.net/)，并引入了一些来自 [Arch Linux](https://archlinux.org/) 的自定义扩展和补丁。内置多种诊断工具以便更好管理硬件。近期版本基于 Linux 6.1，也可选择 Linux 6.5。
+- 配置文件与主机系统共享。虚拟机可使用 [wpa_supplicant(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_supplicant&sektion=8&format=html) 或 [hostapd(8)](https://man.freebsd.org/cgi/man.cgi?query=hostapd&sektion=8&format=html)](取决于配置），可直接导入主机的 [wpa_supplicant.conf(5)](https://man.freebsd.org/cgi/man.cgi?query=wpa_supplicant.conf&sektion=5&format=html) 或 [hostapd.conf(5)](https://man.freebsd.org/cgi/man.cgi?query=hostapd.conf&sektion=5&format=html) 文件，无需修改。
+- 配置完成后，客机可暴露 [wpa_supplicant(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_supplicant&sektion=8&format=html) 和 [hostapd(8)](https://man.freebsd.org/cgi/man.cgi?query=hostapd&sektion=8&format=html) 的控制套接字，使主机可直接使用相关工具，如 [wpa_cli(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_cli&sektion=8&format=html)、[wpa_gui(8)](https://man.freebsd.org/cgi/man.cgi?query=wpa_gui&sektion=8&format=html)](来自 [net/wpa_supplicant_gui](https://cgit.freebsd.org/ports/tree/net/wpa_supplicant_gui/) 包）或 [hostapd_cli(8)](https://man.freebsd.org/cgi/man.cgi?query=hostapd_cli&sektion=8&format=html)。
+- 软件以单一包形式提供，易于安装和卸载，带 [rc(8)](https://man.freebsd.org/cgi/man.cgi?query=rc&sektion=8&format=html) 系统服务，可在启动时自动运行客机，关机时自动停止。
+- 可配置 IPv6 流量转发，当前为实验性选项，默认开启。
 
 Wifibox 已在 Intel 芯片组上进行了大量测试，表现出良好的性能与稳定性，可作为 FreeBSD 对这些芯片组支持尚未完善时的过渡方案。
 
