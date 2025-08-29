@@ -1,4 +1,4 @@
-# 目录
+# Table of contents
 
 * [FreeBSD 中文状态报告](README.md)
 * [编辑日志](CHANGELOG.md)
@@ -25,7 +25,7 @@
 ## 2022
 
 * [FreeBSD 2022 年第四季度状态报告](2022/2022-Q4.md)
-* [FreeBSD 2022 年第三季度状态报告](2022/2022-Q3.md.md)
+* [FreeBSD 2022 年第三季度状态报告](2022/2022-Q3.md)
 * [FreeBSD 2022 年第二季度状态报告](2022/2022-Q2.md)
 * [FreeBSD 2022 年第一季度状态报告](2022/2022-Q1.md)
 
