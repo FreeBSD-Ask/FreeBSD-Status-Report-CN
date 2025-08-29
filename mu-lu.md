@@ -1,4 +1,4 @@
-# 目录
+# Table of contents
 
 * [FreeBSD 中文状态报告](README.md)
 * [编辑日志](CHANGELOG.md)
@@ -175,4 +175,3 @@
 * [FreeBSD 2001 年 8 月状态报告](2001/8.md)
 * [FreeBSD 2001 年 7 月状态报告](2001/7.md)
 * [FreeBSD 2001 年 6 月状态报告](2001/6.md)
-```
