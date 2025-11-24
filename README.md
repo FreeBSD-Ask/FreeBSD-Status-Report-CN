@@ -24,4 +24,4 @@ FreeBSD 状态报告机制正是为解决这一问题而设立，它为开发者
 
 ---
 
-若你有意提交状态报告，或想了解状态报告的发布流程，请参阅我们的[状态报告流程说明](https://docs.freebsd.org/en/articles/freebsd-status-report-process/)。
+若你有意提交状态报告，或想了解状态报告的发布流程，请参阅我们的 [状态报告流程说明](https://docs.freebsd.org/en/articles/freebsd-status-report-process/)。
