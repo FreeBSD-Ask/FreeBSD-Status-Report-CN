@@ -1,5 +1,10 @@
 # FreeBSD 中文状态报告
 
+>**技巧**
+>
+>关注实时开发状态或使用 CURRENT 的用户应该关注 [freebsd-src/UPDATING](https://github.com/freebsd/freebsd-src/blob/main/UPDATING) 及 [freebsd-src/RELNOTES](https://github.com/freebsd/freebsd-src/blob/main/RELNOTES)。
+
+
 状态报告原文：<https://www.freebsd.org/status/>
 
 文档部署地址：<https://book.bsdcn.org>
