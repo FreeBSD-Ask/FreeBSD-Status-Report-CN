@@ -2,12 +2,12 @@
 
 >**技巧**
 >
->关注实时开发状态或使用 CURRENT 的用户应该关注 [freebsd-src/UPDATING](https://github.com/freebsd/freebsd-src/blob/main/UPDATING) 及 [freebsd-src/RELNOTES](https://github.com/freebsd/freebsd-src/blob/main/RELNOTES)。
+>那些关注实时开发状态或使用 CURRENT 的用户应该关注 [freebsd-src/UPDATING](https://github.com/freebsd/freebsd-src/blob/main/UPDATING) 及 [freebsd-src/RELNOTES](https://github.com/freebsd/freebsd-src/blob/main/RELNOTES)。
+>
+>否则仅建议你使用在生命周期内最新的 RELEASE 版本。
 
-
-状态报告原文：<https://www.freebsd.org/status/>
-
-文档部署地址：<https://book.bsdcn.org>
+- 状态报告原文：<https://www.freebsd.org/status/>
+- 本文档部署地址：<https://book.bsdcn.org>
 
 >**警告**
 >
@@ -17,15 +17,13 @@
 
 ## 页面说明
 
-以下是状态页面说明的中文翻译：
-
 FreeBSD 开发模式的优势之一，在于其集中化的设计与实现——操作系统由中央代码库统一维护，并通过集中管理的邮件列表进行讨论。这种模式能高度协调系统各组件的开发者，确保从架构到代码风格的各项策略在整个系统中得以贯彻。然而随着 FreeBSD 开发社区的壮大，邮件列表流量与代码库修改频次与日俱增，即使是最专注的开发者也难以全面掌握代码库中的所有动态。
 
 FreeBSD 状态报告机制正是为解决这一问题而设立，它为开发者提供了向社区通报其工作进展的渠道，无论这些开发基于中央代码库还是独立进行。每个项目及子项目都会附一段摘要说明，阐述自上次报告以来的进展。若属新项目或未提交过历史报告的项目，则会在状态信息前附加简短描述。
 
 项目组会定期编写并发布特别状态报告，开发者峰会报告便是其中之一。开发者峰会为开发者提供面对面探讨项目相关议题的交流平台，所有有志为 FreeBSD 项目作出重大贡献的人士均可参与，这类峰会极具参与价值。
 
-只要明确标注来源并给予相应署名，允许对这些状态报告进行全部/部分转载。
+只要明确标注来源并给予相应署名，就可全文或部分转载这些状态报告。
 
 ---
 
