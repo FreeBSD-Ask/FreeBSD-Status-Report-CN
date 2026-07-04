@@ -48,11 +48,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 - **命令行前缀：** `#` 表示 root 权限，`$` 表示普通用户。不要使用 `sudo`。
 - **提示块：** tip/important/note/warning/caution 使用 `>` 缩进引用，关键词 **加粗**。
-- **代码块：** 使用 ` ```sh ` 兜底，禁止使用 text 作为代码块标记
+- **代码块：** 使用 ` ```sh ` 兜底，禁止使用 text 作为代码块标记。
 - **表格：** 一律居中。
 - **禁止 HTML：** 本项目不支持任何 HTML 语法。
 - **文件命名：** 使文件名中不得包含空格、中文字符或英文冒号 `:`，必须兼容 Windows 操作系统对文件名的要求。
 - 正文（非代码块、非行间代码）的引号一律使用中文双引号，即`“”`，要求方向正确，必须成对。
+- 注意：不带选项和参数的裸命令，如 mv cp 等，一般不加反引号，不进行包裹。
 - `汉字 **纯粹中文文字加粗内容** 汉字` 中间的 `**纯粹中文文字加粗内容**` 前后必须有一个空格（有标点在前后则不计入此条）
 
 ### 术语
@@ -73,16 +74,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 在正文中插入图片，使用 markdown 格式。
 
-### 翻译流程
-
-1. 参考官方英文手册原文进行人工校对
-2. 提交 PR 到 main 分支
-
 ### 翻译校对工作流程（Claude Code）
 
 对已翻译章节进行质量审校时，参考以下步骤：
 
-1. **获取原文**：通过 `WebFetch` 抓取对应章节的英文原版翻译源（`https://www.freebsd.org/releases/`），获取完整的英文文本。
+1. **获取原文**：通过 `WebFetch` 抓取对应章节的英文原版翻译源（`https://www.freebsd.org/releases/`），获取完整的英文文本。（存在 en 文件夹时忽略此步）
 
 2. **逐句对照**：将中文翻译与英文原文逐句比对，重点检查以下问题类别：
 
@@ -116,3 +112,26 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
    - 禁止篡改带圈数字，如 ①②③ 等，确保其位置、数量和英语原文一致
    - 确保全书 Markdown 格式一致：确保 **markdownlint**（markdownlint 必须使用 `.github/.markdownlint.json` 规则）0 报错，对于错误必须手动逐个修改。
    - 确保全书 Markdown 格式正确，数量、成对否、位置等。
+
+## Lint 配置
+
+- **markdownlint**（`.github/.markdownlint.json`）：本地已安装 `markdownlint-cli2 v0.22.1`（基于 `markdownlint v0.40.0`），可在本地直接运行检查与修复
+  - **本地运行命令**（在仓库根目录执行）：
+
+    ```sh
+    # 检查全部中文 .md（排除 en/、.github/、.gitbook/、node_modules/、script/）
+    markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!.gitbook/**" "!node_modules/**" "!script/**" --config .github/.markdownlint.json
+
+    # 自动修复可修复的问题（MD012 多余空行、MD047 末尾换行、MD034 裸 URL 等）
+    markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!.gitbook/**" "!node_modules/**" "!script/**" --config .github/.markdownlint.json --fix
+    ```
+
+  - **MD060 表格列风格规则（重要）**：配置为 `"style": "compact"` + `"aligned_delimiter": true`
+    - **compact 风格**：管道符两侧各保留**单个空格**，例如 `| cell1 | cell2 |`；空单元格写作 `| |`（不是 `||` 或 `|  |`）
+    - **aligned_delimiter**：分隔行 `|---|` 的管道符位置必须与表头行的管道符位置对齐
+    - **CJK 显示宽度**：markdownlint 按**显示宽度**计算列位置，**每个中文字符按 2 宽度**计算（与英文 1 宽度不同）。因此含 CJK 的列宽 = CJK 字符数 × 2 + ASCII 字符数 × 1
+    - **分隔行 dash 数量公式**：若某列内容显示宽度为 W，则分隔行该列总宽（含两侧空格）也应为 W，dash 数量 = W − 4（减去前后各 1 空格 + 前后各 1 冒号）。例如列内容 `FreeBSD 版本` 显示宽度 = 7+1+4 = 12，分隔行应为 ` :--------: `（8 个 dash）
+    - **常见错误修复**：当 markdownlint 报 `MD060/table-column-style [Table pipe does not align with header for option "aligned_delimiter"]` 时，需手动扩展分隔行 dash 数量，使管道符位置与表头按显示宽度对齐；`--fix` 无法自动修复此类问题
+  - **MD056 表格列数规则**：表头声明几列，所有数据行都必须有几列；末尾缺空单元格时需补 `| |`，而非省略管道符
+- **textlint**（`.textlintrc`）：仅启用 `ja-space-between-half-and-full-width` 规则，用于 CJK/英文空格检查
+- **lychee**（`.github/lychee.toml`）：6 线程、30 并发、30 秒超时、最多 3 次重试、Chrome UA、排除私有 IP 和 `ftp.freebsd.org`
