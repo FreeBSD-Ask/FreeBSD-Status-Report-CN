@@ -15,7 +15,7 @@
 
 在桌面工作组中，Kris Moore 总结了过去几个月 PC-BSD 领域的变化。基于新发布的 9.2-RELEASE 版本的构建正在进行中，基于 10-STABLE 的未来构建也将很快推出。计划是跟踪 10-STABLE 分支，直到其变成 11-STABLE。Kris 还描述了他们已切换到的滚动发布模型。该方法利用 freebsd-update(8) 提供基于内核和用户空间工具的滚动更新，与此同时，pkg(8) 被用于桌面应用程序的软件包管理。还报告称，PC-BSD 团队已经改善了他们工具的 ZFS 集成，包括安装程序。即将发布的 PC-BSD 版本的另一个亮点是，它们将包括 Gleb Kurtsou 的 PEFS，提供基于 PAM 的认证来加密用户主目录。
 
-接下来，报告和讨论了当前进行中的项目。最近，Port sysutils/pcbsd-utils 和 sysutils/pcbsd-utils-qt4 已添加到 ports 中，其中包含所有 PC-BSD 开发的工具和实用程序，前者是命令行版本，后者是具有 GUI 支持的版本。PC-BSD 开发者们还在开发一个 Life-preserver ZFS 命令行和 GUI 工具，仍在积极开发中。此工具的目的是利用 ZFS 的快照和复制功能作为备份解决方案。
+接下来，报告和讨论了当前进行中的项目。最近，Port sysutils/pcbsd-utils 和 sysutils/pcbsd-utils-qt4 已添加到 Ports 中，其中包含所有 PC-BSD 开发的工具和实用程序，前者是命令行版本，后者是具有 GUI 支持的版本。PC-BSD 开发者们还在开发一个 Life-preserver ZFS 命令行和 GUI 工具，仍在积极开发中。此工具的目的是利用 ZFS 的快照和复制功能作为备份解决方案。
 
 最后，总结了 PC-BSD 10 的计划。PC-BSD 使用的 PBI 软件包格式正在修订，将更新为使用 pkg(8) 仓库构建 PBI，并为服务器 PBI 提供更好的集成。作为此项工作的部分，将调查是否有可能在不实际安装的情况下运行 PBI。pc-sysinstall 将具有文本界面。起初将是基础版本，但以后将提供一个命令行接口，通过 pc-sysinstall 后端进行安装。
 
