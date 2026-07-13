@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **翻译基准：** 以 FreeBSD 英语版本为准，翻译源为 <https://www.freebsd.org/releases/>，具体原文链接在每份 Markdown 文章开头有标注，格式形如：`- 原文链接：[FreeBSD Quarterly Status Report 3rd Quarter 2021](https://www.freebsd.org/status/report-2021-07-2021-09/)`。
 
-**website/content/en/status**
+**英文原文来源**：`en/` 文件夹，从 GitHub `freebsd/freebsd-doc` 仓库拉取。其中 2021 年及以后的报告为 ADOC 格式（来自 `main` 分支 `website/content/en/status/`），2001-2020 年的报告为 XML 格式（来自 `svn_head` 分支 `en_US.ISO8859-1/htdocs/news/status/`）。拉取脚本为 `script/pull_en_reports.py`（ADOC）和 `script/pull_en_reports_svn.py`（XML）。
 
 ## 内容架构
 
@@ -101,7 +101,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 翻译流程
 
-1. 参考 `en/` 文件夹下对应发行版目录的 adoc 文件进行人工校对
+1. 参考 `en/` 文件夹下对应报告目录的原文文件进行人工校对（2021 年及以后为 adoc 格式，2001-2020 年为 xml 格式）
 2. 提交 PR 到 main 分支
 
 ### 更新流程
@@ -110,7 +110,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 1. **检测上游更新**：访问 <https://www.freebsd.org/status/> 获取最新季度报告列表，对比 `SUMMARY.md` 中已收录的条目，识别新增或修订的报告。对于可疑的修订，需联网复查三次后确认。
 
-2. **获取英文原文**：通过 `WebFetch` 抓取对应报告的英文原版页面（URL 格式形如 `https://www.freebsd.org/status/report-YYYY-MM-YYYY-MM/`）。若仓库存在 `en/` 文件夹下对应 adoc 文件，以 adoc 为唯一权威源。
+2. **获取英文原文**：优先从 `en/` 文件夹获取对应报告的原文文件（2021 年及以后为 adoc 格式，2001-2020 年为 xml 格式），以 `en/` 文件夹下的原文文件为唯一权威源。如 `en/` 文件夹中缺失该报告，可通过 `WebFetch` 抓取对应报告的英文原版页面（URL 格式形如 `https://www.freebsd.org/status/report-YYYY-MM-YYYY-MM/`）作为参考。
 
 3. **比对差异**：将英文原文与现有中文 `.md` 文件逐段对照，重点关注：
    - 上游新增的条目（entries）或段落
