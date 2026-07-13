@@ -10,6 +10,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **翻译基准：** 以 FreeBSD 英语版本为准，翻译源为 <https://www.freebsd.org/releases/>，具体原文链接在每份 Markdown 文章开头有标注，格式形如：`- 原文链接：[FreeBSD Quarterly Status Report 3rd Quarter 2021](https://www.freebsd.org/status/report-2021-07-2021-09/)`。
 
+**website/content/en/status** 
+
 ## 内容架构
 
 ### 核心文件
