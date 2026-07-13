@@ -10,7 +10,32 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **翻译基准：** 以 FreeBSD 英语版本为准，翻译源为 <https://www.freebsd.org/releases/>，具体原文链接在每份 Markdown 文章开头有标注，格式形如：`- 原文链接：[FreeBSD Quarterly Status Report 3rd Quarter 2021](https://www.freebsd.org/status/report-2021-07-2021-09/)`。
 
-**英文原文来源**：`en/` 文件夹，从 GitHub `freebsd/freebsd-doc` 仓库拉取。其中 2021 年及以后的报告为 ADOC 格式（来自 `main` 分支 `website/content/en/status/`），2001-2020 年的报告为 XML 格式（来自 `svn_head` 分支 `en_US.ISO8859-1/htdocs/news/status/`）。拉取脚本为 `script/pull_en_reports.py`（ADOC）和 `script/pull_en_reports_svn.py`（XML）。
+**英文原文来源**：`en/` 文件夹，从 GitHub `freebsd/freebsd-doc` 仓库拉取。拉取脚本为 `script/pull_en_reports.py`（ADOC）和 `script/pull_en_reports_svn.py`（XML）。
+
+#### `en/` 文件夹分支分析
+
+`en/` 文件夹共 102 个报告目录，源自 `freebsd/freebsd-doc` 仓库的两个分支：
+
+| 分支 | 路径 | 格式 | 年份范围 | 目录数 | 文件结构 |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| `main` | `website/content/en/status/` | ADOC | 2021 Q1 - 2026 Q2 | 22 | 每目录含 `_index.adoc` + 多个分节 `.adoc` 文件（8-47 个） |
+| `svn_head` | `en_US.ISO8859-1/htdocs/news/status/` | XML | 2001-06 - 2020 Q3 | 80 | 每目录含单个 `report-*.xml` 文件 |
+
+**分支说明：**
+
+- **`main` 分支**：当前默认分支，采用 AsciiDoc 格式。每篇报告为一个目录，内含 `_index.adoc`（总览）和各独立条目的 `.adoc` 文件（如 `FreshPorts.adoc`、`ACPI.adoc` 等）。此分支仅保留 2021 年起的报告，早期报告目录已被移除（但 `_index.adoc` 中仍保留指向早期报告的链接，实际目录不存在）。
+- **`svn_head` 分支**：SVN 到 Git 的迁移分支，保留旧版文档树结构。状态报告以单个 XML 文件形式存储在 `en_US.ISO8859-1/htdocs/news/status/` 路径下，采用 FreeBSD DocBook DTD 格式。涵盖 2001-2020 年的全部报告。
+
+**特殊报告与异常情况：**
+
+- **devsummit 特别报告**：`report-2013-05-devsummit`（BSDCan 2013 开发者峰会）、`report-2013-09-devsummit`（EuroBSDcon 2013 开发者峰会），仅 XML 格式，非季度报告。
+- **`report-2017-10-2017-12`**：存在于 `svn_head` 分支但未列入 `_index.adoc` 的官方报告列表，可能为未正式发布的草稿。
+- **缺失报告 `report-2020-10-2020-12`**（2020 Q4）：在 `main` 和 `svn_head` 两个分支中均不存在源文件。该报告仅在 FreeBSD 网站上有 HTML 版本，GitHub 仓库中无对应源文件。校对此报告时需通过 `WebFetch` 抓取网站内容作为参考。
+- **早期报告命名不规则**：2001 年的报告为单月命名（如 `report-2001-06`）；部分报告跨年份（如 `report-2001-12-2002-01`）或覆盖非标准月数（如 `report-2003-03-2003-09` 覆盖 7 个月、`report-2018-01-2018-09` 覆盖 9 个月）。
+
+**`en/` 目录名与中文 `.md` 文件的对应关系：**
+
+`en/` 目录名 `report-YYYY-MM-YYYY-MM` 对应中文翻译文件 `YYYY/M-M.md` 或 `YYYY/QN.md`。例如 `en/report-2008-10-2008-12/` 对应 `2008/10-12.md`。
 
 ## 内容架构
 
