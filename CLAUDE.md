@@ -71,6 +71,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - **禁止 AsciiDoc 残留语法：** 禁止在 Markdown 中保留 AsciiDoc 的 `::` 定义列表语法（如 `mini-memstick::`、`dvd1::`）和 `+` 续行标记。`::` 双冒号一律不被允许。英文原文中的 AsciiDoc 定义列表术语（如 `dvd1::`、`disc1::`、`bootonly::`、`memstick::`、`mini-memstick::`、`FreeBSD/arm SD 卡镜像::`）必须转换为 Markdown 加粗标签格式：`**术语**` + 空行 + 描述文本。`+` 续行标记必须移除，段落间用空行分隔。如需链接，必须指向真实 URL，不得使用 `::` 伪引用。
 - **fstab 不翻译：** fstab 文件表头（如 `# Device Mountpoint FStype Options Dump Pass#`）及其相关内容保持英文原样，不翻译。
 - **段落换行：** 一段内容必须在同一行，不同段必须换行（段落之间用空行分隔）。禁止在同一段落内插入软换行（即两行普通文本之间无空行分隔却属于同一段落的情况）。
+- 避免 xx yy 类倒置。包括不限于 xx 可调参数，应为可调参数 xx。禁止机械替换。
 
 ### 术语
 
