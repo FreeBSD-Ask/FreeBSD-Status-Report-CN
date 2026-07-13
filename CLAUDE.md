@@ -10,7 +10,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **翻译基准：** 以 FreeBSD 英语版本为准，翻译源为 <https://www.freebsd.org/releases/>，具体原文链接在每份 Markdown 文章开头有标注，格式形如：`- 原文链接：[FreeBSD Quarterly Status Report 3rd Quarter 2021](https://www.freebsd.org/status/report-2021-07-2021-09/)`。
 
-**website/content/en/status** 
+**website/content/en/status**
 
 ## 内容架构
 
@@ -77,19 +77,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 术语
 
-- "Jail" 保持英文，在正文不使用复数（不翻译为"监狱"、"监牢"）禁止机械替换。
-- "拷贝" → "复制"，"壳/外壳" → "shell"禁止机械替换。
-- 第二人称一律使用"你"而非"您"
-- "bhyve" 保持英文，在正文不使用复数
-- `Ports` 保持英文不翻译，且保持首字母大写（注意区分真正的“端口”）禁止机械替换。
-- “Jail”保持英文（不翻译为“监狱”、“监牢”）禁止机械替换。
+- “Jail”保持英文，在正文不使用复数（不翻译为“监狱”、“监牢”）。禁止机械替换。
+- “bhyve”保持英文，在正文不使用复数。
+- `Ports` 保持英文不翻译，且保持首字母大写（注意区分真正的“端口”）。禁止机械替换。
 - “pkgbase”保持英文不翻译（不翻译为“打包基系统”、“打包基本系统”、“基系统包”等）。禁止机械替换。
 - “base system” → “基本系统”（不翻译为“基系统”等）。禁止机械替换。
 - “package” / “packages” → “软件包”（不保留英文“package”，不翻译为“包”）。代码块和命令输出中的“package”保留英文。禁止机械替换。
 - “Google Summer of Code” → “谷歌编程之夏”，“GSoC” → “编程之夏”（“Google”已单独翻译时不重复）。禁止机械替换。
 - “拷贝” → “复制”，“壳/外壳” → “shell”。禁止机械替换。
 - “The FreeBSD Foundation” → “FreeBSD 基金会”，注意前后空格自动调整（CJK 与 CJK 间不留空格，如“基金会的注册商标”、“基金会[捐赠]”；CJK 与 Latin 间保留空格，如“包括 FreeBSD 基金会、”）。禁止机械替换。
-- 第二人称一律使用“你”而非“您”
+- 第二人称一律使用“你”而非“您”。
 - “(R)”（注册商标符号的 ASCII 表示）一律略去不翻译，直接删除，不译为“注册商标”等。注意区分安装程序菜单中的快捷键提示（如 `(R)eread`、`(Q)uit` 中的 `(R)` 表示按 R 键），此类不删除。逐个手动修改，禁止批量替换。
 
 无法判断的术语使用术语在线平台自行爬取。统一全书术语。
@@ -106,6 +103,39 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 1. 参考 `en/` 文件夹下对应发行版目录的 adoc 文件进行人工校对
 2. 提交 PR 到 main 分支
+
+### 更新流程
+
+当上游 FreeBSD 发布新的季度状态报告，或对已发布报告进行修订时，按以下步骤同步更新中文翻译：
+
+1. **检测上游更新**：访问 <https://www.freebsd.org/status/> 获取最新季度报告列表，对比 `SUMMARY.md` 中已收录的条目，识别新增或修订的报告。对于可疑的修订，需联网复查三次后确认。
+
+2. **获取英文原文**：通过 `WebFetch` 抓取对应报告的英文原版页面（URL 格式形如 `https://www.freebsd.org/status/report-YYYY-MM-YYYY-MM/`）。若仓库存在 `en/` 文件夹下对应 adoc 文件，以 adoc 为唯一权威源。
+
+3. **比对差异**：将英文原文与现有中文 `.md` 文件逐段对照，重点关注：
+   - 上游新增的条目（entries）或段落
+   - 上游修订的措辞、数据、版本号、链接
+   - 上游删除的内容（中文侧相应移除）
+   - 已翻译但与原文不符的历史偏差
+
+4. **增量更新**：
+   - **新增条目**：在对应 `.md` 文件中按上游顺序插入新条目的中文翻译，保持与上下文一致的翻译风格；同时在 `SUMMARY.md` 中补充 `* [标题](路径)` 条目（**仅当新建文件时**，已有文件内新增小节无需改 `SUMMARY.md`）。
+   - **修订内容**：仅修改上游发生变化的段落，**不要重译未改动的部分**，避免破坏既有译文的稳定性。
+   - **删除内容**：若上游移除某段，中文侧相应删除；删除前联网复查三次确认。
+   - **标题与文件名**：新增 `.md` 文件时，文件名遵循 `YYYY-QN.md` 或 `YYYY-M-M.md` 命名模式，不得包含空格、中文或英文冒号 `:`；`# 标题` 由 `sync-headers.yml` 自动同步，**不要手动编辑**。
+
+5. **更新原文链接标注**：每份 `.md` 文件开头的 `- 原文：[...](url)` 与 `- 版本：...`、`- 最后作者：...` 等元信息需同步至上游最新值；版本日期与作者以英文原版页面底部署名为准。
+
+6. **格式与 lint 校验**：更新完成后，依次运行：
+   - `markdownlint-cli2`（配置 `.github/.markdownlint.json`），手动逐个修复报错，**禁止直接 `--fix` 批量接受**
+   - `AutoCorrect`、`md-padding`（如本地可用），同样逐个结合上下文复核
+   - 不可见字符检测（`script/detect_invisible_chars.py`），清理 AI 残留字符
+
+7. **更新日志**：在 `CHANGELOG.md` 顶部追加一行，格式为 `- YYYY.M.D 校对“<报告标题>”` 或 `- YYYY.M.D 同步上游修订“<报告标题>”`，日期使用中文点分隔。
+
+8. **提交 PR**：将改动提交到 `main` 分支并发起 PR，commit message 需准确反映更新性质（新增报告 / 同步修订 / 修复偏差）。
+
+9. **复核约束**：更新流程同样遵循“三轮逐句校对 + 一轮复查递归”的核心约束（见“校对工作流程”），不得以“仅是小改动”为由绕过审查。
 
 ### 校对工作流程（Claude Code）
 
