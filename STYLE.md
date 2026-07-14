@@ -209,3 +209,32 @@
 
 - 核心团队批准了 XX (xx@) 的 src 提交权限
 - 核心团队批准恢复 YY (yy@) 的 src 提交权限
+```
+
+### 9.2 规则
+
+- 标题统一为 `#### 提交权限`（中文"提交"，**不**用英文"Commit"）
+- 使用无序列表
+- 用户名后的提交权限标识（如 `src`、`ports`、`doc`）保持小写
+
+## 十、术语统一规范
+
+以下术语全书统一，**禁止机械替换**，需逐个结合上下文复核：
+
+| 术语 | 统一译法 | 备注 |
+| --- | --- | --- |
+| Google Summer of Code | 谷歌编程之夏 | 不译为"夏季代码大赛"等；"Google"已单独翻译时不重复 |
+| GSoC | 编程之夏 | |
+| Ports Collection | Ports Collection | 专有名词，保留复数 |
+| Ports 管理团队 | Ports 管理团队 | 保留复数 |
+| FreeBSD Ports | FreeBSD Ports | 保留复数 |
+| Port（单个） | Port | 中文复数用单数 |
+| package / packages | 软件包 | 代码块内保留英文 |
+| pkgbase | pkgbase | 不翻译 |
+| base system | 基本系统 | |
+| Jail | Jail | 不翻译为"监狱" |
+| bhyve | bhyve | 不翻译 |
+| The FreeBSD Foundation | FreeBSD 基金会 | |
+| shell | shell | 不译为"壳"或"外壳" |
+| 拷贝 | 复制 | |
+| (R) 注册商标符号 | 直接删除 | 不
