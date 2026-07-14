@@ -318,7 +318,6 @@ Lorenzo Salvadore
 | BETA | BETA | 不译 |
 | PR（Problem Report） | PR | 不译为"问题报告" |
 | patch | 补丁 | |
-| exp-run | exp-run | 保留英文 |
 | upstream | 上游 | |
 | downstream | 下游 | |
 | backport | 向后移植 | |
