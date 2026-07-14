@@ -13,7 +13,7 @@
 
 联系方式：Kris Moore <[kmoore@FreeBSD.org](mailto:kmoore@FreeBSD.org)>
 
-在桌面工作组中，Kris Moore 总结了过去几个月 PC-BSD 领域的变化。基于新发布的 9.2-RELEASE 版本的构建正在进行中，基于 10-STABLE 的未来构建也将很快推出。计划是跟踪 10-STABLE 分支，直到其变成 11-STABLE。Kris 还描述了他们已切换到的滚动发布模型。该方法利用 freebsd-update(8) 提供基于内核和用户空间工具的滚动更新，与此同时，pkg(8) 被用于桌面应用程序的软件包管理。还报告称，PC-BSD 团队已经改善了他们工具的 ZFS 集成，包括安装程序。即将发布的 PC-BSD 版本的另一个亮点是，它们将包括 Gleb Kurtsou 的 PEFS，提供基于 PAM 的认证来加密用户主目录。
+在桌面工作组中，Kris Moore 总结了过去几个月 PC-BSD 领域的变化。基于新发布的 9.2-RELEASE 版本的构建正在进行中，基于 10-STABLE 的未来构建也将很快推出。计划是跟踪 10-STABLE 分支，直到其变成 11-STABLE。Kris 还描述了他们已切换到的滚动发布模型。该方法利用 freebsd-update(8) 为基本系统（即内核和用户空间工具）提供滚动更新，与此同时，pkg(8) 被用于桌面应用程序的软件包管理。还报告称，PC-BSD 团队已经改善了他们工具的 ZFS 集成，包括安装程序。即将发布的 PC-BSD 版本的另一个亮点是，它们将包括 Gleb Kurtsou 的 PEFS，提供基于 PAM 的认证来加密用户主目录。
 
 接下来，报告和讨论了当前进行中的项目。最近，Port sysutils/pcbsd-utils 和 sysutils/pcbsd-utils-qt4 已添加到 Ports 中，其中包含所有 PC-BSD 开发的工具和实用程序，前者是命令行版本，后者是具有 GUI 支持的版本。PC-BSD 开发者们还在开发一个 Life-preserver ZFS 命令行和 GUI 工具，仍在积极开发中。此工具的目的是利用 ZFS 的快照和复制功能作为备份解决方案。
 
@@ -31,7 +31,7 @@
 
 自 2011 年起，FreeBSD 开发者峰会专题已成为 BSDCan 和 EuroBSDcon 会议的重要组成部分。它为开发者和社区成员提供了一个机会，展示他们的最新项目，集思广益解决难题，培训与会者使用新工具，观察 FreeBSD 开发过程并讨论如何改进，分享他们的公司如何使用 FreeBSD，或协调活动。在欧洲实例中，还可以听到谷歌编程之夏学生的报告。
 
-在 2013 年 EuroBSDcon 会议上，我们有以下主题的讲座：ARM 超页、SDIO 堆栈、移植 GlusterFS、无人值守加密内核崩溃转储、为压缩服务添加 Capsicum 支持、智能下载管理服务、LLDB、数据包转发改进、多路径 TCP 支持、基于 FreeBSD 的网络仿真环境，最后是将 Mirage 操作系统（用 OCaml 函数式语言编写）移植到 FreeBSD。讲座录音（带幻灯片和演示的音频）播放列表可以在上述 URL 部分找到。
+在 2013 年 EuroBSDcon 会议上，我们有以下主题的讲座：ARM 超级页、SDIO 堆栈、移植 GlusterFS、无人值守加密内核崩溃转储、为压缩服务添加 Capsicum 支持、智能下载管理服务、LLDB、数据包转发改进、多路径 TCP 支持、基于 FreeBSD 的网络仿真环境，最后是将 Mirage 操作系统（用 OCaml 函数式语言编写）移植到 FreeBSD。讲座录音（带幻灯片和演示的音频）播放列表可以在上述 URL 部分找到。
 
 ## DNS
 
