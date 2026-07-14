@@ -7,7 +7,7 @@
 
 ## 超越 Buildworld……
 
-联系方式：Brooks Davis <[brooks@FreeBSD.org](mailto:brooks@FreeBSD.org)>
+**联系方式**：Brooks Davis <[brooks@FreeBSD.org](mailto:brooks@FreeBSD.org)>
 
 Buildworld 是 FreeBSD 构建系统中用于构建基本系统的目标。此次会议旨在调查当前的限制、讨论近期的改进，并提出该过程的未来发展方向。
 
@@ -21,9 +21,9 @@ Buildworld 是 FreeBSD 构建系统中用于构建基本系统的目标。此次
 
 ## 文档
 
-联系方式：Dru Lavigne <[dru@FreeBSD.org](mailto:dru@FreeBSD.org)>
+**联系方式**：Dru Lavigne <[dru@FreeBSD.org](mailto:dru@FreeBSD.org)>
 
-联系方式：Benedict Reuschling <[bcr@FreeBSD.org](mailto:bcr@FreeBSD.org)>
+**联系方式**：Benedict Reuschling <[bcr@FreeBSD.org](mailto:bcr@FreeBSD.org)>
 
 文档工作组在主要会议期间召开了会议，并且还在几个富有成效的晚上改进了 FreeBSD 文档的现状。
 
@@ -37,7 +37,7 @@ FreeBSD 项目是国际化的，许多贡献者的母语并非英语。为了鼓
 
 ## 网络接收性能
 
-联系方式：George Neville-Neil <[gnn@FreeBSD.org](mailto:gnn@FreeBSD.org)>
+**联系方式**：George Neville-Neil <[gnn@FreeBSD.org](mailto:gnn@FreeBSD.org)>
 
 FreeBSD 传统上是一个支持非常高性能网络的平台。这是它被选为奈飞流媒体设备的主要原因之一，该设备目前负责美国超过 20% 的互联网流量。本次会议的目标是讨论连接接收端的当前瓶颈。
 
@@ -47,13 +47,13 @@ FreeBSD 传统上是一个支持非常高性能网络的平台。这是它被选
 
 ## Ports 和软件包
 
-链接
+**链接**：
 
 [关于 Poudriere 状态的幻灯片](http://people.freebsd.org/~bdrewery/poudriere-0515.pdf)
 
 [关于基于 QEMU 的交叉构建的幻灯片](http://people.freebsd.org/~sson/imgact_binmisc/20130515-bsdcan-xbuild-ports.pdf)
 
-联系方式：Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
+**联系方式**：Erwin Lansing <[erwin@FreeBSD.org](mailto:erwin@FreeBSD.org)>
 
  Ports 和软件包工作组讨论了安全事件的影响及其经验教训。传统的二进制软件包构建现在已上线，构建这些软件包的基础设施也已变得更加易于维护。构建 pkg(8)（新式）软件包应该很快就能实现。
 
