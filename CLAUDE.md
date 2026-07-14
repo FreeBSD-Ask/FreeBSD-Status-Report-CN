@@ -12,12 +12,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **英文原文来源**：`en/` 文件夹，从 GitHub `freebsd/freebsd-doc` 仓库拉取。拉取脚本为 `script/pull_en_reports.py`（ADOC）和 `script/pull_en_reports_svn.py`（XML）。
 
-#### `en/` 文件夹分支分析
+### `en/` 文件夹分支分析
 
 `en/` 文件夹共 102 个报告目录，源自 `freebsd/freebsd-doc` 仓库的两个分支：
 
 | 分支 | 路径 | 格式 | 年份范围 | 目录数 | 文件结构 |
-| ------ | ------ | ------ | ------ | ------ | ------ |
+| ---- | ---- | ---- | -------- | ------ | -------- |
 | `main` | `website/content/en/status/` | ADOC | 2021 Q1 - 2026 Q2 | 22 | 每目录含 `_index.adoc` + 多个分节 `.adoc` 文件（8-47 个） |
 | `svn_head` | `en_US.ISO8859-1/htdocs/news/status/` | XML | 2001-06 - 2020 Q3 | 80 | 每目录含单个 `report-*.xml` 文件 |
 
