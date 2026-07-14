@@ -29,7 +29,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **特殊报告与异常情况：**
 
 - **devsummit 特别报告**：`report-2013-05-devsummit`（BSDCan 2013 开发者峰会）、`report-2013-09-devsummit`（EuroBSDcon 2013 开发者峰会），仅 XML 格式，非季度报告。
-- **`report-2017-10-2017-12`**：存在于 `svn_head` 分支但未列入 `_index.adoc` 的官方报告列表，可能为未正式发布的草稿。
+- **`report-2017-10-2017-12`**：存在于 `svn_head` 分支但未列入 `_index.adoc` 的官方报告列表，为未正式发布的草稿（FreeBSD 官方网站明确标注"This is a draft"）。已翻译收录为 `2017/10-12.md`，标题注明"（未公开草稿）"。
 - **缺失报告 `report-2020-10-2020-12`**（2020 Q4）：在 `main` 和 `svn_head` 两个分支中均不存在源文件。该报告仅在 FreeBSD 网站上有 HTML 版本，GitHub 仓库中无对应源文件。校对此报告时需通过 `WebFetch` 抓取网站内容作为参考。
 - **早期报告命名不规则**：2001 年的报告为单月命名（如 `report-2001-06`）；部分报告跨年份（如 `report-2001-12-2002-01`）或覆盖非标准月数（如 `report-2003-03-2003-09` 覆盖 7 个月、`report-2018-01-2018-09` 覆盖 9 个月）。
 
