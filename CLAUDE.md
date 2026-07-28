@@ -245,6 +245,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 **规则**：
 
 - “联系方式”四字**加粗**
+- “赞助者”**加粗**
 - 冒号使用中文全角冒号 `：`
 - 邮箱用 markdown 链接包裹，外层用尖括号 `< >`
 - 多个联系人时，每个联系人单独一行
