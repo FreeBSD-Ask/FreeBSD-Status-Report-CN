@@ -318,6 +318,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - “PR”（Problem Report）保留为“PR”，不译为“问题报告”
 - “patch” → “补丁”；“upstream” → “上游”；“downstream” → “下游”；“backport” → “向后移植”
 - “cherry-pick”：保留英文；“revert” → “还原”（不译为“回滚”）
+- “Cyber Resilience Act”：网络弹性法案（不译为“网络韧性法案”）
 
 无法判断的术语使用术语在线平台自行爬取。统一全书术语。
 
