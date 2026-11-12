@@ -44,7 +44,7 @@ RE_MAILTO = re.compile(r"<[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+>")
 
 
 def extract_prose(text: str) -> str:
-    """提取正文：剔除代码块、标题、列表行、链接区块行、元信息行。"""
+    """提取正文：剔除代码块、标题与元信息；列表项保留其文字部分一并统计。"""
     lines: list[str] = []
     in_fence = False
     for line in text.splitlines():
@@ -53,8 +53,12 @@ def extract_prose(text: str) -> str:
             continue
         if in_fence:
             continue
-        if RE_HEADING.match(line) or RE_LIST.match(line) or RE_META.match(line):
+        if RE_HEADING.match(line) or RE_META.match(line):
             continue
+        # 列表项去掉标记后保留文字，避免列表内的长句与措辞逃过统计
+        m = RE_LIST.match(line)
+        if m:
+            line = line[m.end():]
         # 链接区块：只保留加粗标签行中的中文（如 **链接**：），剔除 URL
         stripped = line.strip()
         if stripped.startswith("[") and stripped.endswith(")"):

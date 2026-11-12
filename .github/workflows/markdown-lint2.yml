@@ -31,6 +31,9 @@ jobs:
             **/*.md
             !en/**
             !.trae/**
+            !.github/**
+            !node_modules/**
+            !script/**
 
   fix:
     name: 手动修复并提交 PR
@@ -50,9 +53,11 @@ jobs:
             **/*.md
             !en/**
             !.trae/**
+            !.github/**
+            !node_modules/**
+            !script/**
 
       - name: markdownlint cli2 RP
-        if: failure()
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "Markdown 格式化"

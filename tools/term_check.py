@@ -73,26 +73,32 @@ def parse_glossary(path: Path) -> list[Term]:
     return terms
 
 
+RE_MD_LINK_DEST = re.compile(r"\]\([^)]*\)")
+
+
 def check_man_format(path: Path, lines: list[str], term: str) -> list[tuple[int, str]]:
-    """正文出现 man 引用但未加粗（且不在链接文本内）→ 违规。"""
+    """正文出现 man 引用但未加粗（且不在链接文本或行间代码内）→ 违规。
+
+    逐处检查每个出现位置：先剔除链接目标，再判断是否位于链接文本或行间代码内，
+    避免“整行含有一处加粗”就放过其余裸引用。
+    """
     hits: list[tuple[int, str]] = []
-    pattern = re.compile(r"\*\*" + re.escape(term) + r"\*\*")
-    bare = re.compile(r"(?<!\*)\b" + re.escape(term) + r"\b(?!\*)")
+    bold = f"**{term}**"
+    bare = re.compile(r"(?<![A-Za-z0-9_*])" + re.escape(term) + r"(?![A-Za-z0-9_*])")
     for lineno, line in enumerate(lines, start=1):
         if RE_HEADING.match(line) or RE_FENCE.match(line):
             continue
-        if pattern.search(line):
-            continue
-        m = bare.search(line)
-        if not m:
-            continue
-        # 位于链接文本 [term](...) 或行间代码内则豁免
-        prefix = line[: m.start()]
-        if prefix.rstrip().endswith("["):
-            continue
-        if line[max(0, m.start() - 1): m.end() + 1].count("`"):
-            continue
-        hits.append((lineno, line.strip()))
+        scan = RE_MD_LINK_DEST.sub("]()", line)
+        masked = scan.replace(bold, "\u0000" * len(bold))
+        for m in bare.finditer(masked):
+            prefix = masked[: m.start()]
+            # 行间代码内
+            if prefix.count("`") % 2 == 1:
+                continue
+            # 链接文本 [...] 内
+            if prefix.rfind("[") > prefix.rfind("]"):
+                continue
+            hits.append((lineno, line.strip()))
     return hits
 
 

@@ -69,7 +69,14 @@ def substitute(text: str, attrs: dict[str, str]) -> str:
 
 
 def resolve_include(entry_dir: Path, target: str) -> Path | None:
-    candidates = [entry_dir / target, entry_dir / Path(target).name, entry_dir.parent / Path(target).name]
+    name = Path(target).name
+    candidates = [
+        entry_dir / target,
+        entry_dir / name,
+        entry_dir.parent / name,
+        entry_dir.parent / "shared" / name,
+        entry_dir.parent / "shared" / "en" / name,
+    ]
     for cand in candidates:
         if cand.exists():
             return cand
@@ -108,8 +115,16 @@ def expand_adoc(path: Path, entry_dir: Path, attrs: dict[str, str], seen: set[Pa
         if m:
             target = substitute(m.group(1), attrs).strip("/")
             sub = resolve_include(entry_dir, target)
-            if sub is not None:
-                out.extend(expand_adoc(sub, entry_dir, attrs, seen))
+            if sub is None:
+                raise SystemExit(f"错误：无法解析 include::{m.group(1)}[]（位于 {path.name}），原文快照不完整")
+            if "shared" in sub.parts:
+                # 共享属性文件只取属性定义，不把作者名单等内容计入正文
+                for attr_line in read_lines(sub):
+                    am = RE_ADOC_ATTR.match(attr_line)
+                    if am:
+                        attrs[am.group(1)] = substitute(am.group(2).strip(), attrs)
+                continue
+            out.extend(expand_adoc(sub, entry_dir, attrs, seen))
             continue
         if line.startswith(("include::", "//")):
             continue
@@ -123,31 +138,41 @@ def norm_target(url: str) -> str:
         return "mail:" + url[len("mailto:"):].lower()
     if url.startswith("{"):
         return "unresolved:" + url
+    if url.startswith("#"):
+        return "frag:" + url[1:]
     if "#" in url:
-        return "anchor:" + url.split("#", 1)[1]
+        base, frag = url.split("#", 1)
+        return norm_target(base) + "#" + frag
     if url.startswith(("http://", "https://")):
         rest = url.split("://", 1)[1]
         host, _, path = rest.partition("/")
+        host = host.lower()
         if host == "www.freshports.org":
-            return "pkg:" + path.strip("/")
+            tail = path.strip("/")
+            return "pkg:" + tail if tail else "url:https://www.freshports.org"
         if host == "cgit.freebsd.org" and path.startswith("ports/tree/"):
-            return "pkg:" + path[len("ports/tree/"):].strip("/")
+            tail = path[len("ports/tree/"):].strip("/")
+            return "pkg:" + tail if tail else "url:https://cgit.freebsd.org/ports/tree"
         if host in ("www.freebsd.org", "freebsd.org") or host.endswith(".freebsd.org"):
             return "path:" + path.strip("/")
         return "url:" + url.rstrip("/")
-    if url.startswith("#"):
-        return "anchor:" + url[1:]
     tail = "/".join(p for p in url.split("/") if p and p not in (".", ".."))
+    if re.match(r"^[A-Za-z0-9.-]+\.[A-Za-z]{2,}(/|$)", tail):
+        return "url:https://" + tail.rstrip("/")
+    if tail.startswith("report-"):
+        return "path:status/" + tail
     return "path:" + tail
 
 
-def adoc_links(lines: list[str]) -> set[str]:
-    keys: set[str] = set()
+def adoc_links(lines: list[str], report_base: str) -> Counter:
+    """统计上游链接目标出现次数；同一行内的重复目标只计一次（上游存在 link:x[] 重复写法）。"""
+    counter: Counter = Counter()
     for line in lines:
+        keys: set[str] = set()
         for url, _text in RE_ADOC_LINK.findall(line):
             keys.add(norm_target(url))
         for anchor, _text in RE_ADOC_XREF.findall(line):
-            keys.add("anchor:" + anchor.strip())
+            keys.add(f"path:status/{report_base}#{anchor.strip()}")
         for url in RE_ADOC_URL.findall(line):
             keys.add(norm_target(url))
         for addr in RE_ADOC_MAILTO.findall(line):
@@ -157,7 +182,8 @@ def adoc_links(lines: list[str]) -> set[str]:
         for name, _text in RE_ADOC_ATTR_LINK.findall(line):
             if name not in DEFAULT_ATTRS:
                 keys.add("unresolved:{" + name + "}")
-    return keys
+        counter.update(keys)
+    return counter
 
 
 def analyze_adoc(entry_dir: Path) -> dict:
@@ -219,7 +245,7 @@ def analyze_adoc(entry_dir: Path) -> dict:
         "headings": headings,
         "paragraphs": paragraphs,
         "list_items": list_items,
-        "links": adoc_links(lines),
+        "links": adoc_links(lines, entry_dir.name),
     }
 
 
@@ -228,7 +254,7 @@ def analyze_md(path: Path) -> dict:
     headings: Counter = Counter()
     paragraphs = 0
     list_items = 0
-    links: set[str] = set()
+    links: Counter = Counter()
     in_code = False
     in_para = False
     for raw in lines:
@@ -250,10 +276,12 @@ def analyze_md(path: Path) -> dict:
             continue
         if RE_META.match(stripped):
             continue
+        line_keys: set[str] = set()
         for target in RE_MD_LINK.findall(stripped):
-            links.add(norm_target(target))
+            line_keys.add(norm_target(target))
         for target in RE_MD_AUTOLINK.findall(stripped):
-            links.add(norm_target(target))
+            line_keys.add(norm_target(target))
+        links.update(line_keys)
         if RE_MD_LIST.match(stripped):
             list_items += 1
             in_para = False
@@ -326,23 +354,48 @@ def main() -> int:
         print(f"  [{'一致' if match else '偏差'}] {label}: 上游 {a} / 中文 {b}{note}")
 
     allowlist = load_allowlist()
-    missing = sorted(
-        k for k in zh["links"]
-        if k not in en["links"]
-        and not k.startswith("unresolved:")
-        and k not in allowlist
-        and not any(adoc_key.startswith(k + "/") for adoc_key in en["links"])
+    zh_links: Counter = zh["links"]
+    en_links: Counter = en["links"]
+
+    def excess(left: Counter, right: Counter) -> list[str]:
+        out: list[str] = []
+        for key in left:
+            # 空键与邮箱不参与失败判定：邮箱属联系人元数据，正文重复提及无需逐处保留
+            if key in ("path:", "pkg:", "url:", "frag:") or key.startswith("mail:"):
+                continue
+            if key.startswith("unresolved:") or key in allowlist:
+                continue
+            if key not in right:
+                # 属性链接或被合并的前缀链接按已覆盖处理
+                if any(other.startswith(key + "/") for other in right):
+                    continue
+                out.append(key)
+        return sorted(out)
+
+    zh_only = excess(zh_links, en_links)
+    en_only = excess(en_links, zh_links)
+    excused = sorted(k for k in zh_links if k in allowlist)
+    unresolved = sorted(k for k in en_links if k.startswith("unresolved:"))
+    count_diff = sorted(
+        k for k in set(zh_links) | set(en_links)
+        if not k.startswith(("mail:", "unresolved:")) and zh_links.get(k, 0) != en_links.get(k, 0)
     )
-    excused = sorted(k for k in zh["links"] if k in allowlist)
-    unresolved = sorted(k for k in en["links"] if k.startswith("unresolved:"))
-    print(f"  [{'一致' if not missing else '偏差'}] 链接目标: 中文 {len(zh['links'])} 个，缺失对应 {len(missing)} 个")
-    for key in missing[:20]:
+
+    print(f"  [{'一致' if not zh_only else '偏差'}] 链接目标: 中文多出 {len(zh_only)} 个（上游无对应）")
+    for key in zh_only[:20]:
         print(f"      - {key}")
+    print(f"  [{'一致' if not en_only else '偏差'}] 链接目标: 中文遗漏 {len(en_only)} 个（上游有对应）")
+    for key in en_only[:20]:
+        print(f"      - {key}")
+    if count_diff:
+        print(f"  [提示] 出现次数与上游不同 {len(count_diff)} 个（重复引用合并属正常，仅供参考）")
+        for key in count_diff[:10]:
+            print(f"      - {key}: 上游 {en_links.get(key, 0)} / 中文 {zh_links.get(key, 0)}")
     if excused:
         print(f"  [提示] 已登记例外 {len(excused)} 个（见 tools/structure_allowlist.txt）")
     if unresolved:
         print(f"  [提示] 上游含未解析属性链接 {len(unresolved)} 个（不计入偏差）")
-    ok &= not missing
+    ok &= not zh_only and not en_only
     return 0 if ok else 1
 
 
