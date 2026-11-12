@@ -93,8 +93,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | 字段 | 是否必填 | 说明 |
 | ---- | -------- | ---- |
 | `原文` | 必填 | 统一用“原文”二字，**不**用“原文链接” |
-| `版本` | 2021 起必填；2020 及之前若上游无版本信息则可省略 | 日期格式为 `YYYY 年 M 月 D 日`（中文点分隔） |
-| `最后作者` | 必填 | 以英文原版页面底部署名为准；若署名为“FreeBSD 项目”则保留 |
+| `版本` | 2021 起必填；2020 及之前若上游无版本信息则可省略 | 取英文原版页面页脚 `Last modified on : <Month D, YYYY> by <Author>` 的日期，转为 `YYYY 年 M 月 D 日`；页脚缺失时回退为上游报告目录最后一次提交日期 |
+| `最后作者` | 必填 | 取同一页脚署名；页脚缺失时取引言署名；若署名为“FreeBSD 项目”则保留 |
 
 **URL 后缀规则**：
 
@@ -118,12 +118,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 | ------ | -------- | ---- |
 | `sync-headers.yml` | push | 从 SUMMARY.md 同步一级标题到各 .md 文件 |
 | `mulu.yml` | SUMMARY.md 变更时 push | 复制 SUMMARY.md → mu-lu.md |
-| `markdown-lint2.yml` | workflow_dispatch | markdownlint 检查，规则见 `.github/.markdownlint.json` |
+| `markdown-lint2.yml` | PR、push（main）、workflow_dispatch | PR/push 只检查（失败即失败）；手动触发时修复并自动建 PR |
 | `md-padding.yml` | workflow_dispatch | 自动在 CJK 与英文/数字间添加空格 |
-| `AutoCorrect.yml` | --- | 自动修正常见中文笔误与格式问题 |
+| `AutoCorrect.yml` | workflow_dispatch | 按 `.autocorrectrc` 检查并修正中文空格与标点问题 |
 | `links.yml` | 定时 + workflow_dispatch | lychee 死链检查，配置见 `.github/lychee.toml` |
-| `file-name-check.yml` | --- | 检查 SUMMARY.md 中引用的文件是否存在 |
-| `create-pdf.yml` | --- | 导出 PDF |
+| `file-name-check.yml` | push（.md 变更） | 检查 SUMMARY.md 中引用的文件是否存在 |
+| `pdf.yml` | 定时 + workflow_dispatch | 导出 PDF 与 EPUB |
+| `docs-qa.yml` | PR、push（main）、workflow_dispatch | 不可见字符、行尾空白、编码换行、SUMMARY 引用一致性 |
 
 ## 编写规范
 
@@ -320,6 +321,12 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - “patch” → “补丁”；“upstream” → “上游”；“downstream” → “下游”；“backport” → “向后移植”
 - “cherry-pick”：保留英文；“revert” → “还原”（不译为“回滚”）
 - “Cyber Resilience Act”：网络弹性法案（不译为“网络韧性法案”）
+- “splitlock” / “split lock”：保留英文，正文首次出现时说明其指跨缓存行的原子操作
+- “Zoned Storage”：分区存储（首次出现写作“分区存储（Zoned Storage）”）
+- “procdesc”、“Sylve”、“AppJail”、“x11appjail”、“rdma-core”、“bsdinstall”、“LLDB”、“ROCm”：保留英文
+- “Capsicumize”：用 Capsicum 改造（不生造“胶囊化”）
+- “configuration trinity”：配置三件套（指 sysrc、bsdconfig、sysconf）
+- “hypervisor”：虚拟机监控器
 
 无法判断的术语使用术语在线平台自行爬取。统一全书术语。
 
@@ -333,8 +340,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ### 翻译流程
 
-1. 参考 `en/` 文件夹下对应报告目录的原文文件进行人工校对（2021 年及以后为 adoc 格式，2001-2020 年为 xml 格式）
-2. 提交 PR 到 main 分支
+1. 参考 `en/` 文件夹下对应报告目录的原文文件进行人工校对（2021 年及以后为 adoc 格式，2001-2020 年为 xml 格式）；原文快照可用 `tools/fetch_report.py` 获取
+2. 按“三审三校六轮 + 递归”执行校对，并用 `tools/structure_check.py`、`tools/term_check.py`、`tools/text_metrics.py`、`tools/invisible_chars.py` 复核
+3. 贡献流程、命名规则与本地校验命令见 `CONTRIBUTING.md`
+4. 提交 PR 到 main 分支
 
 ### 更新流程
 
@@ -398,12 +407,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 4. **工作流**：比较一章，修复一章，复核一章，继续下一章。
 
-5. **三轮 + 一轮复查递归**（核心约束）：
+5. **三审三校六轮 + 递归**（核心约束）：
+   - **一审（准确性）**：逐句双语对齐编号，核对信息、数字、版本、日期、链接、专名；通过条件为漏译 0、增译 0、事实偏差 0
+   - **二审（汉语表达）**：遮蔽英文冷读，逐句过“主干是什么、修饰语属于谁、删去修饰是否成立”三问；按“去欧化汉语清单”与“病句检查表”逐条扫描，命中即改写
+   - **三审（术语与一致性）**：对照 `tools/glossary.yml` 逐节比对，同词同译、同义同词；通过条件为术语偏离 0
+   - **一校（事实核验）**：回查原文并联网核验版本号、提交统计、评审编号、外链锚点
+   - **二校（交叉复核）**：换视角冷读，对前几轮每处修改回读；每节随机抽 3 句回译英文比对
+   - **三校（规范终校）**：逐项扫描引号、加粗、反引号、空格、链接区块、联系方式、标题层级、代码块注释，并朗读每段
+   - **递归**：六轮后仍有问题，回到一审重新执行，直至完整一轮零发现
    - **逐行逐句子** 遍历内容，检查逻辑一致性，联网复核后修改
-   - 完整执行三轮逐句校对，然后严格、完整地复查一轮；若仍有问题，继续执行三轮，递归直至无问题
    - **逐个修改**：修改时禁止机械修改、禁止批量；必须逐个手动修改，禁止使用软件工具批量替换或批量逐个复核
    - **修改前后复核**：每次修改前确认问题真实存在、修改后确认改动准确且未引入新错误
-   - **不复查旧错**：不得复查以前已经完成三轮的错误；每轮查询内容必须是新的（若与之前的复查重复则跳过、不改，只看是否有新增内容）
+   - **不复查旧错**：不得复查以前已经完成轮次的错误；每轮查询内容必须是新的（若与之前的复查重复则跳过、不改，只看是否有新增内容）
    - **联网复查**：对于失效链接、版本号、API 端点等实际访问查询，需联网复查三次后修改
    - **禁止绕过审查**：不得以任何方式搜索、批量、绕过逐句子审查流程
 
@@ -515,15 +530,15 @@ Author Name
 
 ## Lint 配置
 
-- **markdownlint**（`.github/.markdownlint.json`）：本地已安装 `markdownlint-cli2 v0.22.1`（基于 `markdownlint v0.40.0`），可在本地直接运行检查与修复
+- **markdownlint**（`.github/.markdownlint.json`）：本地 CLI 为 `markdownlint-cli2 v0.24.1`（基于 `markdownlint v0.42.1`），CI 使用 `DavidAnson/markdownlint-cli2-action@v25.0.0`（action 版本号与 CLI 版本号不同，勿混写）
   - **本地运行命令**（在仓库根目录执行）：
 
     ```sh
-    # 检查全部中文 .md（排除 en/、.github/、node_modules/、script/）
-    markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!node_modules/**" "!script/**" --config .github/.markdownlint.json
+    # 检查全部中文 .md（排除 en/、.github/、node_modules/、script/、.trae/）
+    markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!node_modules/**" "!script/**" "!.trae/**" --config .github/.markdownlint.json
 
     # 自动修复可修复的问题（MD012 多余空行、MD047 末尾换行、MD034 裸 URL 等）
-    markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!node_modules/**" "!script/**" --config .github/.markdownlint.json --fix
+    markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!node_modules/**" "!script/**" "!.trae/**" --config .github/.markdownlint.json --fix
     ```
 
   - **MD060 表格列风格规则（重要）**：配置为 `"style": "compact"` + `"aligned_delimiter": true`

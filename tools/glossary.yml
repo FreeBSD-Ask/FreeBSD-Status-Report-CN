@@ -1,0 +1,154 @@
+# 术语基线（供 tools/term_check.py 使用）
+#
+# 格式说明（term_check.py 内置解析器仅支持此子集）：
+#   - term: 术语
+#     keep: true        保留英文不译（可选）
+#     man: true         man 页引用，正文须加粗为 **term**（可选）
+#     level: forbid|warn  命中 wrong 时的严重度，缺省 forbid（可选）
+#     wrong:            禁止出现的变体（可选，列表）
+#       - 变体
+#     note: 说明（可选）
+
+terms:
+  # —— 既有术语（沿用 AGENTS.md）——
+  - term: Port
+    keep: true
+    note: 中文正文用单数 Port；仅专有名词（FreeBSD Ports、Ports Collection、Ports 管理团队）保留复数
+  - term: pkgbase
+    keep: true
+    wrong:
+      - 打包基系统
+      - 打包基本系统
+      - 基系统包
+  - term: Jail
+    keep: true
+    wrong:
+      - 监狱
+      - 监牢
+  - term: bhyve
+    keep: true
+  - term: Capsicum
+    keep: true
+  - term: LinuxKPI
+    keep: true
+  - term: Netlink
+    keep: true
+  - term: RDMA
+    keep: true
+  - term: NFS
+    keep: true
+  - term: ZFS
+    keep: true
+  - term: UFS
+    keep: true
+  - term: CARP
+    keep: true
+  - term: GEOM
+    keep: true
+  - term: ACL
+    keep: true
+  - term: CRA
+    keep: true
+    note: 网络弹性法案
+  - term: 网络弹性法案
+    wrong:
+      - 网络韧性法案
+  - term: SBOM
+    keep: true
+    note: 软件物料清单
+  - term: GSoC
+    note: 谷歌编程之夏 / 编程之夏
+  - term: 谷歌编程之夏
+    wrong:
+      - 谷歌编程之夏计划
+  - term: 基本系统
+    wrong:
+      - 基系统
+  - term: 软件包
+    keep: true
+    note: package / packages 译为软件包；代码块与命令输出中保留英文
+  - term: 复制
+    wrong:
+      - 拷贝
+  - term: shell
+    wrong:
+      - 壳
+      - 外壳
+  - term: 提交者
+    note: committer
+  - term: 指导老师
+    wrong:
+      - 导师
+  - term: 还原
+    note: revert 译为还原
+    wrong:
+      - 回滚
+  - term: 补丁
+    note: patch
+  - term: 向后移植
+    note: backport
+  - term: 快照
+    note: snapshot
+  - term: 季度分支
+    note: quarterly branch
+  - term: 上游
+    note: upstream
+  - term: 下游
+    note: downstream
+
+  # —— 本期（2026 Q3）新增术语 ——
+  - term: splitlock
+    keep: true
+    note: 保留英文；正文首次出现时说明“跨缓存行的原子操作”
+    wrong:
+      - 分裂锁
+  - term: 分区存储
+    note: Zoned Storage 首次出现给全称“分区存储（Zoned Storage）”
+  - term: procdesc
+    keep: true
+    note: 调试 API，保留英文
+  - term: Sylve
+    keep: true
+  - term: AppJail
+    keep: true
+  - term: x11appjail
+    keep: true
+  - term: rdma-core
+    keep: true
+  - term: nfsdtop(8)
+    man: true
+  - term: fts(3)
+    man: true
+  - term: truss(1)
+    man: true
+  - term: sysconf(8)
+    man: true
+  - term: aq(4)
+    man: true
+  - term: bsdinstall
+    keep: true
+  - term: Free Pascal
+    keep: true
+  - term: Lazarus
+    keep: true
+  - term: -fbounds-safety
+    keep: true
+    note: 编译器选项，行间代码
+  - term: BPF/ifnet 契约加固
+    note: BPF/ifnet contract hardening
+  - term: 虚拟机监控器
+    note: hypervisor
+    level: warn
+    wrong:
+      - 管理程序
+      - 监督程序
+  - term: 视觉无障碍
+    note: Vision Accessibility
+  - term: 配置三件套
+    note: configuration trinity，指 sysrc、bsdconfig、sysconf
+  - term: 用 Capsicum 改造
+    note: Capsicumize
+    wrong:
+      - 胶囊化
+  - term: HPC Port 现代化
+    note: HPC Ports Modernization，Port 用单数

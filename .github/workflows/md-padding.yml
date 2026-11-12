@@ -1,8 +1,16 @@
 name: 🔗 md-padding 自动加空格
 
-on: 
+on:
   repository_dispatch:
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: md-padding-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:

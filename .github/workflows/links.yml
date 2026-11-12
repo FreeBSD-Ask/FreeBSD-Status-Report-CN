@@ -6,6 +6,14 @@ on:
   schedule:
     - cron: "00 18 15 * *"
 
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: links-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   linkChecker:
     runs-on: ubuntu-latest

@@ -1,0 +1,106 @@
+name: 🔗 文档质量检查
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-qa-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  qa:
+    name: 文档质量检查
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v7
+
+      - name: 设置 Python 环境
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.14'
+
+      - name: 不可见字符检查
+        run: python tools/invisible_chars.py .
+
+      - name: 编码与换行检查
+        run: |
+          python - <<'PY'
+          import sys
+          from pathlib import Path
+
+          skip = {"en", ".github", "node_modules", "script", ".trae", ".git"}
+          bad = []
+          for path in sorted(Path(".").rglob("*.md")):
+              if any(part in skip for part in path.parts[:-1]):
+                  continue
+              raw = path.read_bytes()
+              if raw.startswith(b"\xef\xbb\xbf"):
+                  bad.append(f"{path}: 含 UTF-8 BOM")
+              if b"\r\n" in raw:
+                  bad.append(f"{path}: 含 CRLF 换行")
+              if raw and not raw.endswith(b"\n"):
+                  bad.append(f"{path}: 缺少文件末尾换行")
+          for item in bad:
+              print(f"::error::{item}")
+          print(f"检查 {len(bad)} 处问题")
+          sys.exit(1 if bad else 0)
+          PY
+
+      - name: 行尾空白检查（仅提示）
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          skip = {"en", ".github", "node_modules", "script", ".trae", ".git"}
+          count = 0
+          for path in sorted(Path(".").rglob("*.md")):
+              if any(part in skip for part in path.parts[:-1]):
+                  continue
+              for lineno, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+                  if line != line.rstrip():
+                      count += 1
+                      print(f"::warning file={path},line={lineno}::行尾存在空白字符")
+          print(f"共 {count} 处行尾空白；Markdown 行尾两个空格表示硬换行，不阻断合并")
+          PY
+
+      - name: SUMMARY 引用一致性检查
+        run: |
+          python - <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+
+          summary = Path("SUMMARY.md")
+          if not summary.exists():
+              print("::error::缺少 SUMMARY.md")
+              sys.exit(1)
+          text = summary.read_text(encoding="utf-8")
+          refs = re.findall(r"\]\(([^)]+\.md)\)", text)
+
+          missing = [r for r in refs if not Path(r).exists()]
+          duplicated = sorted({r for r in refs if refs.count(r) > 1})
+          sep = "\\"
+          on_disk = {
+              str(p).replace(sep, "/")
+              for p in Path(".").rglob("*.md")
+              if p.parts[0][:1].isdigit()
+          }
+          unreferenced = sorted(on_disk - set(refs))
+
+          for r in missing:
+              print(f"::error file=SUMMARY.md::条目指向的文件不存在：{r}")
+          for r in duplicated:
+              print(f"::error file=SUMMARY.md::条目重复：{r}")
+          for r in unreferenced:
+              print(f"::error::年份目录下的文件未收录进 SUMMARY.md：{r}")
+          print(f"条目 {len(refs)} 条，缺失 {len(missing)}，重复 {len(duplicated)}，未收录 {len(unreferenced)}")
+          sys.exit(1 if (missing or duplicated or unreferenced) else 0)
+          PY

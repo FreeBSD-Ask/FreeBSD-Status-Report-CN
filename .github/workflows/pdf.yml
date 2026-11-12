@@ -5,6 +5,13 @@ on:
     - cron: '30 15 * * 0'  # 每周日 UTC 时间 15:30 运行
   workflow_dispatch:  # 可手动触发
 
+permissions:
+  contents: write
+
+concurrency:
+  group: pdf-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
