@@ -83,14 +83,17 @@ markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!node_modules/**" "!script/*
 autocorrect --lint 20*/*.md *.md
 python tools/invisible_chars.py .
 python tools/structure_check.py 2026/2026-Q3.md
+python tools/object_check.py 2026/2026-Q3.md
 python tools/term_check.py 2026/2026-Q3.md
 python tools/text_metrics.py 2026/2026-Q3.md
+python tools/selftest.py
 ```
 
 - markdownlint 须为 0 报错，报错逐处手工修正，不要用 `--fix` 批量接受。
 - autocorrect 读取根目录 `.autocorrectrc`，规则与项目标点规范一致，出现命中须逐条判断，确属错误才改。
 - `invisible_chars.py` 检测零宽字符、BOM、双向标记等不可见字符，合法的列表缩进 Tab 不报。
-- `structure_check.py` 比对标题层级、段落数、列表项数与链接数；`term_check.py` 按 `tools/glossary.yml` 检查术语；`text_metrics.py` 统计句长与用词密度。三项均以非零状态表示未通过。
+- `structure_check.py` 比对标题层级、段落数、列表项数与链接目标；`object_check.py` 按对象盘点链接、邮箱、man 页引用、行间代码与代码行、版本号与评审编号；`term_check.py` 按 `tools/glossary.yml` 检查术语；`text_metrics.py` 统计句长与用词密度。四者均以非零状态表示未通过。
+- `selftest.py` 用最小样例验证上述检查器能报出漏链接、漏邮箱、漏 man、漏数字、漏代码与缺 include；修改工具后必须先跑通自测。
 
 ## 提交与拉取请求
 

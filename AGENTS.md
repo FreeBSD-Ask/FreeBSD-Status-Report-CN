@@ -341,7 +341,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### 翻译流程
 
 1. 参考 `en/` 文件夹下对应报告目录的原文文件进行人工校对（2021 年及以后为 adoc 格式，2001-2020 年为 xml 格式）；原文快照可用 `tools/fetch_report.py` 获取
-2. 按“三审三校六轮 + 递归”执行校对，并用 `tools/structure_check.py`、`tools/term_check.py`、`tools/text_metrics.py`、`tools/invisible_chars.py` 复核
+2. 按“三审三校六轮 + 递归”执行校对，并用 `tools/structure_check.py`、`tools/object_check.py`、`tools/term_check.py`、`tools/text_metrics.py`、`tools/invisible_chars.py` 复核
 3. 贡献流程、命名规则与本地校验命令见 `CONTRIBUTING.md`
 4. 提交 PR 到 main 分支
 
@@ -422,7 +422,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
    - **联网复查**：对于失效链接、版本号、API 端点等实际访问查询，需联网复查三次后修改
    - **禁止绕过审查**：不得以任何方式搜索、批量、绕过逐句子审查流程
 
-6. **注意事项**：
+6. **对象盘点（独立门禁，不得以句子通顺替代）**：
+   - 句子级校对无法发现“属性展开后才出现”的对象（如 `{dch}` 展开出的邮箱）与格式转换后隐藏的对象，必须单列盘点
+   - 逐类比对上游与译文：链接目标、邮箱地址、man 页引用、行间代码与代码行、版本号/百分比/日期/提交哈希/评审编号
+   - 执行 `python tools/object_check.py <中文.md>`，任何“上游有、中文无”都视为未通过
+   - 事实核验禁止抽样；不得以“抽查若干条目”代替全量对象比对
+
+7. **注意事项**：
    - 不要修改 `# 标题`——会被 `sync-headers.yml` CI 覆盖
    - 保持术语一致性
    - 添加新内容（如英文原版新增的段落）时，确保翻译风格与上下文一致

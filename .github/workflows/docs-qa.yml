@@ -27,6 +27,9 @@ jobs:
         with:
           python-version: '3.14'
 
+      - name: 质量工具自测
+        run: python tools/selftest.py
+
       - name: 不可见字符检查
         run: python tools/invisible_chars.py .
 
