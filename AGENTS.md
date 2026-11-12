@@ -50,7 +50,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 章节目录遵循 `Q1、Q2、Q3、Q1` 命名模式，分别为第一二三四季度；或者以开头结束月份命名，如 `1-3.md`，代表 1 到 3 月。
 - 每节为独立 `.md` 文件，如 `2025/Q1.md` 或 `2007/1-3.md`
   - 如果有 .po 文件，则用于翻译对照参考，**不要修改或翻译其中的内容**
-  
+
 ### 标题管理（关键约束）
 
 `senc-headers.yml` 工作流会在每次 push 时自动将 `SUMMARY.md` 中的标题同步到对应 `.md` 文件的 H1。 **这意味着直接编辑 `.md` 文件的 `# 标题` 会被 CI 覆盖。** 修改章节标题时，只改 `SUMMARY.md` 中对应的 `* [标题](路径)` 条目即可。
