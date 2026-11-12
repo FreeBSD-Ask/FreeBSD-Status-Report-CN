@@ -338,12 +338,36 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 在正文中插入图片，使用 markdown 格式。
 
-### 翻译流程
+### 标准化翻译流程（S0–S6）
 
-1. 参考 `en/` 文件夹下对应报告目录的原文文件进行人工校对（2021 年及以后为 adoc 格式，2001-2020 年为 xml 格式）；原文快照可用 `tools/fetch_report.py` 获取
-2. 按“三审三校六轮 + 递归”执行校对，并用 `tools/structure_check.py`、`tools/object_check.py`、`tools/term_check.py`、`tools/text_metrics.py`、`tools/invisible_chars.py` 复核
-3. 贡献流程、命名规则与本地校验命令见 `CONTRIBUTING.md`
-4. 提交 PR 到 main 分支
+全流程分七个阶段，逐阶段设门禁；上一阶段未通过不得进入下一阶段。检查清单、量化指标与记录格式见 `tools/quality_gates.md`。
+
+- **S0 准备与范围登记**：用 `python tools/fetch_report.py --report report-YYYY-MM-YYYY-MM` 拉取上游快照；核对 `_index.adoc` 的 `include::` 数、引言自述条目数与 `###` 条目数三者一致；登记报告期、条目数、目标文件与元信息三项；从 `main` 建立分支。
+- **S1 初译**：按 `_index.adoc` 顺序逐条目翻译，一条目一次完成；保留标题层级、列表、链接区块、联系方式、赞助者结构；链接、邮箱、man 页引用、行间代码、代码行、版本号/百分比/日期/哈希/评审编号逐项保真；代码块、命令、路径、URL、用户名、带圈数字不译不改。
+- **S2 三审三校六轮**：按“一审准确性 → 二审汉语表达 → 三审术语 → 一校事实 → 二校交叉 → 三校规范”全量执行，禁止抽样；六轮后仍有问题回到一审，直至完整一轮零发现。
+- **S3 结构与对象门禁**：`python tools/structure_check.py <中文.md>` 与 `python tools/object_check.py <中文.md>` 必须通过；任一“上游有、中文无”即阻断。
+- **S4 格式一致性专检**：与内容校对分离，按 10 个维度逐段核查（见 `tools/quality_gates.md`）；每处命中须有“规则条 + 全书语料先例 + 上游格式”三方证据；无法判定时登记例外，不臆改。
+- **S5 工具复核**：`markdownlint-cli2` 0 报错、`term_check` 无命中、`text_metrics` 达标、`invisible_chars` 0、`selftest` 全部通过；编码 UTF-8 无 BOM、换行 LF、无行尾空白。工具本身有改动时先过 `selftest` 再用于译文。
+- **S6 提交与记录**：`CHANGELOG.md` 顶部追加一行；仅新建文件时更新 `SUMMARY.md`；译文、工具、治理文件分开提交；按 `.github/PULL_REQUEST_TEMPLATE.md` 填写门禁证据与例外登记；在 PR 中留下分段统计与典型修改记录。
+
+**门禁原则**：
+
+- 全量覆盖，禁止抽样；不得以“抽查若干条目”代替逐句、逐对象核对。
+- 脚本只做检测，不得用脚本改写正文；修改必须逐处手动完成。
+- 禁止为追求规则一致而机械替换；改前先核对上游格式与全书语料先例。
+- 每次修改前确认问题真实存在，修改后回读上下文，确认未引入新错误。
+- 工具误报与规则冲突记入 PR 例外登记，不擅自扩大改动范围。
+- 临时脚本放 `script/`，任务结束删除；`tools/` 只保留可复用资产。
+
+**失效模式与对策**：
+
+- 以句子级校对替代对象盘点 → 属性展开产生的邮箱、链接漏检 → S3 独立执行对象盘点。
+- 以抽样代替全量 → 长尾条目漏检 → 明令禁止抽样。
+- 内容校对与格式检查混在一起 → 格式问题被放过 → S4 独立门禁。
+- 机械套用规则 → 把上游斜体、行间代码、列表标记误改 → 三方证据与例外登记。
+- 工具无自测 → 检查器漏报 → `selftest` 与 docs-qa 双重验证。
+- 无记录 → 无法证明全量覆盖 → PR 证据表与评论留痕。
+- 脚本改写正文或残留 → 不可审计、污染仓库 → 脚本只检测，`script/` 用后删除。
 
 ### 更新流程
 
@@ -367,16 +391,20 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 5. **更新原文链接标注**：每份 `.md` 文件开头的 `- 原文：[...](url)` 与 `- 版本：...`、`- 最后作者：...` 等元信息需同步至上游最新值；版本日期与作者以英文原版页面底部署名为准。
 
-6. **格式与 lint 校验**：更新完成后，依次运行：
+6. **结构与对象门禁**：更新完成后先运行 `python tools/structure_check.py <中文.md>` 与 `python tools/object_check.py <中文.md>`，任一“上游有、中文无”即阻断。
+
+7. **格式与 lint 校验**：门禁通过后，依次运行：
+   - 格式一致性专检：按 `tools/quality_gates.md` 的 10 个维度逐段核查
    - `markdownlint-cli2`（配置 `.github/.markdownlint.json`），手动逐个修复报错，**禁止直接 `--fix` 批量接受**
    - `AutoCorrect`、`md-padding`（如本地可用），同样逐个结合上下文复核
-   - 不可见字符检测（`script/detect_invisible_chars.py`），清理 AI 残留字符
+   - 不可见字符检测（`python tools/invisible_chars.py <目录>`），清理 AI 残留字符
+   - `python tools/term_check.py <中文.md>`、`python tools/text_metrics.py <中文.md>`、`python tools/selftest.py`
 
-7. **更新日志**：在 `CHANGELOG.md` 顶部追加一行，格式为 `- YYYY.M.D 校对“<报告标题>”` 或 `- YYYY.M.D 同步上游修订“<报告标题>”`，日期使用中文点分隔。
+8. **更新日志**：在 `CHANGELOG.md` 顶部追加一行，格式为 `- YYYY.M.D 校对“<报告标题>”` 或 `- YYYY.M.D 同步上游修订“<报告标题>”`，日期使用中文点分隔。
 
-8. **提交 PR**：将改动提交到 `main` 分支并发起 PR，commit message 需准确反映更新性质（新增报告 / 同步修订 / 修复偏差）。
+9. **提交 PR**：将改动提交到 `main` 分支并发起 PR，commit message 需准确反映更新性质（新增报告 / 同步修订 / 修复偏差）；按 PR 模板填写门禁证据与例外登记。
 
-9. **复核约束**：更新流程同样遵循“三轮逐句校对 + 一轮复查递归”的核心约束（见“校对工作流程”），不得以“仅是小改动”为由绕过审查。
+10. **复核约束**：更新流程同样遵循“三审三校六轮 + 递归”的核心约束（见“校对工作流程”与 `tools/quality_gates.md`），不得以“仅是小改动”为由绕过审查。
 
 ### 校对工作流程（Claude Code）
 
@@ -425,10 +453,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 6. **对象盘点（独立门禁，不得以句子通顺替代）**：
    - 句子级校对无法发现“属性展开后才出现”的对象（如 `{dch}` 展开出的邮箱）与格式转换后隐藏的对象，必须单列盘点
    - 逐类比对上游与译文：链接目标、邮箱地址、man 页引用、行间代码与代码行、版本号/百分比/日期/提交哈希/评审编号
-   - 执行 `python tools/object_check.py <中文.md>`，任何“上游有、中文无”都视为未通过
+   - 执行 `python tools/structure_check.py <中文.md>` 与 `python tools/object_check.py <中文.md>`，任何“上游有、中文无”都视为未通过
    - 事实核验禁止抽样；不得以“抽查若干条目”代替全量对象比对
 
-7. **注意事项**：
+7. **格式一致性专检（独立门禁）**：
+   - 与句子级校对分开，按 `tools/quality_gates.md` 的 10 个维度逐段覆盖全文，不得以抽查代替
+   - 每处命中须核对“规则条 + 全书语料先例 + 上游格式”三方证据；规则与上游或语料冲突时登记例外，不擅自改动
+   - 格式专检的命中数、修正数与例外数须写入 PR 记录
+
+8. **注意事项**：
    - 不要修改 `# 标题`——会被 `sync-headers.yml` CI 覆盖
    - 保持术语一致性
    - 添加新内容（如英文原版新增的段落）时，确保翻译风格与上下文一致

@@ -31,7 +31,7 @@ npm install -g markdownlint-cli2@0.24.1 autocorrect-node
 - `mu-lu.md` 由 CI 从 `SUMMARY.md` 自动生成，不要手工编辑。
 - `CHANGELOG.md` 记录校对与同步进度，新条目追加在文件顶部。
 - `en/` 存放从上游拉取的英文原文快照，`script/` 存放一次性临时脚本，两者均不纳入版本控制。
-- `tools/` 存放可复用的质量校验脚本与术语表，属于仓库资产，请勿删除。
+- `tools/` 存放可复用的质量校验脚本、术语表与质量门禁清单（`tools/quality_gates.md`），属于仓库资产，请勿删除。
 
 各年份目录下按季度或月份分文件：`2001/1-3.md`、`2010/Q2.md`、`2026/2026-Q3.md`。文件名不得包含空格、中文或英文冒号。
 
@@ -66,34 +66,41 @@ python tools/fetch_report.py --report report-2026-07-2026-09
 
 ## 翻译流程
 
-1. 通读整节英文，登记术语与专名，再动笔；不要逐句硬译后拼装。
-2. 一次性完成整节初译，不在中途反复回改。
-3. 按“三审三校”逐轮处理：一审准确性、二审汉语表达、三审术语一致性；一校事实核验、二校交叉复核、三校规范终校。每轮只看新问题，不复查上一轮已处理的结论。
-4. 逐处修改，一次一处，禁止批量替换与脚本改写译文；每处修改要能说明原文依据与规则依据。
-5. 修改后回读上下文，确认未引入新错误。
+完整流程分七个阶段（S0–S6），上一阶段未通过不得进入下一阶段；检查清单与量化指标见 [tools/quality_gates.md](tools/quality_gates.md)，规则冲突时以 [AGENTS.md](AGENTS.md) 为准。
 
-译文须同时满足准确、完整、清晰、流畅、明白五项要求，篇幅较长的句子按语义拆分，单句“的”不超过三个，“被”字句、“进行/作出/加以”与“使得”按密度阈值控制。具体清单与阈值见 [AGENTS.md](AGENTS.md)。
+1. **S0 准备**：拉取上游快照，核对 `_index.adoc` 的 `include::` 数、引言自述条目数与 `###` 条目数；登记报告期、条目数、目标文件与元信息三项；从 `main` 建分支。
+2. **S1 初译**：按上游顺序逐条目完成，一条目一次译完；保留标题、列表、链接区块、联系方式与赞助者结构；链接、邮箱、man 页引用、行间代码、代码行与各类数字逐项保真。
+3. **S2 三审三校六轮**：一审准确性、二审汉语表达、三审术语；一校事实、二校交叉、三校规范。全量逐句，禁止抽样；递归至完整一轮零发现。
+4. **S3 结构与对象门禁**：运行 `structure_check.py` 与 `object_check.py`，任一“上游有、中文无”即阻断。
+5. **S4 格式一致性专检**：与内容校对分开，按 10 个维度逐段核查；每处改动须有规则、语料先例与上游格式三方证据；无法判定时登记例外。
+6. **S5 工具复核**：本地校验全部通过（见下节），编码为 UTF-8 无 BOM、换行 LF、无行尾空白。
+7. **S6 提交与记录**：更新 `CHANGELOG.md`（新建文件时同时更新 `SUMMARY.md`）；译文、工具与治理文件分开提交；按 PR 模板填写门禁证据与例外登记。
+
+译文须同时满足准确、完整、清晰、流畅、明白五项要求，篇幅较长的句子按语义拆分，单句“的”不超过三个，“被”字句、“进行/作出/加以”与“使得”按密度阈值控制。具体清单与阈值见 [AGENTS.md](AGENTS.md) 与 [tools/quality_gates.md](tools/quality_gates.md)。
 
 ## 本地校验
 
-提交前请在仓库根目录依次执行以下命令，全部通过再推送。
+提交前请在仓库根目录按门禁顺序执行以下命令，全部通过再推送。示例路径以 `2026/2026-Q3.md` 为例，请替换为实际文件。
 
 ```sh
 markdownlint-cli2 "**/*.md" "!en/**" "!.github/**" "!node_modules/**" "!script/**" "!.trae/**" --config .github/.markdownlint.json
 autocorrect --lint 20*/*.md *.md
-python tools/invisible_chars.py .
 python tools/structure_check.py 2026/2026-Q3.md
 python tools/object_check.py 2026/2026-Q3.md
 python tools/term_check.py 2026/2026-Q3.md
 python tools/text_metrics.py 2026/2026-Q3.md
+python tools/invisible_chars.py .
 python tools/selftest.py
+git diff --check
 ```
 
+- 顺序固定：结构与对象门禁（`structure_check.py`、`object_check.py`）未通过时，不进入格式专检与工具复核。
 - markdownlint 须为 0 报错，报错逐处手工修正，不要用 `--fix` 批量接受。
 - autocorrect 读取根目录 `.autocorrectrc`，规则与项目标点规范一致，出现命中须逐条判断，确属错误才改。
 - `invisible_chars.py` 检测零宽字符、BOM、双向标记等不可见字符，合法的列表缩进 Tab 不报。
 - `structure_check.py` 比对标题层级、段落数、列表项数与链接目标；`object_check.py` 按对象盘点链接、邮箱、man 页引用、行间代码与代码行、版本号与评审编号；`term_check.py` 按 `tools/glossary.yml` 检查术语；`text_metrics.py` 统计句长与用词密度。四者均以非零状态表示未通过。
 - `selftest.py` 用最小样例验证上述检查器能报出漏链接、漏邮箱、漏 man、漏数字、漏代码与缺 include；修改工具后必须先跑通自测。
+- `git diff --check` 检查行尾空白与冲突标记；编码与换行由 `.editorconfig`、`.gitattributes` 与 docs-qa 工作流共同保证。
 
 ## 提交与拉取请求
 
