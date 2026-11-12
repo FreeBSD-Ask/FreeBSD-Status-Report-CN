@@ -8,6 +8,13 @@ on:
       - completed
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-headers-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   verify-and-sync:
     runs-on: ubuntu-latest

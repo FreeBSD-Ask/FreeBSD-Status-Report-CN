@@ -6,6 +6,13 @@ on:
       - 'SUMMARY.md'
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: mulu-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   update-mu-lu:
     runs-on: ubuntu-latest

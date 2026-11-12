@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 贡献指南
+    url: https://github.com/FreeBSD-Ask/FreeBSD-Status-Report-CN/blob/main/CONTRIBUTING.md
+    about: 环境准备、文件命名、翻译流程、本地校验命令与拉取请求要求
+  - name: 上游状态报告流程
+    url: https://docs.freebsd.org/en/articles/freebsd-status-report-process/
+    about: 如何向 FreeBSD 项目提交状态报告原文

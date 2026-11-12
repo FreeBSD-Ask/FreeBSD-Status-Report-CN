@@ -1,34 +1,49 @@
 name: 🔗 md-padding 自动加空格
 
-on: 
+on:
   repository_dispatch:
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: md-padding-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     name: md-padding
     runs-on: ubuntu-latest
-    
-    steps:
-        - name: Checkout from repository
-          uses: actions/checkout@v7
-        
-        - name: Setup Node.js
-          uses: actions/setup-node@v7
-          with:
-            node-version: '24'
-          
-        - name: Install Node.js dependencies 
-          run: npm i -g md-padding@latest
-        
-        - name: Run md-padding lint
-          run: find "$(pwd)" -type f -name "*.md" | npx md-padding --ignore-words='-' ':' '>' '=' '<' -f --read-files -i
 
-        - name: Markdown add spaces
-          uses: peter-evans/create-pull-request@v8
-          with:
-             commit-message: "Markdown add spaces"
-             labels: "Markdown"
-             delete-branch: true
-             title: Markdown add spaces
-             body: 格式化——使用 md-padding 给 Markdown 自动加空格
+    steps:
+      - name: Checkout from repository
+        uses: actions/checkout@v7
+        with:
+          # 安装依赖期间不把写权限令牌留在 git 配置中
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+
+      # 固定版本并禁用生命周期脚本
+      - name: Install pinned md-padding
+        run: npm install --global --ignore-scripts md-padding@1.10.0
+
+      - name: Run md-padding
+        run: |
+          find "$(pwd)" -type f -name "*.md" \
+            | xargs md-padding --ignore-words='-' ':' '>' '=' '<' -f --read-files -i
+
+      - name: Create or update fix PR
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: md-padding-fixes
+          commit-message: "Markdown 自动加空格"
+          labels: "Markdown"
+          delete-branch: true
+          title: Markdown 自动加空格
+          body: 由 md-padding 工作流生成的自动修正，请人工复核后再合并。

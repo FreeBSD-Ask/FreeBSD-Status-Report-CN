@@ -170,6 +170,10 @@ docs/_book
 # TODO: where does this rule come from?
 test/
 
+### Python ###
+__pycache__/
+*.py[cod]
+
 ### Vuejs ###
 # Recommended template: Node.gitignore
 

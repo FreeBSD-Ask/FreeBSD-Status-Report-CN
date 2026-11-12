@@ -5,6 +5,13 @@ on:
     paths:
       - '**/*.md'
 
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: file-name-check-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   check-summary:

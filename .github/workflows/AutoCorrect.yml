@@ -1,37 +1,55 @@
 name: 🔗 AutoCorrect 空格语法检查
 
-on: 
+on:
   repository_dispatch:
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: autocorrect-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     name: AutoCorrect
     runs-on: ubuntu-latest
-    
-    steps:
-        - name: Checkout from repository
-          uses: actions/checkout@v7
-        
-        - name: Setup Node.js
-          uses: actions/setup-node@v7
-          with:
-            node-version: '20'
-          
-        - name: Install nodejs dependencies
-          run: yarn add autocorrect-node
-        
-        - name: Run autocorrect lint
-          run: yarn autocorrect --config .autocorrectrc --lint --no-diff-bg-color **/*.md  || true 
-          
-        - name: Run autocorrect fix
-          run: yarn autocorrect --fix **/*.md
 
-        - name: Markdown add spaces
-          uses: peter-evans/create-pull-request@v8
-          with:
-             commit-message: "Markdown add spaces"
-             labels: "Markdown"
-             delete-branch: true
-             title: Markdown add spaces
-             body: 格式化——Markdown 自动加空格
+    steps:
+      - name: Checkout from repository
+        uses: actions/checkout@v7
+        with:
+          # 安装依赖期间不把写权限令牌留在 git 配置中
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '20'
+
+      # 固定版本并禁用生命周期脚本，避免安装期执行第三方代码
+      - name: Install pinned autocorrect-node
+        run: npm install --no-save --ignore-scripts autocorrect-node@2.14.0
+
+      # 仅检查纳入版本控制的 Markdown，避免扫描 en/、script/ 与本地产物
+      - name: Run autocorrect lint
+        id: lint
+        continue-on-error: true
+        run: npx --no-install autocorrect --config .autocorrectrc --lint --no-diff-bg-color $(git ls-files '*.md')
+
+      - name: Run autocorrect fix
+        if: steps.lint.outcome == 'failure'
+        run: npx --no-install autocorrect --config .autocorrectrc --fix $(git ls-files '*.md')
+
+      - name: Create or update fix PR
+        if: steps.lint.outcome == 'failure'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: autocorrect-fixes
+          commit-message: "Markdown 空格与标点修正"
+          labels: "Markdown"
+          delete-branch: true
+          title: Markdown 空格与标点修正
+          body: 由 AutoCorrect 工作流生成的自动修正，请人工复核后再合并。

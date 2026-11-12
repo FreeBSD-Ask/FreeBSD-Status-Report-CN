@@ -1,0 +1,41 @@
+# AutoCorrect 配置（供 .github/workflows/AutoCorrect.yml 使用）
+#
+# 规则取值：0 = 关闭，1 = 错误（lint 失败），2 = 警告（lint 通过）。
+# 本配置以 AGENTS.md“编写规范”为准：中文正文用全角标点，CJK 与
+# 拉丁字母、数字之间加半角空格，代码块与命令保持原样。
+rules:
+  # CJK 与英文/数字之间加空格——项目硬性要求，保留为错误级
+  space-word: 1
+  # CJK 与标点之间加空格
+  space-punctuation: 1
+  # CJK 与括号之间加空格
+  space-bracket: 1
+  # CJK 与反引号之间加空格
+  space-backticks: 1
+  # 破折号/连字符两侧加空格——与项目日期区间写法“2018 年 10 月-2018 年 12 月”
+  # 及“混合中断-轮询”等术语冲突，关闭
+  space-dash: 0
+  space-dollar: 0
+  # 中文语境半角标点转全角——与“正文标点统一全角”一致，保留
+  fullwidth: 1
+  # 删除全角标点前的空格——与“中文标点前不留空格”一致，保留
+  no-space-fullwidth: 1
+  # 删除全角引号两侧空格——项目既有语料在拉丁字母与“”之间保留空格，
+  # 批量删除会造成 28 处无依据改动，关闭
+  no-space-fullwidth-quote: 0
+  # 全角字母数字转半角——项目禁止改动版本号、带圈数字等字面，关闭
+  halfwidth-word: 0
+  # 英文语境全角标点转半角——会把（Ports）、顿号等正文全角标点改为半角，
+  # 违反项目标点规范，关闭
+  halfwidth-punctuation: 0
+  # 拼写检查：本项目以 FreeBSD 专名为主，词表无法穷尽，关闭以免噪声
+  spellcheck: 0
+
+# 代码块内的命令、配置与输出保持原样，不做格式化
+context:
+  codeblock: 0
+
+# 跨年报告的日期区间写作“10 月-2018 年”，连字符前不插空格
+textRules:
+  "月-2002": 0
+  "月-2018": 0

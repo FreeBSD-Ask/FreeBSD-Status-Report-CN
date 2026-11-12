@@ -1,21 +1,63 @@
 name: 🔗 markdownlint-cli2 语法检查
 
-# Disable automatic runs
-on: [workflow_dispatch]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: markdownlint-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  lint:
+  check:
+    name: 检查（不修改文件）
+    if: github.event_name != 'workflow_dispatch'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+
+      - name: markdownlint cli2 只检查
+        uses: DavidAnson/markdownlint-cli2-action@v25.0.0
+        with:
+          config: '.github/.markdownlint.json'
+          fix: false
+          globs: |
+            **/*.md
+            !en/**
+            !.trae/**
+            !.github/**
+            !node_modules/**
+            !script/**
+
+  fix:
+    name: 手动修复并提交 PR
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - uses: actions/checkout@v7
+
       - uses: DavidAnson/markdownlint-cli2-action@v25.0.0
         with:
           config: '.github/.markdownlint.json'
           fix: true
-          globs: '**/*.md'
+          globs: |
+            **/*.md
+            !en/**
+            !.trae/**
+            !.github/**
+            !node_modules/**
+            !script/**
 
       - name: markdownlint cli2 RP
-        if: failure()
         uses: peter-evans/create-pull-request@v8
         with:
           commit-message: "Markdown 格式化"

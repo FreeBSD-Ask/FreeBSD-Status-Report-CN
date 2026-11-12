@@ -5,6 +5,14 @@ on:
     - cron: '30 15 * * 0'  # 每周日 UTC 时间 15:30 运行
   workflow_dispatch:  # 可手动触发
 
+permissions:
+  contents: write
+
+concurrency:
+  group: pdf-${{ github.workflow }}-${{ github.ref }}
+  # 发布流程不可中途取消：取消可能留下已推送标签但无 Release 的中间状态
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -92,8 +100,12 @@ jobs:
           timedatectl
           git config --global user.email "yklaxds@gmail.com"
           git config --global user.name "ykla"
-          git tag ${{ env.RELEASE_TAG }}
-          git push origin ${{ env.RELEASE_TAG }}
+          if git ls-remote --exit-code --tags origin "refs/tags/${RELEASE_TAG}" >/dev/null 2>&1; then
+            echo "标签 ${RELEASE_TAG} 已存在，跳过创建"
+          else
+            git tag "${RELEASE_TAG}"
+            git push origin "${RELEASE_TAG}"
+          fi
 
       - name: 生成增量变更日志
         uses: janheinrichmerker/action-github-changelog-generator@v2.4
@@ -102,40 +114,19 @@ jobs:
           sinceTag: ${{ env.PREVIOUS_TAG }}
           user: FreeBSD-Ask
           repo: FreeBSD-Status-Report-CN
-
-      - name: 读取变更日志内容
-        id: read_changelog
-        run: |
-          timedatectl
-          CHANGES=$(cat CHANGELOG.md)
-          echo "CHANGES_CONTENT<<EOF" >> $GITHUB_ENV
-          echo "$CHANGES" >> $GITHUB_ENV
-          echo "EOF" >> $GITHUB_ENV
+          output: release-notes.md
 
       - name: 创建 GitHub Release
         uses: ncipollo/release-action@v1
         with:
           tag: ${{ env.RELEASE_TAG }}
           name: ${{ env.RELEASE_TAG }}
+          # 直接读取文件作为 Release 说明，不经过 GITHUB_ENV，避免多行内容注入
+          bodyFile: release-notes.md
+          allowUpdates: true
           artifacts: |
             pdf-generator/build/${{ env.RELEASE_TAG }}.pdf
             pdf-generator/build/${{ env.RELEASE_TAG }}.epub
           token: ${{ secrets.GITHUB_TOKEN }}
           makeLatest: true
-      - name: 更新 Release 说明
-        uses: actions/github-script@v9
-        with:
-          script: |
-            const release = await github.rest.repos.getReleaseByTag({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              tag: process.env.RELEASE_TAG
-            });
-            
-            await github.rest.repos.updateRelease({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              release_id: release.data.id,
-              body: process.env.CHANGES_CONTENT
-            });
             
